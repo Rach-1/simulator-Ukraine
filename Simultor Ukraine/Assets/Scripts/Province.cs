@@ -4,14 +4,14 @@ using UnityEngine.UI;
 public class Province : MonoBehaviour
 {
     public GameObject ProvMenu;
-    public string Name;
-    public string CountryTag;
-    public int Population;
-    public float Natality; //приріст населення
+    public string Name; // Назва регіону
+    public string CountryTag; // Тег країни
+    public long Population; // Населення
+    public long Gdp; // ВВП
 
     [SerializeField] Text name;
     [SerializeField] Text population;
-    [SerializeField] Text natality;
+    [SerializeField] Text gdp;
 
     void Update()
     {
@@ -37,6 +37,6 @@ public class Province : MonoBehaviour
         ProvMenu.SetActive(true);
         name.text = Name;
         population.text = Population.ToString();
-        natality.text = Natality.ToString();
+        gdp.text = Gdp.ToString();
     }
 }
