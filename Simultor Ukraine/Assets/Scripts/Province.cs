@@ -5,7 +5,6 @@ public class Province : MonoBehaviour
 {
     public GameObject ProvMenu;
     public string Name; // Назва регіону
-    public string CountryTag; // Тег країни
     public long Population; // Населення
     public long Gdp; // ВВП
 

@@ -5,7 +5,7 @@ public class CameraControler : MonoBehaviour
     public float PanSpeed = 20f; 
     public float PanBorderThickness = 20f; //для миші
     public Vector2 PanLimit; //рамки руху камери
-    public Camera cam;
+    public Camera Cam;
 
     public float ZoomChange = 1f;
     public float SmoothChange = 1f;
@@ -42,7 +42,7 @@ public class CameraControler : MonoBehaviour
         {
             ZoomOut();
         }
-        cam.orthographicSize = Mathf.Clamp(cam.orthographicSize, MinCamSize, MaxCamSize);
+        Cam.orthographicSize = Mathf.Clamp(Cam.orthographicSize, MinCamSize, MaxCamSize);
 
         pos.x = Mathf.Clamp(pos.x, -PanLimit.x, PanLimit.x);
         pos.y = Mathf.Clamp(pos.y, -PanLimit.y, PanLimit.y);
@@ -52,11 +52,11 @@ public class CameraControler : MonoBehaviour
 
     public void ZoomIn()
     {
-        cam.orthographicSize += ZoomChange * Time.deltaTime * SmoothChange;
+        Cam.orthographicSize += ZoomChange * Time.deltaTime * SmoothChange;
     }
 
     public void ZoomOut()
     {
-        cam.orthographicSize -= ZoomChange * Time.deltaTime * SmoothChange;
+        Cam.orthographicSize -= ZoomChange * Time.deltaTime * SmoothChange;
     }
 }
