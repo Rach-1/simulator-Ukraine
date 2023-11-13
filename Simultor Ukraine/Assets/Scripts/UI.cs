@@ -4,13 +4,26 @@ using UnityEngine.UI;
 
 public class UI : MonoBehaviour
 {
-    public long PopulationUI;
-    public long GDPUI;
-    [SerializeField] Text populationui;
-    [SerializeField] Text gdpui;
-    void Update()
+    public string provinceTag = "Ukr"; // Поки що це буде працювати тільки для України, пізніше продумаю як зробити це для країни гравця
+    public Province[] provinces;
+    [SerializeField] Text totalPopulationText;
+    [SerializeField] Text totalGdpText;
+    void Awake()
     {
-        populationui.text = PopulationUI.ToString();
-        gdpui.text = GDPUI.ToString();
+        GameObject[] provinceObjects = GameObject.FindGameObjectsWithTag(provinceTag);
+        provinces = new Province[provinceObjects.Length];
+        for (int i = 0; i < provinceObjects.Length; i++)
+        {
+            provinces[i] = provinceObjects[i].GetComponent<Province>();
+        }
+        long totalPopulation = 0;
+        long totalGdp = 0;
+        foreach (Province province in provinces)
+        {
+            totalPopulation += province.Population;
+            totalGdp += province.Gdp;
+        }
+        totalPopulationText.text = "Загальне населення: " + (totalPopulation / 1000000.0).ToString("0.000") + " млн";
+        totalGdpText.text = "Загальний ВВП: " + (totalGdp / 1000000000.0).ToString("0.000") + " млрд";
     }
 }
