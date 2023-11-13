@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 11269298}
   - component: {fileID: 11269300}
   - component: {fileID: 11269299}
+  - component: {fileID: 11269301}
   m_Layer: 0
   m_Name: Hmelnickiy
   m_TagString: Ukr
@@ -222,12 +223,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
-  Name: Hmelnickiy
-  Population: 0
-  Gdp: 0
+  Name: Khmelnytsky region
+  Population: 1422065
+  Gdp: 2204200750
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   gdp: {fileID: 312409684}
+  displaytext: {fileID: 1692063595}
 --- !u!60 &11269300
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -417,6 +419,18 @@ PolygonCollider2D:
       - {x: -8.915, y: -7.73}
       - {x: -8.855, y: -7.45}
   m_UseDelaunayMesh: 0
+--- !u!114 &11269301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11269296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff65aa735d8f4b64db774bcad56dc904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &31660224
 GameObject:
   m_ObjectHideFlags: 0
@@ -429,6 +443,7 @@ GameObject:
   - component: {fileID: 31660226}
   - component: {fileID: 31660228}
   - component: {fileID: 31660227}
+  - component: {fileID: 31660229}
   m_Layer: 0
   m_Name: Poltava
   m_TagString: Ukr
@@ -516,12 +531,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
-  Name: Poltava
+  Name: Poltava region
   Population: 1618737
   Gdp: 2509042350
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   gdp: {fileID: 312409684}
+  displaytext: {fileID: 1692063595}
 --- !u!60 &31660228
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -726,6 +742,18 @@ PolygonCollider2D:
       - {x: 2.145, y: -4.4}
       - {x: 2.145, y: -4.23}
   m_UseDelaunayMesh: 0
+--- !u!114 &31660229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 31660224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff65aa735d8f4b64db774bcad56dc904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &85603107
 GameObject:
   m_ObjectHideFlags: 0
@@ -738,6 +766,7 @@ GameObject:
   - component: {fileID: 85603109}
   - component: {fileID: 85603111}
   - component: {fileID: 85603110}
+  - component: {fileID: 85603112}
   m_Layer: 0
   m_Name: Zakarpatska
   m_TagString: Ukr
@@ -825,12 +854,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
-  Name: Zakarpatska
-  Population: 0
-  Gdp: 0
+  Name: Zakarpattia region
+  Population: 1255567
+  Gdp: 1946128850
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   gdp: {fileID: 312409684}
+  displaytext: {fileID: 1692063595}
 --- !u!60 &85603111
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -947,6 +977,18 @@ PolygonCollider2D:
       - {x: -9.059473, y: -9.04254}
       - {x: -8.839336, y: -8.67}
   m_UseDelaunayMesh: 0
+--- !u!114 &85603112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85603107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff65aa735d8f4b64db774bcad56dc904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &87192889
 GameObject:
   m_ObjectHideFlags: 0
@@ -981,8 +1023,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -142.96, y: 139.1}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -141.98584, y: -43.5246}
+  m_SizeDelta: {x: 369.1076, y: 92.1902}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &87192891
 MonoBehaviour:
@@ -1006,7 +1048,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -1153,14 +1195,15 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 441604528}
+  - {fileID: 1692063597}
   - {fileID: 87192890}
   - {fileID: 312409686}
   m_Father: {fileID: 1855320512}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -733.2302, y: -321.8141}
-  m_SizeDelta: {x: -1466.4604, y: -643.6282}
+  m_AnchoredPosition: {x: -603.0674, y: -321.8141}
+  m_SizeDelta: {x: -1206.1348, y: -643.6282}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &312409683
 GameObject:
@@ -1202,7 +1245,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -1238,8 +1281,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -142.96, y: 119.6}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -141.98578, y: -135.71487}
+  m_SizeDelta: {x: 369.1076, y: 92.1902}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &407951328
 GameObject:
@@ -1253,6 +1296,7 @@ GameObject:
   - component: {fileID: 407951330}
   - component: {fileID: 407951332}
   - component: {fileID: 407951331}
+  - component: {fileID: 407951333}
   m_Layer: 0
   m_Name: Harkiv
   m_TagString: Ukr
@@ -1340,12 +1384,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
-  Name: Kharkiv
+  Name: Kharkiv region
   Population: 2899436
   Gdp: 4494125800
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   gdp: {fileID: 312409684}
+  displaytext: {fileID: 1692063595}
 --- !u!60 &407951332
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1598,6 +1643,18 @@ PolygonCollider2D:
       - {x: 0.22999999, y: -4.8849998}
       - {x: 0.22999999, y: -4.805}
   m_UseDelaunayMesh: 0
+--- !u!114 &407951333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407951328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff65aa735d8f4b64db774bcad56dc904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &431560686
 GameObject:
   m_ObjectHideFlags: 0
@@ -1610,6 +1667,7 @@ GameObject:
   - component: {fileID: 431560688}
   - component: {fileID: 431560690}
   - component: {fileID: 431560689}
+  - component: {fileID: 431560691}
   m_Layer: 0
   m_Name: Donetsk
   m_TagString: Ukr
@@ -1697,12 +1755,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
-  Name: Donetsk
+  Name: Donetsk region
   Population: 4804567
   Gdp: 7447078850
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   gdp: {fileID: 312409684}
+  displaytext: {fileID: 1692063595}
 --- !u!60 &431560690
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1973,6 +2032,18 @@ PolygonCollider2D:
       - {x: -1.665, y: -5.825}
       - {x: -1.545, y: -5.615}
   m_UseDelaunayMesh: 0
+--- !u!114 &431560691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 431560686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff65aa735d8f4b64db774bcad56dc904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &441604527
 GameObject:
   m_ObjectHideFlags: 0
@@ -2007,8 +2078,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -142.96, y: 157.56}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -141.98578, y: 48.66559}
+  m_SizeDelta: {x: 369.1071, y: 92.1902}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &441604529
 MonoBehaviour:
@@ -2032,7 +2103,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -2228,7 +2299,7 @@ MonoBehaviour:
   PanSpeed: 20
   PanBorderThickness: 20
   PanLimit: {x: 40, y: 20}
-  Cam: {fileID: 0}
+  Cam: {fileID: 519420031}
   ZoomChange: 800
   SmoothChange: 0.9
   MinCamSize: 10
@@ -2267,8 +2338,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 319, y: -61.0162}
-  m_SizeDelta: {x: 120.92383, y: 58.152603}
+  m_AnchoredPosition: {x: 361.19, y: -66.773}
+  m_SizeDelta: {x: 490.6097, y: 23.222}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &555413646
 MonoBehaviour:
@@ -2292,7 +2363,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -2324,6 +2395,7 @@ GameObject:
   - component: {fileID: 578931883}
   - component: {fileID: 578931882}
   - component: {fileID: 578931884}
+  - component: {fileID: 578931885}
   m_Layer: 0
   m_Name: Sevastopol
   m_TagString: Ukr
@@ -2478,11 +2550,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
   Name: Sevastopol
-  Population: 0
-  Gdp: 0
+  Population: 378959
+  Gdp: 587386450
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   gdp: {fileID: 312409684}
+  displaytext: {fileID: 1692063595}
+--- !u!114 &578931885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578931880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff65aa735d8f4b64db774bcad56dc904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &601486102
 GameObject:
   m_ObjectHideFlags: 0
@@ -2495,6 +2580,7 @@ GameObject:
   - component: {fileID: 601486104}
   - component: {fileID: 601486106}
   - component: {fileID: 601486105}
+  - component: {fileID: 601486107}
   m_Layer: 0
   m_Name: Vinnica
   m_TagString: Ukr
@@ -2582,12 +2668,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
-  Name: Vinnica
-  Population: 0
-  Gdp: 0
+  Name: Vinnytsia region
+  Population: 1762056
+  Gdp: 2731186800
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   gdp: {fileID: 312409684}
+  displaytext: {fileID: 1692063595}
 --- !u!60 &601486106
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2821,6 +2908,18 @@ PolygonCollider2D:
       - {x: -2.4199998, y: -8.809999}
       - {x: -2.3799999, y: -8.57}
   m_UseDelaunayMesh: 0
+--- !u!114 &601486107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 601486102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff65aa735d8f4b64db774bcad56dc904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &652760362
 GameObject:
   m_ObjectHideFlags: 0
@@ -2833,6 +2932,7 @@ GameObject:
   - component: {fileID: 652760364}
   - component: {fileID: 652760366}
   - component: {fileID: 652760365}
+  - component: {fileID: 652760367}
   m_Layer: 0
   m_Name: Chernigiv
   m_TagString: Ukr
@@ -2920,12 +3020,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
-  Name: Chernihiv
+  Name: Chernihiv region
   Population: 1234250
   Gdp: 1913087500
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   gdp: {fileID: 312409684}
+  displaytext: {fileID: 1692063595}
 --- !u!60 &652760366
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3151,6 +3252,18 @@ PolygonCollider2D:
       - {x: 1.24, y: -5.375}
       - {x: 1.38, y: -5.275}
   m_UseDelaunayMesh: 0
+--- !u!114 &652760367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652760362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff65aa735d8f4b64db774bcad56dc904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &773724466
 GameObject:
   m_ObjectHideFlags: 0
@@ -3163,6 +3276,7 @@ GameObject:
   - component: {fileID: 773724468}
   - component: {fileID: 773724470}
   - component: {fileID: 773724469}
+  - component: {fileID: 773724471}
   m_Layer: 0
   m_Name: Chernivci
   m_TagString: Ukr
@@ -3250,12 +3364,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
-  Name: Chernivci
-  Population: 0
-  Gdp: 0
+  Name: Chernivtsi region
+  Population: 920151
+  Gdp: 1426234050
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   gdp: {fileID: 312409684}
+  displaytext: {fileID: 1692063595}
 --- !u!60 &773724470
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3388,6 +3503,18 @@ PolygonCollider2D:
       - {x: -11.779092, y: -9.346318}
       - {x: -11.270195, y: -8.8622465}
   m_UseDelaunayMesh: 0
+--- !u!114 &773724471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 773724466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff65aa735d8f4b64db774bcad56dc904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &800635278
 GameObject:
   m_ObjectHideFlags: 0
@@ -3400,6 +3527,7 @@ GameObject:
   - component: {fileID: 800635282}
   - component: {fileID: 800635281}
   - component: {fileID: 800635280}
+  - component: {fileID: 800635283}
   m_Layer: 0
   m_Name: KyivReg
   m_TagString: Ukr
@@ -3435,12 +3563,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
-  Name: Kyivska oblast
+  Name: Kyiv region
   Population: 1816926
   Gdp: 2816235300
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   gdp: {fileID: 312409684}
+  displaytext: {fileID: 1692063595}
 --- !u!60 &800635281
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3897,6 +4026,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &800635283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800635278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff65aa735d8f4b64db774bcad56dc904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &964879154
 GameObject:
   m_ObjectHideFlags: 0
@@ -3909,6 +4050,7 @@ GameObject:
   - component: {fileID: 964879156}
   - component: {fileID: 964879158}
   - component: {fileID: 964879157}
+  - component: {fileID: 964879159}
   m_Layer: 0
   m_Name: IvanoFrankivsk
   m_TagString: Ukr
@@ -3996,12 +4138,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
-  Name: IvanoFrankivsk
-  Population: 0
-  Gdp: 0
+  Name: Ivano-Frankivsk region
+  Population: 1406172
+  Gdp: 2179566600
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   gdp: {fileID: 312409684}
+  displaytext: {fileID: 1692063595}
 --- !u!60 &964879158
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4145,6 +4288,18 @@ PolygonCollider2D:
       - {x: -10.271499, y: -9.271874}
       - {x: -10.184574, y: -8.953154}
   m_UseDelaunayMesh: 0
+--- !u!114 &964879159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964879154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff65aa735d8f4b64db774bcad56dc904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &975743652
 GameObject:
   m_ObjectHideFlags: 0
@@ -4157,6 +4312,7 @@ GameObject:
   - component: {fileID: 975743655}
   - component: {fileID: 975743657}
   - component: {fileID: 975743656}
+  - component: {fileID: 975743658}
   m_Layer: 0
   m_Name: Mykolaiv
   m_TagString: Ukr
@@ -4244,12 +4400,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
-  Name: Mykolaiv
+  Name: Mykolaiv region
   Population: 1257547
   Gdp: 1949197850
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   gdp: {fileID: 312409684}
+  displaytext: {fileID: 1692063595}
 --- !u!60 &975743657
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4489,6 +4646,18 @@ PolygonCollider2D:
       - {x: -0.565, y: -3.975}
       - {x: -0.555, y: -4.015}
   m_UseDelaunayMesh: 0
+--- !u!114 &975743658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975743652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff65aa735d8f4b64db774bcad56dc904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1108452870
 GameObject:
   m_ObjectHideFlags: 0
@@ -4501,6 +4670,7 @@ GameObject:
   - component: {fileID: 1108452872}
   - component: {fileID: 1108452874}
   - component: {fileID: 1108452873}
+  - component: {fileID: 1108452875}
   m_Layer: 0
   m_Name: Lviv
   m_TagString: Ukr
@@ -4588,12 +4758,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
-  Name: Lviv
-  Population: 0
-  Gdp: 0
+  Name: Lviv region
+  Population: 2716642
+  Gdp: 4210795100
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   gdp: {fileID: 312409684}
+  displaytext: {fileID: 1692063595}
 --- !u!60 &1108452874
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4719,6 +4890,18 @@ PolygonCollider2D:
       - {x: -13.392442, y: -6.0187206}
       - {x: -13.313663, y: -5.5302906}
   m_UseDelaunayMesh: 0
+--- !u!114 &1108452875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1108452870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff65aa735d8f4b64db774bcad56dc904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1133882924
 GameObject:
   m_ObjectHideFlags: 0
@@ -4731,6 +4914,7 @@ GameObject:
   - component: {fileID: 1133882928}
   - component: {fileID: 1133882927}
   - component: {fileID: 1133882926}
+  - component: {fileID: 1133882929}
   m_Layer: 0
   m_Name: Crimea 1
   m_TagString: Ukr
@@ -4772,6 +4956,7 @@ MonoBehaviour:
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   gdp: {fileID: 312409684}
+  displaytext: {fileID: 1692063595}
 --- !u!60 &1133882927
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5004,6 +5189,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1133882929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1133882924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff65aa735d8f4b64db774bcad56dc904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1163496542
 GameObject:
   m_ObjectHideFlags: 0
@@ -5016,6 +5213,7 @@ GameObject:
   - component: {fileID: 1163496544}
   - component: {fileID: 1163496546}
   - component: {fileID: 1163496545}
+  - component: {fileID: 1163496547}
   m_Layer: 0
   m_Name: Kropivnickiy
   m_TagString: Ukr
@@ -5103,12 +5301,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
-  Name: Kropyvnytskyi
+  Name: Kropyvnytskyi region
   Population: 1123517
   Gdp: 1741451350
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   gdp: {fileID: 312409684}
+  displaytext: {fileID: 1692063595}
 --- !u!60 &1163496546
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5351,6 +5550,18 @@ PolygonCollider2D:
       - {x: 1.28, y: -3.47}
       - {x: 1.4, y: -3.29}
   m_UseDelaunayMesh: 0
+--- !u!114 &1163496547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163496542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff65aa735d8f4b64db774bcad56dc904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1197039027
 GameObject:
   m_ObjectHideFlags: 0
@@ -5363,6 +5574,7 @@ GameObject:
   - component: {fileID: 1197039029}
   - component: {fileID: 1197039031}
   - component: {fileID: 1197039030}
+  - component: {fileID: 1197039032}
   m_Layer: 0
   m_Name: Zhitomyr
   m_TagString: Ukr
@@ -5450,12 +5662,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
-  Name: Zhitomyr
-  Population: 0
-  Gdp: 0
+  Name: Zhytomyr region
+  Population: 1380872
+  Gdp: 2140351600
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   gdp: {fileID: 312409684}
+  displaytext: {fileID: 1692063595}
 --- !u!60 &1197039031
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5688,6 +5901,18 @@ PolygonCollider2D:
       - {x: -0.79499996, y: -4.13}
       - {x: -0.59499997, y: -4.02}
   m_UseDelaunayMesh: 0
+--- !u!114 &1197039032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1197039027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff65aa735d8f4b64db774bcad56dc904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1233093329
 GameObject:
   m_ObjectHideFlags: 0
@@ -5732,6 +5957,7 @@ GameObject:
   - component: {fileID: 1355737710}
   - component: {fileID: 1355737712}
   - component: {fileID: 1355737711}
+  - component: {fileID: 1355737713}
   m_Layer: 0
   m_Name: Cherson
   m_TagString: Ukr
@@ -5819,12 +6045,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
-  Name: Kherson
+  Name: Kherson region
   Population: 1167407
   Gdp: 1809480850
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   gdp: {fileID: 312409684}
+  displaytext: {fileID: 1692063595}
 --- !u!60 &1355737712
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6089,6 +6316,18 @@ PolygonCollider2D:
       - {x: -2.1499999, y: -3.8999999}
       - {x: -1.9699999, y: -3.79}
   m_UseDelaunayMesh: 0
+--- !u!114 &1355737713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1355737708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff65aa735d8f4b64db774bcad56dc904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1375152169
 GameObject:
   m_ObjectHideFlags: 0
@@ -6101,6 +6340,7 @@ GameObject:
   - component: {fileID: 1375152171}
   - component: {fileID: 1375152173}
   - component: {fileID: 1375152172}
+  - component: {fileID: 1375152174}
   m_Layer: 0
   m_Name: Sumy
   m_TagString: Ukr
@@ -6188,12 +6428,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
-  Name: Sumy
+  Name: Sumy region
   Population: 1288909
   Gdp: 1997808950
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   gdp: {fileID: 312409684}
+  displaytext: {fileID: 1692063595}
 --- !u!60 &1375152173
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6441,6 +6682,18 @@ PolygonCollider2D:
       - {x: 1.505, y: -5.7799997}
       - {x: 1.645, y: -5.7}
   m_UseDelaunayMesh: 0
+--- !u!114 &1375152174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375152169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff65aa735d8f4b64db774bcad56dc904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1455984596
 GameObject:
   m_ObjectHideFlags: 0
@@ -6453,6 +6706,7 @@ GameObject:
   - component: {fileID: 1455984598}
   - component: {fileID: 1455984600}
   - component: {fileID: 1455984599}
+  - component: {fileID: 1455984601}
   m_Layer: 0
   m_Name: Luhansk
   m_TagString: Ukr
@@ -6540,12 +6794,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
-  Name: Luhansk
+  Name: Luhansk region
   Population: 2524976
   Gdp: 3913712800
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   gdp: {fileID: 312409684}
+  displaytext: {fileID: 1692063595}
 --- !u!60 &1455984600
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6790,6 +7045,18 @@ PolygonCollider2D:
       - {x: 1.9599999, y: -5.64}
       - {x: 2.1499999, y: -5.74}
   m_UseDelaunayMesh: 0
+--- !u!114 &1455984601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455984596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff65aa735d8f4b64db774bcad56dc904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1467813134
 GameObject:
   m_ObjectHideFlags: 0
@@ -6802,6 +7069,7 @@ GameObject:
   - component: {fileID: 1467813136}
   - component: {fileID: 1467813138}
   - component: {fileID: 1467813137}
+  - component: {fileID: 1467813139}
   m_Layer: 0
   m_Name: Dnipro
   m_TagString: Ukr
@@ -6889,12 +7157,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
-  Name: Dnipro
+  Name: Dnipro region
   Population: 3548132
   Gdp: 5499604600
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   gdp: {fileID: 312409684}
+  displaytext: {fileID: 1692063595}
 --- !u!60 &1467813138
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7178,6 +7447,18 @@ PolygonCollider2D:
       - {x: -5.27, y: -4.515}
       - {x: -5.1, y: -4.525}
   m_UseDelaunayMesh: 0
+--- !u!114 &1467813139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467813134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff65aa735d8f4b64db774bcad56dc904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1506245411
 GameObject:
   m_ObjectHideFlags: 0
@@ -7213,8 +7494,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 176.34778, y: -61.0162}
-  m_SizeDelta: {x: 120.92383, y: 58.152603}
+  m_AnchoredPosition: {x: 361.1908, y: -43.5507}
+  m_SizeDelta: {x: 490.6097, y: 23.2219}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1506245413
 MonoBehaviour:
@@ -7228,10 +7509,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e14b7c02adf14548b9725e490c98a3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PopulationUI: 1
-  GDPUI: 5
-  populationui: {fileID: 555413646}
-  gdpui: {fileID: 1506245414}
+  provinceTag: Ukr
+  provinces: []
+  totalPopulationText: {fileID: 555413646}
+  totalGdpText: {fileID: 1506245414}
 --- !u!114 &1506245414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7254,7 +7535,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -7286,6 +7567,7 @@ GameObject:
   - component: {fileID: 1509729907}
   - component: {fileID: 1509729909}
   - component: {fileID: 1509729908}
+  - component: {fileID: 1509729910}
   m_Layer: 0
   m_Name: Zaporizhia
   m_TagString: Ukr
@@ -7373,12 +7655,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
-  Name: Zaporizhia
+  Name: Zaporizhia region
   Population: 1918203
   Gdp: 2973214650
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   gdp: {fileID: 312409684}
+  displaytext: {fileID: 1692063595}
 --- !u!60 &1509729909
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7649,6 +7932,18 @@ PolygonCollider2D:
       - {x: -0.765, y: -4.68}
       - {x: -0.59499997, y: -4.44}
   m_UseDelaunayMesh: 0
+--- !u!114 &1509729910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509729905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff65aa735d8f4b64db774bcad56dc904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1597554683
 GameObject:
   m_ObjectHideFlags: 0
@@ -7738,6 +8033,7 @@ GameObject:
   - component: {fileID: 1634771598}
   - component: {fileID: 1634771600}
   - component: {fileID: 1634771599}
+  - component: {fileID: 1634771601}
   m_Layer: 0
   m_Name: Ternopilska
   m_TagString: Ukr
@@ -7825,12 +8121,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
-  Name: Ternopil
-  Population: 0
-  Gdp: 0
+  Name: Ternopil region
+  Population: 1137764
+  Gdp: 1763534200
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   gdp: {fileID: 312409684}
+  displaytext: {fileID: 1692063595}
 --- !u!60 &1634771600
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7958,6 +8255,97 @@ PolygonCollider2D:
       - {x: -7.6140347, y: -6.822966}
       - {x: -7.626395, y: -6.291467}
   m_UseDelaunayMesh: 0
+--- !u!114 &1634771601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634771596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff65aa735d8f4b64db774bcad56dc904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1692063594
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1692063597}
+  - component: {fileID: 1692063596}
+  - component: {fileID: 1692063595}
+  m_Layer: 5
+  m_Name: Country
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1692063595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692063594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Country
+--- !u!222 &1692063596
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692063594}
+  m_CullTransparentMesh: 1
+--- !u!224 &1692063597
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692063594}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 236199366}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -141.98578, y: 140.85583}
+  m_SizeDelta: {x: 369.1071, y: 92.1902}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1842695178
 GameObject:
   m_ObjectHideFlags: 0
@@ -7970,6 +8358,7 @@ GameObject:
   - component: {fileID: 1842695180}
   - component: {fileID: 1842695182}
   - component: {fileID: 1842695181}
+  - component: {fileID: 1842695183}
   m_Layer: 0
   m_Name: Rivne
   m_TagString: Ukr
@@ -8057,12 +8446,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
-  Name: Rivne
-  Population: 0
-  Gdp: 0
+  Name: Rivne region
+  Population: 1170337
+  Gdp: 1814022350
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   gdp: {fileID: 312409684}
+  displaytext: {fileID: 1692063595}
 --- !u!60 &1842695182
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -8234,6 +8624,18 @@ PolygonCollider2D:
       - {x: -10.650234, y: -2.1694922}
       - {x: -10.592227, y: -1.7750391}
   m_UseDelaunayMesh: 0
+--- !u!114 &1842695183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842695178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff65aa735d8f4b64db774bcad56dc904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1855320508
 GameObject:
   m_ObjectHideFlags: 0
@@ -8349,6 +8751,8 @@ GameObject:
   - component: {fileID: 1868859400}
   - component: {fileID: 1868859402}
   - component: {fileID: 1868859403}
+  - component: {fileID: 1868859405}
+  - component: {fileID: 1868859404}
   m_Layer: 0
   m_Name: Odessa
   m_TagString: Ukr
@@ -8816,12 +9220,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
-  Name: Odessa
+  Name: Odesa region
   Population: 2457134
   Gdp: 3808557700
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   gdp: {fileID: 312409684}
+  displaytext: {fileID: 1692063595}
+--- !u!114 &1868859404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1868859398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff65aa735d8f4b64db774bcad56dc904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1868859405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1868859398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff65aa735d8f4b64db774bcad56dc904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1887822229
 GameObject:
   m_ObjectHideFlags: 0
@@ -8834,6 +9263,7 @@ GameObject:
   - component: {fileID: 1887822231}
   - component: {fileID: 1887822233}
   - component: {fileID: 1887822232}
+  - component: {fileID: 1887822234}
   m_Layer: 0
   m_Name: Cherkasy
   m_TagString: Ukr
@@ -8921,12 +9351,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
-  Name: Cherkasy
+  Name: Cherkasy region
   Population: 1393960
   Gdp: 2160638000
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   gdp: {fileID: 312409684}
+  displaytext: {fileID: 1692063595}
 --- !u!60 &1887822233
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -9172,6 +9603,18 @@ PolygonCollider2D:
       - {x: -4.19, y: -4.75}
       - {x: -3.98, y: -4.72}
   m_UseDelaunayMesh: 0
+--- !u!114 &1887822234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1887822229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff65aa735d8f4b64db774bcad56dc904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2071915238
 GameObject:
   m_ObjectHideFlags: 0
@@ -9184,6 +9627,7 @@ GameObject:
   - component: {fileID: 2071915240}
   - component: {fileID: 2071915242}
   - component: {fileID: 2071915241}
+  - component: {fileID: 2071915243}
   m_Layer: 0
   m_Name: Lutsk
   m_TagString: Ukr
@@ -9271,12 +9715,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
-  Name: Lutsk
-  Population: 0
-  Gdp: 0
+  Name: Volyn region
+  Population: 1057283
+  Gdp: 1638788650
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   gdp: {fileID: 312409684}
+  displaytext: {fileID: 1692063595}
 --- !u!60 &2071915242
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -9409,6 +9854,18 @@ PolygonCollider2D:
       - {x: -9.35419, y: -0.58292234}
       - {x: -9.4502, y: -0.089152835}
   m_UseDelaunayMesh: 0
+--- !u!114 &2071915243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071915238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff65aa735d8f4b64db774bcad56dc904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2110831062
 GameObject:
   m_ObjectHideFlags: 0
@@ -9421,6 +9878,7 @@ GameObject:
   - component: {fileID: 2110831064}
   - component: {fileID: 2110831066}
   - component: {fileID: 2110831065}
+  - component: {fileID: 2110831067}
   m_Layer: 0
   m_Name: Kyiv
   m_TagString: Ukr
@@ -9508,12 +9966,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
-  Name: Ruiv
-  Population: 0
-  Gdp: 0
+  Name: Kyiv
+  Population: 2616054
+  Gdp: 4054883700
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   gdp: {fileID: 312409684}
+  displaytext: {fileID: 1692063595}
 --- !u!60 &2110831066
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -9605,6 +10064,18 @@ PolygonCollider2D:
       - {x: -0.24499999, y: -0.39}
       - {x: -0.33499998, y: -0.26999998}
   m_UseDelaunayMesh: 0
+--- !u!114 &2110831067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110831062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff65aa735d8f4b64db774bcad56dc904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
