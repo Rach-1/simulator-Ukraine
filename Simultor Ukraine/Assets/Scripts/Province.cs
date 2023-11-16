@@ -10,7 +10,7 @@ public class Province : MonoBehaviour
     public long Gdp; // ВВП
     private Dictionary<string, string> tagToWord = new Dictionary<string, string>(); // Словник 
 
-    [SerializeField] Text name;
+    [SerializeField] new Text name;
     [SerializeField] Text population;
     [SerializeField] Text gdp;
     [SerializeField] Text displaytext;

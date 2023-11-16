@@ -4,8 +4,8 @@ using System.Collections.Generic;
 public class ColorMapWorld : MonoBehaviour
 {
     public Dictionary<string, Color> tagColors = new Dictionary<string, Color>();
-
-    void Start()
+    public int ID;
+    void Awake()
     {
         // Додавання різних тегів і колорів
         tagColors.Add("Pol", Color.green);
