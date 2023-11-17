@@ -23,7 +23,7 @@ public class UI : MonoBehaviour
             totalPopulation += province.Population;
             totalGdp += province.Gdp;
         }
-        totalPopulationText.text = "Загальне населення: " + (totalPopulation / 1000000.0).ToString("0.000") + " млн";
-        totalGdpText.text = "Загальний ВВП: " + (totalGdp / 1000000000.0).ToString("0.000") + " млрд";
+        totalPopulationText.text = (totalPopulation / 1000000.0).ToString("0.000") + " млн";
+        totalGdpText.text = (totalGdp / 1000000000.0).ToString("0.000") + " млрд";
     }
 }

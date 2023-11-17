@@ -56,7 +56,7 @@ public class Clock : MonoBehaviour
     {
         if(timer >= SecPerMin)
         {
-            min+=10;
+            min += 60;
             if(min >= maxMin)
             {
                 min = 0;
@@ -180,6 +180,22 @@ public class Clock : MonoBehaviour
         for (int i = 0; i < UiDate.Length; i++)
         {
             UiDate[i].text = date;
+        }
+    }
+
+    public void SpeedSet(int speedSet)
+    {
+        if (speedSet == 1)
+        {
+            SecPerMin = 0.5f;
+        }
+        else if(speedSet == 2)
+        {
+            SecPerMin = 0.1f;
+        }
+        else
+        {
+            SecPerMin = 0f;
         }
     }
 }
