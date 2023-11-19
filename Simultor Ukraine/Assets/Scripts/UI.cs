@@ -8,6 +8,8 @@ public class UI : MonoBehaviour
     public Province[] provinces;
     [SerializeField] Text totalPopulationText;
     [SerializeField] Text totalGdpText;
+    public long totalPopulation = 0;
+    public long totalGdp = 0;
     void Awake()
     {
         GameObject[] provinceObjects = GameObject.FindGameObjectsWithTag(provinceTag);
@@ -16,8 +18,7 @@ public class UI : MonoBehaviour
         {
             provinces[i] = provinceObjects[i].GetComponent<Province>();
         }
-        long totalPopulation = 0;
-        long totalGdp = 0;
+        
         foreach (Province province in provinces)
         {
             totalPopulation += province.Population;
