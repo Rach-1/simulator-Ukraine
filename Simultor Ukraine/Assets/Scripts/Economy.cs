@@ -6,7 +6,9 @@ public class Economy : MonoBehaviour
 {
     private long gdp;
     private long peoples;
+    private float taxes;
 
+    public float Taxes;
     public long Money;
     public long Income;
     public UI ui;
@@ -21,6 +23,7 @@ public class Economy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Money = (long)taxes;
+        taxes = (peoples * (Taxes / 100))/365;
     }
 }
