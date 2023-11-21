@@ -9,6 +9,67 @@ public class Province : MonoBehaviour
     public long Population; // Населення
     public long Gdp; // ВВП
     private Dictionary<string, string> tagToWord = new Dictionary<string, string>(); // Словник 
+    public Economy economy;
+
+    //наявність ресурсів для видобутку
+    public bool coal;
+    public bool iron;
+    public bool oil;//нафта
+    public bool gas;
+
+    //ресурси, скільки видобувається
+    public int Coal;
+    public int Iron;
+    public int Oil;//нафта
+    public int Gas;
+
+    //ліміти
+    public int CoalLim;
+    public int IronLim;
+    public int OilLim;//нафта
+    public int GasLim;
+
+    //вторинні ресурси
+    public int Metal;
+
+    //продукція
+    public int Auto;
+    public int Plane;
+    public int Fuel;
+    public int It;
+
+    //заводи 
+    public int CoalMine;
+    public int IronMine;
+    public int OilTower;
+    public int GasTower;
+    public int MetalFactory;
+    public int AutoFactory;
+    public int PlaneFactory;
+    public int FuelFactory;
+    public int ItFactory;
+
+    //вартість подудови 
+    public int CoalMinePrice;
+    public int IronMinePrice;
+    public int OilTowerPrice;
+    public int GasTowerPrice;
+    public int MetalFactoryPrice;
+    public int AutoFactoryPrice;
+    public int PlaneFactoryPrice;
+    public int FuelFactoryPrice;
+    public int ItFactoryPrice;
+
+    //виробнича здатність кожного заводу
+    [SerializeField] private int CoalMineCapacity;
+    [SerializeField] private int IronMineCapacity;
+    [SerializeField] private int OilTowerCapacity;
+    [SerializeField] private int GasTowerCapacity;
+    [SerializeField] private int MetalFactoryCapacity;
+    [SerializeField] private int AutoFactoryCapacity;
+    [SerializeField] private int PlaneFactoryCapacity;
+    [SerializeField] private int FuelFactoryCapacity;
+    [SerializeField] private int ItFactoryCapacity;
 
     [SerializeField] new Text name;
     [SerializeField] Text population;
@@ -55,6 +116,17 @@ public class Province : MonoBehaviour
         else
         {
             displaytext.text = "Країна: Невідома";
+        }
+    }
+    public void BuildCoalMine()
+    {
+        if(coal)
+        {
+            if(Coal < CoalLim)
+            {
+                CoalMine++;
+                economy.Money -= CoalMinePrice;
+            }
         }
     }
 }
