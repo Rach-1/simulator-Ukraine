@@ -129,4 +129,37 @@ public class Province : MonoBehaviour
             }
         }
     }
+    public void BuildIronMine()
+    {
+        if (iron)
+        {
+            if (Iron < IronLim)
+            {
+                IronMine++;
+                economy.Money -= IronMinePrice;
+            }
+        }
+    }
+    public void BuildOilTowerMine()
+    {
+        if (oil)
+        {
+            if (Oil < OilLim)
+            {
+                OilTower++;
+                economy.Money -= OilTowerPrice;
+            }
+        }
+    }
+    public void BuildGasTowerMine()
+    {
+        if (gas)
+        {
+            if (Gas < GasLim)
+            {
+                GasTower++;
+                economy.Money -= GasTowerPrice;
+            }
+        }
+    }
 }
