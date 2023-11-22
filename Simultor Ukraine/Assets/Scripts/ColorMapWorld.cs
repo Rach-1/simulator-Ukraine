@@ -7,6 +7,7 @@ public class ColorMapWorld : MonoBehaviour
     public int ID;
     void Awake()
     {
+        PlayerPrefs.GetInt("ID", 0);
         // Додавання різних тегів і колорів
         tagColors.Add("Pol", Color.green);
         tagColors.Add("Ukr", Color.blue);
@@ -25,5 +26,11 @@ public class ColorMapWorld : MonoBehaviour
                 }
             }
         }
+    }
+    void OnApplicationQuit()
+    {
+        // Збереження значення в Playerprefs при закритті додатка
+        PlayerPrefs.SetInt("ID", ID);
+        PlayerPrefs.Save();
     }
 }

@@ -4,12 +4,15 @@ using UnityEngine.UI;
 
 public class UI : MonoBehaviour
 {
-    public string provinceTag = "Ukr"; // Поки що це буде працювати тільки для України, пізніше продумаю як зробити це для країни гравця
+    public string provinceTag = "Ukr"; // я не пойму що це я вже забув, короче нада розибраться і мб удалить
     public Province[] provinces;
     [SerializeField] Text totalPopulationText;
     [SerializeField] Text totalGdpText;
+    [SerializeField] Text totalIncomeText;
     public long totalPopulation = 0;
     public long totalGdp = 0;
+    public long totalIncome = 0;
+    private float incomeCoefficient = 0.001f; // Коефіцієнт доходу (0,1%)
     void Awake()
     {
         GameObject[] provinceObjects = GameObject.FindGameObjectsWithTag(provinceTag);
@@ -26,5 +29,7 @@ public class UI : MonoBehaviour
         }
         totalPopulationText.text = (totalPopulation / 1000000.0).ToString("0.000") + " млн";
         totalGdpText.text = (totalGdp / 1000000000.0).ToString("0.000") + " млрд";
+        float totalIncome = totalGdp * incomeCoefficient;
+        totalIncomeText.text = (totalIncome / 1000000.0).ToString("0.000") + " млн";
     }
 }
