@@ -23,7 +23,7 @@ public class Economy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Money = (long)taxes;
+        Money += (long)taxes;
         taxes = (peoples * (Taxes / 100))/365;
     }
 }

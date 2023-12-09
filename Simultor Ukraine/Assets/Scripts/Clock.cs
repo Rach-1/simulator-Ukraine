@@ -11,6 +11,8 @@ public class Clock : MonoBehaviour
     public DateFormat dateFormat = DateFormat.DD_MM_YYYY;
     public float SecPerMin = 1;
 
+    public bool PickMonth = false;
+
     private string time;
     private string date;
 
@@ -69,11 +71,16 @@ public class Clock : MonoBehaviour
                     {
                         day = 1;
                         month++;
+                        PickMonth = true;
                         if(month > maxMonth)
                         {
                             year++;
                             month = 1;
                         }
+                    }
+                    else
+                    {
+                        PickMonth = false;
                     }
                 }
             }

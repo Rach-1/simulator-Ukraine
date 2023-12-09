@@ -1,4 +1,6 @@
+using System;
 using System.Collections.Generic;
+using System.Data.SqlTypes;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,6 +12,7 @@ public class Province : MonoBehaviour
     public long Gdp; // ВВП
     private Dictionary<string, string> tagToWord = new Dictionary<string, string>(); // Словник 
     public Economy economy;
+    public Clock clock;
 
     //наявність ресурсів для видобутку
     public bool coal;
@@ -17,7 +20,7 @@ public class Province : MonoBehaviour
     public bool oil;//нафта
     public bool gas;
 
-    //ресурси, скільки видобувається
+    //скільки ресурсу на складах
     public int Coal;
     public int Iron;
     public int Oil;//нафта
@@ -35,7 +38,10 @@ public class Province : MonoBehaviour
     //продукція
     public int Auto;
     public int Plane;
+    public int Ship;
+    public int Clothes;
     public int Fuel;
+    public int Electronics;
     public int It;
 
     //заводи 
@@ -46,7 +52,10 @@ public class Province : MonoBehaviour
     public int MetalFactory;
     public int AutoFactory;
     public int PlaneFactory;
+    public int ShipDock;
+    public int SewingFactory;
     public int FuelFactory;
+    public int ElectronicsFactory;
     public int ItFactory;
 
     //вартість подудови 
@@ -57,7 +66,10 @@ public class Province : MonoBehaviour
     public int MetalFactoryPrice;
     public int AutoFactoryPrice;
     public int PlaneFactoryPrice;
+    public int ShipDockPrice;
+    public int SewingFactoryPrice;
     public int FuelFactoryPrice;
+    public int ElectronicsFactoryPrice;
     public int ItFactoryPrice;
 
     //виробнича здатність кожного заводу
@@ -68,7 +80,10 @@ public class Province : MonoBehaviour
     [SerializeField] private int MetalFactoryCapacity;
     [SerializeField] private int AutoFactoryCapacity;
     [SerializeField] private int PlaneFactoryCapacity;
+    [SerializeField] private int ShipDockCapacity;
+    [SerializeField] private int SewingFactoryCapacity;
     [SerializeField] private int FuelFactoryCapacity;
+    [SerializeField] private int ElectronicsFactoryCapacity;
     [SerializeField] private int ItFactoryCapacity;
 
     [SerializeField] new Text name;
@@ -99,6 +114,33 @@ public class Province : MonoBehaviour
             {
                 ProvMenu.SetActive(false);
             }
+
+            //економіка
+            if (clock.PickMonth)
+            {
+                Coal += CoalMine * CoalMineCapacity;
+                Iron += IronMine * IronMineCapacity;
+                Oil += OilTower * OilTowerCapacity;
+                Gas += GasTower * GasTowerCapacity;
+
+                Coal -= MetalFactory;
+                Iron -= MetalFactory;
+                Oil -= FuelFactory;
+                Gas -= AutoFactory + PlaneFactory + ShipDock + SewingFactory + ElectronicsFactory + ItFactory;
+
+                Metal += MetalFactory * MetalFactoryCapacity;
+                Auto += AutoFactory * AutoFactoryCapacity;
+                Plane += PlaneFactory * PlaneFactoryCapacity;
+                Ship += ShipDock * ShipDockCapacity;
+                Clothes += SewingFactory * SewingFactoryCapacity;
+                Fuel += FuelFactory * FuelFactoryCapacity;
+                Electronics += ElectronicsFactory * ElectronicsFactoryCapacity;
+                It += ItFactory * ItFactoryCapacity;
+
+                Metal -= AutoFactory + PlaneFactory + ShipDock + ElectronicsFactory;
+                Fuel -= AutoFactory + PlaneFactory + ShipDock;
+                Electronics -= AutoFactory + PlaneFactory + ShipDock + ItFactory;
+            }
         }
     }
     
@@ -122,10 +164,13 @@ public class Province : MonoBehaviour
     {
         if(coal)
         {
-            if(Coal < CoalLim)
+            if (economy.Money > CoalMinePrice)
             {
-                CoalMine++;
-                economy.Money -= CoalMinePrice;
+                if (Coal < CoalLim)
+                {
+                    CoalMine++;
+                    economy.Money -= CoalMinePrice;
+                }
             }
         }
     }
@@ -140,26 +185,96 @@ public class Province : MonoBehaviour
             }
         }
     }
-    public void BuildOilTowerMine()
+    public void BuildOilTower()
     {
         if (oil)
         {
-            if (Oil < OilLim)
+            if (economy.Money > OilTowerPrice)
             {
-                OilTower++;
-                economy.Money -= OilTowerPrice;
+                if (Oil < OilLim)
+                {
+                    OilTower++;
+                    economy.Money -= OilTowerPrice;
+                }
             }
         }
     }
-    public void BuildGasTowerMine()
+    public void BuildGasTower()
     {
         if (gas)
         {
-            if (Gas < GasLim)
+            if (economy.Money > GasTowerPrice)
             {
-                GasTower++;
-                economy.Money -= GasTowerPrice;
+                if (Gas < GasLim)
+                {
+                    GasTower++;
+                    economy.Money -= GasTowerPrice;
+                }
             }
+        }
+    }
+    public void BuildMetalFactory()
+    {
+        if(economy.Money > MetalFactoryPrice)
+        {
+            MetalFactory++;
+            economy.Money -= MetalFactoryPrice;
+        }
+    }
+    public void BuildAutoFactory()
+    {
+        if (economy.Money > AutoFactoryPrice)
+        {
+            AutoFactory++;
+            economy.Money -= AutoFactoryPrice;
+        }
+    }
+    public void BuildPlaneFactory()
+    {
+        if (economy.Money > PlaneFactoryPrice)
+        {
+            PlaneFactory++;
+            economy.Money -= PlaneFactoryPrice;
+        }
+    }
+    public void BuildShipDock()
+    {
+        if (economy.Money > ShipDockPrice)
+        {
+            ShipDock++;
+            economy.Money -= ShipDockPrice;
+        }
+    }
+    public void BuildSewingFactory()
+    {
+        if (economy.Money > SewingFactoryPrice)
+        {
+            SewingFactory++;
+            economy.Money -= SewingFactoryPrice;
+        }
+    }
+    public void BuildFuelFactory()
+    {
+        if (economy.Money > FuelFactoryPrice)
+        {
+            FuelFactory++;
+            economy.Money -= FuelFactoryPrice;
+        }
+    }
+    public void BuildElectronicsFactory()
+    {
+        if (economy.Money > ElectronicsFactoryPrice)
+        {
+            ElectronicsFactory++;
+            economy.Money -= ElectronicsFactoryPrice;
+        }
+    }
+    public void BuildITFactory()
+    {
+        if (economy.Money > ItFactoryPrice)
+        {
+            ItFactory++;
+            economy.Money -= ItFactoryPrice;
         }
     }
 }

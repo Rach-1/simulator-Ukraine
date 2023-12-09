@@ -1,0 +1,465 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.13f1 (5f90a5ebde0f) revision 6262949'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19042) 64bit Professional' Language: 'uk' Physical Memory: 16326 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.13f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/works/projects/simulator-Ukraine/Simultor Ukraine
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+63975
+Successfully changed project path to: D:/works/projects/simulator-Ukraine/Simultor Ukraine
+D:/works/projects/simulator-Ukraine/Simultor Ukraine
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [9340] Host "[IP] 192.168.0.111 [Port] 0 [Flags] 2 [Guid] 2813673711 [EditorId] 2813673711 [Version] 1048832 [Id] WindowsEditor(7,HOME-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [9340] Host "[IP] 192.168.0.111 [Port] 0 [Flags] 2 [Guid] 2813673711 [EditorId] 2813673711 [Version] 1048832 [Id] WindowsEditor(7,HOME-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 3 workers.
+Refreshing native plugins compatible for Editor in 5.91 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.13f1 (5f90a5ebde0f)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.13f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/works/projects/simulator-Ukraine/Simultor Ukraine/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Radeon RX550/550 Series (ID=0x699f)
+    Vendor:   ATI
+    VRAM:     2027 MB
+    Driver:   31.0.12019.15004
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.13f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.13f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.13f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56724
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.13f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.13f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.13f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+Registered in 0.007736 seconds.
+- Loaded All Assemblies, in  0.363 seconds
+Native extension for UWP target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 163 ms
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.481 seconds
+Domain Reload Profiling: 843ms
+	BeginReloadAssembly (103ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (58ms)
+	LoadAllAssembliesAndSetupDomain (155ms)
+		LoadAssemblies (102ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (153ms)
+			TypeCache.Refresh (151ms)
+				TypeCache.ScanAssembly (138ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (482ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (422ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (275ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (98ms)
+			ProcessInitializeOnLoadMethodAttributes (44ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.823 seconds
+Refreshing native plugins compatible for Editor in 2.07 ms, found 4 plugins.
+Native extension for UWP target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.607 seconds
+Domain Reload Profiling: 1429ms
+	BeginReloadAssembly (346ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (24ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (91ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (44ms)
+	LoadAllAssembliesAndSetupDomain (385ms)
+		LoadAssemblies (293ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (186ms)
+			TypeCache.Refresh (159ms)
+				TypeCache.ScanAssembly (141ms)
+			ScanForSourceGeneratedMonoScriptInfo (21ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (607ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (445ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (28ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (65ms)
+			ProcessInitializeOnLoadAttributes (306ms)
+			ProcessInitializeOnLoadMethodAttributes (37ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 2.33 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4044 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 70 unused Assets / (244.6 KB). Loaded Objects now: 4503.
+Memory consumption went from 153.6 MB to 153.4 MB.
+Total: 3.740000 ms (FindLiveObjects: 0.389400 ms CreateObjectMapping: 0.291100 ms MarkObjects: 2.764600 ms  DeleteObjects: 0.293700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 540.154696 seconds.
+  path: Assets/Scripts/Province.cs
+  artifactKey: Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Province.cs using Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f51fffd3ab325ad7a53903529ee830b') in 0.002870 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1370.844938 seconds.
+  path: Assets/Scripts/Province.cs
+  artifactKey: Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Province.cs using Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f84515879727eb37b11b8b32b546733') in 0.000766 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 162.331329 seconds.
+  path: Assets/Scripts/Province.cs
+  artifactKey: Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Province.cs using Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68982940434492c17aa56dc947216070') in 0.000529 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 266.608512 seconds.
+  path: Assets/Scripts/Province.cs
+  artifactKey: Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Province.cs using Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c864484c486f5211b87ee542a6ed03d9') in 0.000545 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 37.304395 seconds.
+  path: Assets/Scripts/Province.cs
+  artifactKey: Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Province.cs using Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e650a1a1fff42ce69e07184c27344715') in 0.000640 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 202.638787 seconds.
+  path: Assets/Scripts/Province.cs
+  artifactKey: Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Province.cs using Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97a2b2307cdf819f685eb1c43b9fb633') in 0.000491 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 472.594498 seconds.
+  path: Assets/Scripts/Province.cs
+  artifactKey: Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Province.cs using Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd97bf0f8b8365c446052aba49ca29e9e') in 0.000404 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 49.869279 seconds.
+  path: Assets/Scripts/Province.cs
+  artifactKey: Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Province.cs using Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c59d9f4a00c7a0c1d10847a40f2b80ef') in 0.000711 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 136.361628 seconds.
+  path: Assets/Scripts/Province.cs
+  artifactKey: Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Province.cs using Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e3dc7c15b52c19d977ad159ae52980c') in 0.000404 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 646.187904 seconds.
+  path: Assets/Scripts/Province.cs
+  artifactKey: Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Province.cs using Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1abaaf320ae8d883228e9039f136f83') in 0.000516 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 53.345277 seconds.
+  path: Assets/Scripts/Province.cs
+  artifactKey: Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Province.cs using Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35d67b6153a3ffb2c71f577a97f7c893') in 0.000400 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 28.747753 seconds.
+  path: Assets/Scripts/Province.cs
+  artifactKey: Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Province.cs using Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dea137c0f4a3984c2f4a25f245d1a41e') in 0.000888 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 28.027679 seconds.
+  path: Assets/Scripts/Province.cs
+  artifactKey: Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Province.cs using Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04168e74efab193b99b3ac0640f6fe56') in 0.000415 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 19.332920 seconds.
+  path: Assets/Scripts/Province.cs
+  artifactKey: Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Province.cs using Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '472e6f6985769f4311e4508616b072ba') in 0.000380 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 79.273053 seconds.
+  path: Assets/Scripts/Province.cs
+  artifactKey: Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Province.cs using Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76f76645f0c89e72edad80bac1ef1857') in 0.000388 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 10.200193 seconds.
+  path: Assets/Scripts/Province.cs
+  artifactKey: Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Province.cs using Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bad3808863d40c60d59e358c2534aa28') in 0.000399 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 223.031698 seconds.
+  path: Assets/Scripts/Province.cs
+  artifactKey: Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Province.cs using Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cbbb12be978068b3ca3336d893e6efb') in 0.000473 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 80.419550 seconds.
+  path: Assets/Scripts/Province.cs
+  artifactKey: Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Province.cs using Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db1f6791200935965a325da42ef3fb2a') in 0.000419 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 74.158801 seconds.
+  path: Assets/Scripts/Province.cs
+  artifactKey: Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Province.cs using Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97febfa1b0461b7e3cd4605cb6d2bd75') in 0.000413 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 81.961226 seconds.
+  path: Assets/Scripts/Province.cs
+  artifactKey: Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Province.cs using Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dff3e399f0a9bd31f3f3da93db7ef22') in 0.000415 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 31.575927 seconds.
+  path: Assets/Scripts/Province.cs
+  artifactKey: Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Province.cs using Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b703623fcf2929b902174729a6e56c15') in 0.000435 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 70.619079 seconds.
+  path: Assets/Scripts/Province.cs
+  artifactKey: Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Province.cs using Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1a1fa6979cf0036520dc21555ef7f4e') in 0.000407 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 94.991308 seconds.
+  path: Assets/Scripts/Province.cs
+  artifactKey: Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Province.cs using Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79f96721a5a1abc14aa4d2142ed6ff80') in 0.000377 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 66.354607 seconds.
+  path: Assets/Scripts/Province.cs
+  artifactKey: Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Province.cs using Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7875e1e35a1e767bdf6f41f69ded292b') in 0.000439 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 319.277845 seconds.
+  path: Assets/Scripts/Province.cs
+  artifactKey: Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Province.cs using Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9470631fefe6b7fdfa1cbd428a273e42') in 0.000825 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 116.230763 seconds.
+  path: Assets/Scripts/Province.cs
+  artifactKey: Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Province.cs using Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b94b36b9850958e4d8012713dd31be3') in 0.000424 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 151.404145 seconds.
+  path: Assets/Scripts/Province.cs
+  artifactKey: Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Province.cs using Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b1434a95562aaa1729725ecc89bb23f') in 0.000407 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 55.624214 seconds.
+  path: Assets/Scripts/Province.cs
+  artifactKey: Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Province.cs using Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be2866f71f193dc7631e8a14d22761db') in 0.000621 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 30.850937 seconds.
+  path: Assets/Scripts/Province.cs
+  artifactKey: Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Province.cs using Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2cd58d62ca8a8f58233089535ce4b3e') in 0.000467 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 42.709606 seconds.
+  path: Assets/Scripts/Province.cs
+  artifactKey: Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Province.cs using Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94c22a6da1dfde65ec82e0d25d8d037b') in 0.000420 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 70.817021 seconds.
+  path: Assets/Scripts/Province.cs
+  artifactKey: Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Province.cs using Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ae792b4ea03303f2a8bad3add0bc0ff') in 0.000420 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 125.815830 seconds.
+  path: Assets/Scripts/Province.cs
+  artifactKey: Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Province.cs using Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22965b86a004a2f41d6eee60273de189') in 0.000564 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 100.203567 seconds.
+  path: Assets/Scripts/Province.cs
+  artifactKey: Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Province.cs using Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd4a0f56b7e169812638e794fd2d4605') in 0.000439 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 72.971712 seconds.
+  path: Assets/Scripts/Province.cs
+  artifactKey: Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Province.cs using Guid(f6b1c5e7c99d78046bbbbc17dd6a7674) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f32be200ab4d9073664cf92b739d4c7') in 0.001034 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
