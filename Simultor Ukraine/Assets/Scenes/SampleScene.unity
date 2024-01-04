@@ -226,9 +226,70 @@ MonoBehaviour:
   Name: Khmelnytsky region
   Population: 1422065
   Gdp: 2204200750
+  economy: {fileID: 0}
+  clock: {fileID: 569217447}
+  coal: 0
+  iron: 0
+  oil: 0
+  gas: 0
+  Coal: 0
+  Iron: 0
+  Oil: 0
+  Gas: 0
+  CoalLim: 0
+  IronLim: 0
+  OilLim: 0
+  GasLim: 0
+  Metal: 0
+  Auto: 0
+  Plane: 0
+  Ship: 0
+  Clothes: 0
+  Fuel: 0
+  Electronics: 0
+  It: 0
+  CoalMine: 0
+  IronMine: 0
+  OilTower: 0
+  GasTower: 0
+  MetalFactory: 0
+  AutoFactory: 0
+  PlaneFactory: 0
+  ShipDock: 0
+  SewingFactory: 0
+  FuelFactory: 0
+  ElectronicsFactory: 0
+  ItFactory: 0
+  CoalMinePrice: 0
+  IronMinePrice: 0
+  OilTowerPrice: 0
+  GasTowerPrice: 0
+  MetalFactoryPrice: 0
+  AutoFactoryPrice: 0
+  PlaneFactoryPrice: 0
+  ShipDockPrice: 0
+  SewingFactoryPrice: 0
+  FuelFactoryPrice: 0
+  ElectronicsFactoryPrice: 0
+  ItFactoryPrice: 0
+  CoalMineCapacity: 0
+  IronMineCapacity: 0
+  OilTowerCapacity: 0
+  GasTowerCapacity: 0
+  MetalFactoryCapacity: 0
+  AutoFactoryCapacity: 0
+  PlaneFactoryCapacity: 0
+  ShipDockCapacity: 0
+  SewingFactoryCapacity: 0
+  FuelFactoryCapacity: 0
+  ElectronicsFactoryCapacity: 0
+  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
-  gdp: {fileID: 312409684}
+  coalT: {fileID: 312409684}
+  ironT: {fileID: 257810851}
+  oilT: {fileID: 610238556}
+  gasT: {fileID: 739950322}
   displaytext: {fileID: 1692063595}
 --- !u!60 &11269300
 PolygonCollider2D:
@@ -535,9 +596,70 @@ MonoBehaviour:
   Name: Poltava region
   Population: 1618737
   Gdp: 2509042350
+  economy: {fileID: 0}
+  clock: {fileID: 569217447}
+  coal: 1
+  iron: 1
+  oil: 1
+  gas: 1
+  Coal: 0
+  Iron: 0
+  Oil: 0
+  Gas: 0
+  CoalLim: 2
+  IronLim: 4
+  OilLim: 6
+  GasLim: 7
+  Metal: 0
+  Auto: 0
+  Plane: 0
+  Ship: 0
+  Clothes: 0
+  Fuel: 0
+  Electronics: 0
+  It: 0
+  CoalMine: 0
+  IronMine: 0
+  OilTower: 1
+  GasTower: 2
+  MetalFactory: 0
+  AutoFactory: 0
+  PlaneFactory: 0
+  ShipDock: 0
+  SewingFactory: 0
+  FuelFactory: 0
+  ElectronicsFactory: 0
+  ItFactory: 0
+  CoalMinePrice: 0
+  IronMinePrice: 0
+  OilTowerPrice: 0
+  GasTowerPrice: 0
+  MetalFactoryPrice: 0
+  AutoFactoryPrice: 0
+  PlaneFactoryPrice: 0
+  ShipDockPrice: 0
+  SewingFactoryPrice: 0
+  FuelFactoryPrice: 0
+  ElectronicsFactoryPrice: 0
+  ItFactoryPrice: 0
+  CoalMineCapacity: 0
+  IronMineCapacity: 0
+  OilTowerCapacity: 0
+  GasTowerCapacity: 0
+  MetalFactoryCapacity: 0
+  AutoFactoryCapacity: 0
+  PlaneFactoryCapacity: 0
+  ShipDockCapacity: 0
+  SewingFactoryCapacity: 0
+  FuelFactoryCapacity: 0
+  ElectronicsFactoryCapacity: 0
+  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
-  gdp: {fileID: 312409684}
+  coalT: {fileID: 312409684}
+  ironT: {fileID: 257810851}
+  oilT: {fileID: 610238556}
+  gasT: {fileID: 739950322}
   displaytext: {fileID: 1692063595}
 --- !u!60 &31660228
 PolygonCollider2D:
@@ -859,9 +981,70 @@ MonoBehaviour:
   Name: Zakarpattia region
   Population: 1255567
   Gdp: 1946128850
+  economy: {fileID: 0}
+  clock: {fileID: 569217447}
+  coal: 1
+  iron: 0
+  oil: 0
+  gas: 1
+  Coal: 0
+  Iron: 0
+  Oil: 0
+  Gas: 0
+  CoalLim: 2
+  IronLim: 0
+  OilLim: 0
+  GasLim: 3
+  Metal: 0
+  Auto: 0
+  Plane: 0
+  Ship: 0
+  Clothes: 0
+  Fuel: 0
+  Electronics: 0
+  It: 0
+  CoalMine: 0
+  IronMine: 0
+  OilTower: 0
+  GasTower: 0
+  MetalFactory: 0
+  AutoFactory: 0
+  PlaneFactory: 0
+  ShipDock: 0
+  SewingFactory: 0
+  FuelFactory: 0
+  ElectronicsFactory: 0
+  ItFactory: 0
+  CoalMinePrice: 0
+  IronMinePrice: 0
+  OilTowerPrice: 0
+  GasTowerPrice: 0
+  MetalFactoryPrice: 0
+  AutoFactoryPrice: 0
+  PlaneFactoryPrice: 0
+  ShipDockPrice: 0
+  SewingFactoryPrice: 0
+  FuelFactoryPrice: 0
+  ElectronicsFactoryPrice: 0
+  ItFactoryPrice: 0
+  CoalMineCapacity: 0
+  IronMineCapacity: 0
+  OilTowerCapacity: 0
+  GasTowerCapacity: 0
+  MetalFactoryCapacity: 0
+  AutoFactoryCapacity: 0
+  PlaneFactoryCapacity: 0
+  ShipDockCapacity: 0
+  SewingFactoryCapacity: 0
+  FuelFactoryCapacity: 0
+  ElectronicsFactoryCapacity: 0
+  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
-  gdp: {fileID: 312409684}
+  coalT: {fileID: 312409684}
+  ironT: {fileID: 257810851}
+  oilT: {fileID: 610238556}
+  gasT: {fileID: 739950322}
   displaytext: {fileID: 1692063595}
 --- !u!60 &85603111
 PolygonCollider2D:
@@ -1026,8 +1209,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -141.98584, y: -43.5246}
-  m_SizeDelta: {x: 369.1076, y: 92.1902}
+  m_AnchoredPosition: {x: -114.03, y: 117.33}
+  m_SizeDelta: {x: 425.0154, y: 29.4165}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &87192891
 MonoBehaviour:
@@ -1201,6 +1384,9 @@ RectTransform:
   - {fileID: 1692063597}
   - {fileID: 87192890}
   - {fileID: 312409686}
+  - {fileID: 257810850}
+  - {fileID: 610238555}
+  - {fileID: 739950321}
   m_Father: {fileID: 1855320512}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1208,6 +1394,85 @@ RectTransform:
   m_AnchoredPosition: {x: -603.0674, y: -321.8141}
   m_SizeDelta: {x: -1206.1348, y: -643.6282}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &257810849
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 257810850}
+  - component: {fileID: 257810852}
+  - component: {fileID: 257810851}
+  m_Layer: 5
+  m_Name: Iron
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &257810850
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257810849}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 236199366}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -214.13, y: 34.197}
+  m_SizeDelta: {x: 224.8226, y: 29.9033}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &257810851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257810849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Iron
+--- !u!222 &257810852
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257810849}
+  m_CullTransparentMesh: 1
 --- !u!1 &312409683
 GameObject:
   m_ObjectHideFlags: 0
@@ -1220,7 +1485,7 @@ GameObject:
   - component: {fileID: 312409685}
   - component: {fileID: 312409684}
   m_Layer: 5
-  m_Name: GDP
+  m_Name: Coal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1259,7 +1524,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: GDP
+  m_Text: Coal
 --- !u!222 &312409685
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1284,8 +1549,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -141.98578, y: -135.71487}
-  m_SizeDelta: {x: 369.1076, y: 92.1902}
+  m_AnchoredPosition: {x: -214.13, y: 64.1}
+  m_SizeDelta: {x: 224.8226, y: 29.9033}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &359543207
 GameObject:
@@ -1465,9 +1730,70 @@ MonoBehaviour:
   Name: Kharkiv region
   Population: 2899436
   Gdp: 4494125800
+  economy: {fileID: 0}
+  clock: {fileID: 569217447}
+  coal: 0
+  iron: 0
+  oil: 1
+  gas: 1
+  Coal: 0
+  Iron: 0
+  Oil: 0
+  Gas: 0
+  CoalLim: 0
+  IronLim: 0
+  OilLim: 3
+  GasLim: 8
+  Metal: 0
+  Auto: 0
+  Plane: 0
+  Ship: 0
+  Clothes: 0
+  Fuel: 0
+  Electronics: 0
+  It: 0
+  CoalMine: 0
+  IronMine: 0
+  OilTower: 1
+  GasTower: 1
+  MetalFactory: 0
+  AutoFactory: 0
+  PlaneFactory: 0
+  ShipDock: 0
+  SewingFactory: 0
+  FuelFactory: 0
+  ElectronicsFactory: 0
+  ItFactory: 0
+  CoalMinePrice: 0
+  IronMinePrice: 0
+  OilTowerPrice: 0
+  GasTowerPrice: 0
+  MetalFactoryPrice: 0
+  AutoFactoryPrice: 0
+  PlaneFactoryPrice: 0
+  ShipDockPrice: 0
+  SewingFactoryPrice: 0
+  FuelFactoryPrice: 0
+  ElectronicsFactoryPrice: 0
+  ItFactoryPrice: 0
+  CoalMineCapacity: 0
+  IronMineCapacity: 0
+  OilTowerCapacity: 0
+  GasTowerCapacity: 0
+  MetalFactoryCapacity: 0
+  AutoFactoryCapacity: 0
+  PlaneFactoryCapacity: 0
+  ShipDockCapacity: 0
+  SewingFactoryCapacity: 0
+  FuelFactoryCapacity: 0
+  ElectronicsFactoryCapacity: 0
+  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
-  gdp: {fileID: 312409684}
+  coalT: {fileID: 312409684}
+  ironT: {fileID: 257810851}
+  oilT: {fileID: 610238556}
+  gasT: {fileID: 739950322}
   displaytext: {fileID: 1692063595}
 --- !u!60 &407951332
 PolygonCollider2D:
@@ -1837,9 +2163,70 @@ MonoBehaviour:
   Name: Donetsk region
   Population: 4804567
   Gdp: 7447078850
+  economy: {fileID: 0}
+  clock: {fileID: 569217447}
+  coal: 1
+  iron: 0
+  oil: 0
+  gas: 1
+  Coal: 0
+  Iron: 0
+  Oil: 0
+  Gas: 0
+  CoalLim: 10
+  IronLim: 3
+  OilLim: 0
+  GasLim: 5
+  Metal: 0
+  Auto: 0
+  Plane: 0
+  Ship: 0
+  Clothes: 0
+  Fuel: 0
+  Electronics: 0
+  It: 0
+  CoalMine: 2
+  IronMine: 1
+  OilTower: 0
+  GasTower: 0
+  MetalFactory: 0
+  AutoFactory: 0
+  PlaneFactory: 0
+  ShipDock: 0
+  SewingFactory: 0
+  FuelFactory: 0
+  ElectronicsFactory: 0
+  ItFactory: 0
+  CoalMinePrice: 0
+  IronMinePrice: 0
+  OilTowerPrice: 0
+  GasTowerPrice: 0
+  MetalFactoryPrice: 0
+  AutoFactoryPrice: 0
+  PlaneFactoryPrice: 0
+  ShipDockPrice: 0
+  SewingFactoryPrice: 0
+  FuelFactoryPrice: 0
+  ElectronicsFactoryPrice: 0
+  ItFactoryPrice: 0
+  CoalMineCapacity: 0
+  IronMineCapacity: 0
+  OilTowerCapacity: 0
+  GasTowerCapacity: 0
+  MetalFactoryCapacity: 0
+  AutoFactoryCapacity: 0
+  PlaneFactoryCapacity: 0
+  ShipDockCapacity: 0
+  SewingFactoryCapacity: 0
+  FuelFactoryCapacity: 0
+  ElectronicsFactoryCapacity: 0
+  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
-  gdp: {fileID: 312409684}
+  coalT: {fileID: 312409684}
+  ironT: {fileID: 257810851}
+  oilT: {fileID: 610238556}
+  gasT: {fileID: 739950322}
   displaytext: {fileID: 1692063595}
 --- !u!60 &431560690
 PolygonCollider2D:
@@ -2158,8 +2545,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -141.98578, y: 48.66559}
-  m_SizeDelta: {x: 369.1071, y: 92.1902}
+  m_AnchoredPosition: {x: -120.41, y: 145.77}
+  m_SizeDelta: {x: 412.264, y: 27.4548}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &441604529
 MonoBehaviour:
@@ -2759,6 +3146,7 @@ MonoBehaviour:
   timeFormat: 0
   dateFormat: 0
   SecPerMin: 1
+  PickMonth: 0
 --- !u!4 &569217448
 Transform:
   m_ObjectHideFlags: 0
@@ -2943,9 +3331,70 @@ MonoBehaviour:
   Name: Sevastopol
   Population: 378959
   Gdp: 587386450
+  economy: {fileID: 0}
+  clock: {fileID: 569217447}
+  coal: 0
+  iron: 0
+  oil: 0
+  gas: 0
+  Coal: 0
+  Iron: 0
+  Oil: 0
+  Gas: 0
+  CoalLim: 0
+  IronLim: 0
+  OilLim: 0
+  GasLim: 0
+  Metal: 0
+  Auto: 0
+  Plane: 0
+  Ship: 0
+  Clothes: 0
+  Fuel: 0
+  Electronics: 0
+  It: 0
+  CoalMine: 0
+  IronMine: 0
+  OilTower: 0
+  GasTower: 0
+  MetalFactory: 0
+  AutoFactory: 0
+  PlaneFactory: 0
+  ShipDock: 0
+  SewingFactory: 0
+  FuelFactory: 0
+  ElectronicsFactory: 0
+  ItFactory: 0
+  CoalMinePrice: 0
+  IronMinePrice: 0
+  OilTowerPrice: 0
+  GasTowerPrice: 0
+  MetalFactoryPrice: 0
+  AutoFactoryPrice: 0
+  PlaneFactoryPrice: 0
+  ShipDockPrice: 0
+  SewingFactoryPrice: 0
+  FuelFactoryPrice: 0
+  ElectronicsFactoryPrice: 0
+  ItFactoryPrice: 0
+  CoalMineCapacity: 0
+  IronMineCapacity: 0
+  OilTowerCapacity: 0
+  GasTowerCapacity: 0
+  MetalFactoryCapacity: 0
+  AutoFactoryCapacity: 0
+  PlaneFactoryCapacity: 0
+  ShipDockCapacity: 0
+  SewingFactoryCapacity: 0
+  FuelFactoryCapacity: 0
+  ElectronicsFactoryCapacity: 0
+  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
-  gdp: {fileID: 312409684}
+  coalT: {fileID: 312409684}
+  ironT: {fileID: 257810851}
+  oilT: {fileID: 610238556}
+  gasT: {fileID: 739950322}
   displaytext: {fileID: 1692063595}
 --- !u!114 &578931885
 MonoBehaviour:
@@ -3063,9 +3512,70 @@ MonoBehaviour:
   Name: Vinnytsia region
   Population: 1762056
   Gdp: 2731186800
+  economy: {fileID: 0}
+  clock: {fileID: 569217447}
+  coal: 1
+  iron: 0
+  oil: 0
+  gas: 0
+  Coal: 0
+  Iron: 0
+  Oil: 0
+  Gas: 0
+  CoalLim: 2
+  IronLim: 0
+  OilLim: 0
+  GasLim: 0
+  Metal: 0
+  Auto: 0
+  Plane: 0
+  Ship: 0
+  Clothes: 0
+  Fuel: 0
+  Electronics: 0
+  It: 0
+  CoalMine: 0
+  IronMine: 0
+  OilTower: 0
+  GasTower: 0
+  MetalFactory: 0
+  AutoFactory: 0
+  PlaneFactory: 0
+  ShipDock: 0
+  SewingFactory: 0
+  FuelFactory: 0
+  ElectronicsFactory: 0
+  ItFactory: 0
+  CoalMinePrice: 0
+  IronMinePrice: 0
+  OilTowerPrice: 0
+  GasTowerPrice: 0
+  MetalFactoryPrice: 0
+  AutoFactoryPrice: 0
+  PlaneFactoryPrice: 0
+  ShipDockPrice: 0
+  SewingFactoryPrice: 0
+  FuelFactoryPrice: 0
+  ElectronicsFactoryPrice: 0
+  ItFactoryPrice: 0
+  CoalMineCapacity: 0
+  IronMineCapacity: 0
+  OilTowerCapacity: 0
+  GasTowerCapacity: 0
+  MetalFactoryCapacity: 0
+  AutoFactoryCapacity: 0
+  PlaneFactoryCapacity: 0
+  ShipDockCapacity: 0
+  SewingFactoryCapacity: 0
+  FuelFactoryCapacity: 0
+  ElectronicsFactoryCapacity: 0
+  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
-  gdp: {fileID: 312409684}
+  coalT: {fileID: 312409684}
+  ironT: {fileID: 257810851}
+  oilT: {fileID: 610238556}
+  gasT: {fileID: 739950322}
   displaytext: {fileID: 1692063595}
 --- !u!60 &601486106
 PolygonCollider2D:
@@ -3313,6 +3823,85 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 17
+--- !u!1 &610238554
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 610238555}
+  - component: {fileID: 610238557}
+  - component: {fileID: 610238556}
+  m_Layer: 5
+  m_Name: Oil
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &610238555
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 610238554}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 236199366}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -214.13, y: 4.2937}
+  m_SizeDelta: {x: 224.8226, y: 29.9033}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &610238556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 610238554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Oil
+--- !u!222 &610238557
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 610238554}
+  m_CullTransparentMesh: 1
 --- !u!1 &652760362
 GameObject:
   m_ObjectHideFlags: 0
@@ -3416,9 +4005,70 @@ MonoBehaviour:
   Name: Chernihiv region
   Population: 1234250
   Gdp: 1913087500
+  economy: {fileID: 0}
+  clock: {fileID: 569217447}
+  coal: 0
+  iron: 0
+  oil: 1
+  gas: 1
+  Coal: 0
+  Iron: 0
+  Oil: 0
+  Gas: 0
+  CoalLim: 0
+  IronLim: 0
+  OilLim: 5
+  GasLim: 6
+  Metal: 0
+  Auto: 0
+  Plane: 0
+  Ship: 0
+  Clothes: 0
+  Fuel: 0
+  Electronics: 0
+  It: 0
+  CoalMine: 0
+  IronMine: 0
+  OilTower: 0
+  GasTower: 0
+  MetalFactory: 0
+  AutoFactory: 0
+  PlaneFactory: 0
+  ShipDock: 0
+  SewingFactory: 0
+  FuelFactory: 0
+  ElectronicsFactory: 0
+  ItFactory: 0
+  CoalMinePrice: 0
+  IronMinePrice: 0
+  OilTowerPrice: 0
+  GasTowerPrice: 0
+  MetalFactoryPrice: 0
+  AutoFactoryPrice: 0
+  PlaneFactoryPrice: 0
+  ShipDockPrice: 0
+  SewingFactoryPrice: 0
+  FuelFactoryPrice: 0
+  ElectronicsFactoryPrice: 0
+  ItFactoryPrice: 0
+  CoalMineCapacity: 0
+  IronMineCapacity: 0
+  OilTowerCapacity: 0
+  GasTowerCapacity: 0
+  MetalFactoryCapacity: 0
+  AutoFactoryCapacity: 0
+  PlaneFactoryCapacity: 0
+  ShipDockCapacity: 0
+  SewingFactoryCapacity: 0
+  FuelFactoryCapacity: 0
+  ElectronicsFactoryCapacity: 0
+  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
-  gdp: {fileID: 312409684}
+  coalT: {fileID: 312409684}
+  ironT: {fileID: 257810851}
+  oilT: {fileID: 610238556}
+  gasT: {fileID: 739950322}
   displaytext: {fileID: 1692063595}
 --- !u!60 &652760366
 PolygonCollider2D:
@@ -3658,6 +4308,85 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 13
+--- !u!1 &739950320
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 739950321}
+  - component: {fileID: 739950323}
+  - component: {fileID: 739950322}
+  m_Layer: 5
+  m_Name: Gas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &739950321
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739950320}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 236199366}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -214.13, y: -25.61}
+  m_SizeDelta: {x: 224.8226, y: 29.9033}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &739950322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739950320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Gas
+--- !u!222 &739950323
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739950320}
+  m_CullTransparentMesh: 1
 --- !u!1 &773724466
 GameObject:
   m_ObjectHideFlags: 0
@@ -3761,9 +4490,70 @@ MonoBehaviour:
   Name: Chernivtsi region
   Population: 920151
   Gdp: 1426234050
+  economy: {fileID: 0}
+  clock: {fileID: 569217447}
+  coal: 0
+  iron: 0
+  oil: 1
+  gas: 0
+  Coal: 0
+  Iron: 0
+  Oil: 0
+  Gas: 0
+  CoalLim: 0
+  IronLim: 0
+  OilLim: 4
+  GasLim: 0
+  Metal: 0
+  Auto: 0
+  Plane: 0
+  Ship: 0
+  Clothes: 0
+  Fuel: 0
+  Electronics: 0
+  It: 0
+  CoalMine: 0
+  IronMine: 0
+  OilTower: 1
+  GasTower: 0
+  MetalFactory: 0
+  AutoFactory: 0
+  PlaneFactory: 0
+  ShipDock: 0
+  SewingFactory: 0
+  FuelFactory: 0
+  ElectronicsFactory: 0
+  ItFactory: 0
+  CoalMinePrice: 0
+  IronMinePrice: 0
+  OilTowerPrice: 0
+  GasTowerPrice: 0
+  MetalFactoryPrice: 0
+  AutoFactoryPrice: 0
+  PlaneFactoryPrice: 0
+  ShipDockPrice: 0
+  SewingFactoryPrice: 0
+  FuelFactoryPrice: 0
+  ElectronicsFactoryPrice: 0
+  ItFactoryPrice: 0
+  CoalMineCapacity: 0
+  IronMineCapacity: 0
+  OilTowerCapacity: 0
+  GasTowerCapacity: 0
+  MetalFactoryCapacity: 0
+  AutoFactoryCapacity: 0
+  PlaneFactoryCapacity: 0
+  ShipDockCapacity: 0
+  SewingFactoryCapacity: 0
+  FuelFactoryCapacity: 0
+  ElectronicsFactoryCapacity: 0
+  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
-  gdp: {fileID: 312409684}
+  coalT: {fileID: 312409684}
+  ironT: {fileID: 257810851}
+  oilT: {fileID: 610238556}
+  gasT: {fileID: 739950322}
   displaytext: {fileID: 1692063595}
 --- !u!60 &773724470
 PolygonCollider2D:
@@ -3961,9 +4751,70 @@ MonoBehaviour:
   Name: Kyiv region
   Population: 1816926
   Gdp: 2816235300
+  economy: {fileID: 0}
+  clock: {fileID: 569217447}
+  coal: 0
+  iron: 0
+  oil: 0
+  gas: 0
+  Coal: 0
+  Iron: 0
+  Oil: 0
+  Gas: 0
+  CoalLim: 0
+  IronLim: 0
+  OilLim: 0
+  GasLim: 0
+  Metal: 0
+  Auto: 0
+  Plane: 0
+  Ship: 0
+  Clothes: 0
+  Fuel: 0
+  Electronics: 0
+  It: 0
+  CoalMine: 0
+  IronMine: 0
+  OilTower: 0
+  GasTower: 0
+  MetalFactory: 0
+  AutoFactory: 0
+  PlaneFactory: 0
+  ShipDock: 0
+  SewingFactory: 0
+  FuelFactory: 0
+  ElectronicsFactory: 0
+  ItFactory: 0
+  CoalMinePrice: 0
+  IronMinePrice: 0
+  OilTowerPrice: 0
+  GasTowerPrice: 0
+  MetalFactoryPrice: 0
+  AutoFactoryPrice: 0
+  PlaneFactoryPrice: 0
+  ShipDockPrice: 0
+  SewingFactoryPrice: 0
+  FuelFactoryPrice: 0
+  ElectronicsFactoryPrice: 0
+  ItFactoryPrice: 0
+  CoalMineCapacity: 0
+  IronMineCapacity: 0
+  OilTowerCapacity: 0
+  GasTowerCapacity: 0
+  MetalFactoryCapacity: 0
+  AutoFactoryCapacity: 0
+  PlaneFactoryCapacity: 0
+  ShipDockCapacity: 0
+  SewingFactoryCapacity: 0
+  FuelFactoryCapacity: 0
+  ElectronicsFactoryCapacity: 0
+  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
-  gdp: {fileID: 312409684}
+  coalT: {fileID: 312409684}
+  ironT: {fileID: 257810851}
+  oilT: {fileID: 610238556}
+  gasT: {fileID: 739950322}
   displaytext: {fileID: 1692063595}
 --- !u!60 &800635281
 PolygonCollider2D:
@@ -4537,9 +5388,70 @@ MonoBehaviour:
   Name: Ivano-Frankivsk region
   Population: 1406172
   Gdp: 2179566600
+  economy: {fileID: 0}
+  clock: {fileID: 569217447}
+  coal: 0
+  iron: 0
+  oil: 1
+  gas: 1
+  Coal: 0
+  Iron: 0
+  Oil: 0
+  Gas: 0
+  CoalLim: 0
+  IronLim: 0
+  OilLim: 5
+  GasLim: 5
+  Metal: 0
+  Auto: 0
+  Plane: 0
+  Ship: 0
+  Clothes: 0
+  Fuel: 0
+  Electronics: 0
+  It: 0
+  CoalMine: 0
+  IronMine: 0
+  OilTower: 1
+  GasTower: 2
+  MetalFactory: 0
+  AutoFactory: 0
+  PlaneFactory: 0
+  ShipDock: 0
+  SewingFactory: 0
+  FuelFactory: 0
+  ElectronicsFactory: 0
+  ItFactory: 0
+  CoalMinePrice: 0
+  IronMinePrice: 0
+  OilTowerPrice: 0
+  GasTowerPrice: 0
+  MetalFactoryPrice: 0
+  AutoFactoryPrice: 0
+  PlaneFactoryPrice: 0
+  ShipDockPrice: 0
+  SewingFactoryPrice: 0
+  FuelFactoryPrice: 0
+  ElectronicsFactoryPrice: 0
+  ItFactoryPrice: 0
+  CoalMineCapacity: 0
+  IronMineCapacity: 0
+  OilTowerCapacity: 0
+  GasTowerCapacity: 0
+  MetalFactoryCapacity: 0
+  AutoFactoryCapacity: 0
+  PlaneFactoryCapacity: 0
+  ShipDockCapacity: 0
+  SewingFactoryCapacity: 0
+  FuelFactoryCapacity: 0
+  ElectronicsFactoryCapacity: 0
+  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
-  gdp: {fileID: 312409684}
+  coalT: {fileID: 312409684}
+  ironT: {fileID: 257810851}
+  oilT: {fileID: 610238556}
+  gasT: {fileID: 739950322}
   displaytext: {fileID: 1692063595}
 --- !u!60 &964879158
 PolygonCollider2D:
@@ -4800,9 +5712,70 @@ MonoBehaviour:
   Name: Mykolaiv region
   Population: 1257547
   Gdp: 1949197850
+  economy: {fileID: 0}
+  clock: {fileID: 569217447}
+  coal: 0
+  iron: 0
+  oil: 0
+  gas: 0
+  Coal: 0
+  Iron: 0
+  Oil: 0
+  Gas: 0
+  CoalLim: 0
+  IronLim: 0
+  OilLim: 0
+  GasLim: 0
+  Metal: 0
+  Auto: 0
+  Plane: 0
+  Ship: 0
+  Clothes: 0
+  Fuel: 0
+  Electronics: 0
+  It: 0
+  CoalMine: 0
+  IronMine: 0
+  OilTower: 0
+  GasTower: 0
+  MetalFactory: 0
+  AutoFactory: 0
+  PlaneFactory: 0
+  ShipDock: 0
+  SewingFactory: 0
+  FuelFactory: 0
+  ElectronicsFactory: 0
+  ItFactory: 0
+  CoalMinePrice: 0
+  IronMinePrice: 0
+  OilTowerPrice: 0
+  GasTowerPrice: 0
+  MetalFactoryPrice: 0
+  AutoFactoryPrice: 0
+  PlaneFactoryPrice: 0
+  ShipDockPrice: 0
+  SewingFactoryPrice: 0
+  FuelFactoryPrice: 0
+  ElectronicsFactoryPrice: 0
+  ItFactoryPrice: 0
+  CoalMineCapacity: 0
+  IronMineCapacity: 0
+  OilTowerCapacity: 0
+  GasTowerCapacity: 0
+  MetalFactoryCapacity: 0
+  AutoFactoryCapacity: 0
+  PlaneFactoryCapacity: 0
+  ShipDockCapacity: 0
+  SewingFactoryCapacity: 0
+  FuelFactoryCapacity: 0
+  ElectronicsFactoryCapacity: 0
+  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
-  gdp: {fileID: 312409684}
+  coalT: {fileID: 312409684}
+  ironT: {fileID: 257810851}
+  oilT: {fileID: 610238556}
+  gasT: {fileID: 739950322}
   displaytext: {fileID: 1692063595}
 --- !u!60 &975743657
 PolygonCollider2D:
@@ -5445,9 +6418,70 @@ MonoBehaviour:
   Name: Lviv region
   Population: 2716642
   Gdp: 4210795100
+  economy: {fileID: 0}
+  clock: {fileID: 569217447}
+  coal: 1
+  iron: 0
+  oil: 1
+  gas: 1
+  Coal: 0
+  Iron: 0
+  Oil: 0
+  Gas: 0
+  CoalLim: 3
+  IronLim: 0
+  OilLim: 7
+  GasLim: 7
+  Metal: 0
+  Auto: 0
+  Plane: 0
+  Ship: 0
+  Clothes: 0
+  Fuel: 0
+  Electronics: 0
+  It: 0
+  CoalMine: 1
+  IronMine: 0
+  OilTower: 2
+  GasTower: 3
+  MetalFactory: 0
+  AutoFactory: 0
+  PlaneFactory: 0
+  ShipDock: 0
+  SewingFactory: 0
+  FuelFactory: 0
+  ElectronicsFactory: 0
+  ItFactory: 0
+  CoalMinePrice: 0
+  IronMinePrice: 0
+  OilTowerPrice: 0
+  GasTowerPrice: 0
+  MetalFactoryPrice: 0
+  AutoFactoryPrice: 0
+  PlaneFactoryPrice: 0
+  ShipDockPrice: 0
+  SewingFactoryPrice: 0
+  FuelFactoryPrice: 0
+  ElectronicsFactoryPrice: 0
+  ItFactoryPrice: 0
+  CoalMineCapacity: 0
+  IronMineCapacity: 0
+  OilTowerCapacity: 0
+  GasTowerCapacity: 0
+  MetalFactoryCapacity: 0
+  AutoFactoryCapacity: 0
+  PlaneFactoryCapacity: 0
+  ShipDockCapacity: 0
+  SewingFactoryCapacity: 0
+  FuelFactoryCapacity: 0
+  ElectronicsFactoryCapacity: 0
+  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
-  gdp: {fileID: 312409684}
+  coalT: {fileID: 312409684}
+  ironT: {fileID: 257810851}
+  oilT: {fileID: 610238556}
+  gasT: {fileID: 739950322}
   displaytext: {fileID: 1692063595}
 --- !u!60 &1108452874
 PolygonCollider2D:
@@ -5638,9 +6672,70 @@ MonoBehaviour:
   Name: Crimea
   Population: 2025136
   Gdp: 3138960800
+  economy: {fileID: 0}
+  clock: {fileID: 569217447}
+  coal: 0
+  iron: 1
+  oil: 1
+  gas: 1
+  Coal: 0
+  Iron: 1
+  Oil: 0
+  Gas: 2
+  CoalLim: 0
+  IronLim: 5
+  OilLim: 3
+  GasLim: 10
+  Metal: 0
+  Auto: 0
+  Plane: 0
+  Ship: 0
+  Clothes: 0
+  Fuel: 0
+  Electronics: 0
+  It: 0
+  CoalMine: 0
+  IronMine: 0
+  OilTower: 0
+  GasTower: 0
+  MetalFactory: 0
+  AutoFactory: 0
+  PlaneFactory: 0
+  ShipDock: 0
+  SewingFactory: 0
+  FuelFactory: 0
+  ElectronicsFactory: 0
+  ItFactory: 0
+  CoalMinePrice: 0
+  IronMinePrice: 0
+  OilTowerPrice: 0
+  GasTowerPrice: 0
+  MetalFactoryPrice: 0
+  AutoFactoryPrice: 0
+  PlaneFactoryPrice: 0
+  ShipDockPrice: 0
+  SewingFactoryPrice: 0
+  FuelFactoryPrice: 0
+  ElectronicsFactoryPrice: 0
+  ItFactoryPrice: 0
+  CoalMineCapacity: 0
+  IronMineCapacity: 0
+  OilTowerCapacity: 0
+  GasTowerCapacity: 0
+  MetalFactoryCapacity: 0
+  AutoFactoryCapacity: 0
+  PlaneFactoryCapacity: 0
+  ShipDockCapacity: 0
+  SewingFactoryCapacity: 0
+  FuelFactoryCapacity: 0
+  ElectronicsFactoryCapacity: 0
+  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
-  gdp: {fileID: 312409684}
+  coalT: {fileID: 312409684}
+  ironT: {fileID: 257810851}
+  oilT: {fileID: 610238556}
+  gasT: {fileID: 739950322}
   displaytext: {fileID: 1692063595}
 --- !u!60 &1133882927
 PolygonCollider2D:
@@ -5990,9 +7085,70 @@ MonoBehaviour:
   Name: Kropyvnytskyi region
   Population: 1123517
   Gdp: 1741451350
+  economy: {fileID: 0}
+  clock: {fileID: 569217447}
+  coal: 1
+  iron: 1
+  oil: 0
+  gas: 0
+  Coal: 0
+  Iron: 0
+  Oil: 0
+  Gas: 0
+  CoalLim: 5
+  IronLim: 2
+  OilLim: 0
+  GasLim: 0
+  Metal: 0
+  Auto: 0
+  Plane: 0
+  Ship: 0
+  Clothes: 0
+  Fuel: 0
+  Electronics: 0
+  It: 0
+  CoalMine: 1
+  IronMine: 1
+  OilTower: 0
+  GasTower: 0
+  MetalFactory: 0
+  AutoFactory: 0
+  PlaneFactory: 0
+  ShipDock: 0
+  SewingFactory: 0
+  FuelFactory: 0
+  ElectronicsFactory: 0
+  ItFactory: 0
+  CoalMinePrice: 0
+  IronMinePrice: 0
+  OilTowerPrice: 0
+  GasTowerPrice: 0
+  MetalFactoryPrice: 0
+  AutoFactoryPrice: 0
+  PlaneFactoryPrice: 0
+  ShipDockPrice: 0
+  SewingFactoryPrice: 0
+  FuelFactoryPrice: 0
+  ElectronicsFactoryPrice: 0
+  ItFactoryPrice: 0
+  CoalMineCapacity: 0
+  IronMineCapacity: 0
+  OilTowerCapacity: 0
+  GasTowerCapacity: 0
+  MetalFactoryCapacity: 0
+  AutoFactoryCapacity: 0
+  PlaneFactoryCapacity: 0
+  ShipDockCapacity: 0
+  SewingFactoryCapacity: 0
+  FuelFactoryCapacity: 0
+  ElectronicsFactoryCapacity: 0
+  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
-  gdp: {fileID: 312409684}
+  coalT: {fileID: 312409684}
+  ironT: {fileID: 257810851}
+  oilT: {fileID: 610238556}
+  gasT: {fileID: 739950322}
   displaytext: {fileID: 1692063595}
 --- !u!60 &1163496546
 PolygonCollider2D:
@@ -6431,9 +7587,70 @@ MonoBehaviour:
   Name: Zhytomyr region
   Population: 1380872
   Gdp: 2140351600
+  economy: {fileID: 0}
+  clock: {fileID: 569217447}
+  coal: 1
+  iron: 0
+  oil: 0
+  gas: 0
+  Coal: 0
+  Iron: 0
+  Oil: 0
+  Gas: 0
+  CoalLim: 3
+  IronLim: 0
+  OilLim: 0
+  GasLim: 0
+  Metal: 0
+  Auto: 0
+  Plane: 0
+  Ship: 0
+  Clothes: 0
+  Fuel: 0
+  Electronics: 0
+  It: 0
+  CoalMine: 1
+  IronMine: 0
+  OilTower: 0
+  GasTower: 0
+  MetalFactory: 0
+  AutoFactory: 0
+  PlaneFactory: 0
+  ShipDock: 0
+  SewingFactory: 0
+  FuelFactory: 0
+  ElectronicsFactory: 0
+  ItFactory: 0
+  CoalMinePrice: 0
+  IronMinePrice: 0
+  OilTowerPrice: 0
+  GasTowerPrice: 0
+  MetalFactoryPrice: 0
+  AutoFactoryPrice: 0
+  PlaneFactoryPrice: 0
+  ShipDockPrice: 0
+  SewingFactoryPrice: 0
+  FuelFactoryPrice: 0
+  ElectronicsFactoryPrice: 0
+  ItFactoryPrice: 0
+  CoalMineCapacity: 0
+  IronMineCapacity: 0
+  OilTowerCapacity: 0
+  GasTowerCapacity: 0
+  MetalFactoryCapacity: 0
+  AutoFactoryCapacity: 0
+  PlaneFactoryCapacity: 0
+  ShipDockCapacity: 0
+  SewingFactoryCapacity: 0
+  FuelFactoryCapacity: 0
+  ElectronicsFactoryCapacity: 0
+  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
-  gdp: {fileID: 312409684}
+  coalT: {fileID: 312409684}
+  ironT: {fileID: 257810851}
+  oilT: {fileID: 610238556}
+  gasT: {fileID: 739950322}
   displaytext: {fileID: 1692063595}
 --- !u!60 &1197039031
 PolygonCollider2D:
@@ -6947,9 +8164,70 @@ MonoBehaviour:
   Name: Kherson region
   Population: 1167407
   Gdp: 1809480850
+  economy: {fileID: 0}
+  clock: {fileID: 569217447}
+  coal: 0
+  iron: 0
+  oil: 0
+  gas: 0
+  Coal: 0
+  Iron: 0
+  Oil: 0
+  Gas: 0
+  CoalLim: 0
+  IronLim: 0
+  OilLim: 0
+  GasLim: 0
+  Metal: 0
+  Auto: 0
+  Plane: 0
+  Ship: 0
+  Clothes: 0
+  Fuel: 0
+  Electronics: 0
+  It: 0
+  CoalMine: 0
+  IronMine: 0
+  OilTower: 0
+  GasTower: 0
+  MetalFactory: 0
+  AutoFactory: 0
+  PlaneFactory: 0
+  ShipDock: 0
+  SewingFactory: 0
+  FuelFactory: 0
+  ElectronicsFactory: 0
+  ItFactory: 0
+  CoalMinePrice: 0
+  IronMinePrice: 0
+  OilTowerPrice: 0
+  GasTowerPrice: 0
+  MetalFactoryPrice: 0
+  AutoFactoryPrice: 0
+  PlaneFactoryPrice: 0
+  ShipDockPrice: 0
+  SewingFactoryPrice: 0
+  FuelFactoryPrice: 0
+  ElectronicsFactoryPrice: 0
+  ItFactoryPrice: 0
+  CoalMineCapacity: 0
+  IronMineCapacity: 0
+  OilTowerCapacity: 0
+  GasTowerCapacity: 0
+  MetalFactoryCapacity: 0
+  AutoFactoryCapacity: 0
+  PlaneFactoryCapacity: 0
+  ShipDockCapacity: 0
+  SewingFactoryCapacity: 0
+  FuelFactoryCapacity: 0
+  ElectronicsFactoryCapacity: 0
+  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
-  gdp: {fileID: 312409684}
+  coalT: {fileID: 312409684}
+  ironT: {fileID: 257810851}
+  oilT: {fileID: 610238556}
+  gasT: {fileID: 739950322}
   displaytext: {fileID: 1692063595}
 --- !u!60 &1355737712
 PolygonCollider2D:
@@ -7331,9 +8609,70 @@ MonoBehaviour:
   Name: Sumy region
   Population: 1288909
   Gdp: 1997808950
+  economy: {fileID: 0}
+  clock: {fileID: 569217447}
+  coal: 0
+  iron: 0
+  oil: 1
+  gas: 0
+  Coal: 0
+  Iron: 0
+  Oil: 0
+  Gas: 0
+  CoalLim: 0
+  IronLim: 0
+  OilLim: 4
+  GasLim: 0
+  Metal: 0
+  Auto: 0
+  Plane: 0
+  Ship: 0
+  Clothes: 0
+  Fuel: 0
+  Electronics: 0
+  It: 0
+  CoalMine: 0
+  IronMine: 0
+  OilTower: 0
+  GasTower: 0
+  MetalFactory: 0
+  AutoFactory: 0
+  PlaneFactory: 0
+  ShipDock: 0
+  SewingFactory: 0
+  FuelFactory: 0
+  ElectronicsFactory: 0
+  ItFactory: 0
+  CoalMinePrice: 0
+  IronMinePrice: 0
+  OilTowerPrice: 0
+  GasTowerPrice: 0
+  MetalFactoryPrice: 0
+  AutoFactoryPrice: 0
+  PlaneFactoryPrice: 0
+  ShipDockPrice: 0
+  SewingFactoryPrice: 0
+  FuelFactoryPrice: 0
+  ElectronicsFactoryPrice: 0
+  ItFactoryPrice: 0
+  CoalMineCapacity: 0
+  IronMineCapacity: 0
+  OilTowerCapacity: 0
+  GasTowerCapacity: 0
+  MetalFactoryCapacity: 0
+  AutoFactoryCapacity: 0
+  PlaneFactoryCapacity: 0
+  ShipDockCapacity: 0
+  SewingFactoryCapacity: 0
+  FuelFactoryCapacity: 0
+  ElectronicsFactoryCapacity: 0
+  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
-  gdp: {fileID: 312409684}
+  coalT: {fileID: 312409684}
+  ironT: {fileID: 257810851}
+  oilT: {fileID: 610238556}
+  gasT: {fileID: 739950322}
   displaytext: {fileID: 1692063595}
 --- !u!60 &1375152173
 PolygonCollider2D:
@@ -7698,9 +9037,70 @@ MonoBehaviour:
   Name: Luhansk region
   Population: 2524976
   Gdp: 3913712800
+  economy: {fileID: 0}
+  clock: {fileID: 569217447}
+  coal: 1
+  iron: 0
+  oil: 1
+  gas: 0
+  Coal: 0
+  Iron: 0
+  Oil: 0
+  Gas: 0
+  CoalLim: 7
+  IronLim: 0
+  OilLim: 3
+  GasLim: 0
+  Metal: 0
+  Auto: 0
+  Plane: 0
+  Ship: 0
+  Clothes: 0
+  Fuel: 0
+  Electronics: 0
+  It: 0
+  CoalMine: 2
+  IronMine: 0
+  OilTower: 1
+  GasTower: 0
+  MetalFactory: 0
+  AutoFactory: 0
+  PlaneFactory: 0
+  ShipDock: 0
+  SewingFactory: 0
+  FuelFactory: 0
+  ElectronicsFactory: 0
+  ItFactory: 0
+  CoalMinePrice: 0
+  IronMinePrice: 0
+  OilTowerPrice: 0
+  GasTowerPrice: 0
+  MetalFactoryPrice: 0
+  AutoFactoryPrice: 0
+  PlaneFactoryPrice: 0
+  ShipDockPrice: 0
+  SewingFactoryPrice: 0
+  FuelFactoryPrice: 0
+  ElectronicsFactoryPrice: 0
+  ItFactoryPrice: 0
+  CoalMineCapacity: 0
+  IronMineCapacity: 0
+  OilTowerCapacity: 0
+  GasTowerCapacity: 0
+  MetalFactoryCapacity: 0
+  AutoFactoryCapacity: 0
+  PlaneFactoryCapacity: 0
+  ShipDockCapacity: 0
+  SewingFactoryCapacity: 0
+  FuelFactoryCapacity: 0
+  ElectronicsFactoryCapacity: 0
+  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
-  gdp: {fileID: 312409684}
+  coalT: {fileID: 312409684}
+  ironT: {fileID: 257810851}
+  oilT: {fileID: 610238556}
+  gasT: {fileID: 739950322}
   displaytext: {fileID: 1692063595}
 --- !u!60 &1455984600
 PolygonCollider2D:
@@ -8062,9 +9462,70 @@ MonoBehaviour:
   Name: Dnipro region
   Population: 3548132
   Gdp: 5499604600
+  economy: {fileID: 0}
+  clock: {fileID: 569217447}
+  coal: 1
+  iron: 1
+  oil: 0
+  gas: 0
+  Coal: 0
+  Iron: 0
+  Oil: 0
+  Gas: 0
+  CoalLim: 5
+  IronLim: 3
+  OilLim: 0
+  GasLim: 0
+  Metal: 0
+  Auto: 0
+  Plane: 0
+  Ship: 0
+  Clothes: 0
+  Fuel: 0
+  Electronics: 0
+  It: 0
+  CoalMine: 2
+  IronMine: 1
+  OilTower: 0
+  GasTower: 0
+  MetalFactory: 0
+  AutoFactory: 0
+  PlaneFactory: 0
+  ShipDock: 0
+  SewingFactory: 0
+  FuelFactory: 0
+  ElectronicsFactory: 0
+  ItFactory: 0
+  CoalMinePrice: 0
+  IronMinePrice: 0
+  OilTowerPrice: 0
+  GasTowerPrice: 0
+  MetalFactoryPrice: 0
+  AutoFactoryPrice: 0
+  PlaneFactoryPrice: 0
+  ShipDockPrice: 0
+  SewingFactoryPrice: 0
+  FuelFactoryPrice: 0
+  ElectronicsFactoryPrice: 0
+  ItFactoryPrice: 0
+  CoalMineCapacity: 0
+  IronMineCapacity: 0
+  OilTowerCapacity: 0
+  GasTowerCapacity: 0
+  MetalFactoryCapacity: 0
+  AutoFactoryCapacity: 0
+  PlaneFactoryCapacity: 0
+  ShipDockCapacity: 0
+  SewingFactoryCapacity: 0
+  FuelFactoryCapacity: 0
+  ElectronicsFactoryCapacity: 0
+  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
-  gdp: {fileID: 312409684}
+  coalT: {fileID: 312409684}
+  ironT: {fileID: 257810851}
+  oilT: {fileID: 610238556}
+  gasT: {fileID: 739950322}
   displaytext: {fileID: 1692063595}
 --- !u!60 &1467813138
 PolygonCollider2D:
@@ -8565,9 +10026,70 @@ MonoBehaviour:
   Name: Zaporizhia region
   Population: 1918203
   Gdp: 2973214650
+  economy: {fileID: 0}
+  clock: {fileID: 569217447}
+  coal: 0
+  iron: 1
+  oil: 0
+  gas: 1
+  Coal: 0
+  Iron: 0
+  Oil: 0
+  Gas: 0
+  CoalLim: 0
+  IronLim: 8
+  OilLim: 0
+  GasLim: 2
+  Metal: 0
+  Auto: 0
+  Plane: 0
+  Ship: 0
+  Clothes: 0
+  Fuel: 0
+  Electronics: 0
+  It: 0
+  CoalMine: 0
+  IronMine: 2
+  OilTower: 0
+  GasTower: 0
+  MetalFactory: 0
+  AutoFactory: 0
+  PlaneFactory: 0
+  ShipDock: 0
+  SewingFactory: 0
+  FuelFactory: 0
+  ElectronicsFactory: 0
+  ItFactory: 0
+  CoalMinePrice: 0
+  IronMinePrice: 0
+  OilTowerPrice: 0
+  GasTowerPrice: 0
+  MetalFactoryPrice: 0
+  AutoFactoryPrice: 0
+  PlaneFactoryPrice: 0
+  ShipDockPrice: 0
+  SewingFactoryPrice: 0
+  FuelFactoryPrice: 0
+  ElectronicsFactoryPrice: 0
+  ItFactoryPrice: 0
+  CoalMineCapacity: 0
+  IronMineCapacity: 0
+  OilTowerCapacity: 0
+  GasTowerCapacity: 0
+  MetalFactoryCapacity: 0
+  AutoFactoryCapacity: 0
+  PlaneFactoryCapacity: 0
+  ShipDockCapacity: 0
+  SewingFactoryCapacity: 0
+  FuelFactoryCapacity: 0
+  ElectronicsFactoryCapacity: 0
+  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
-  gdp: {fileID: 312409684}
+  coalT: {fileID: 312409684}
+  ironT: {fileID: 257810851}
+  oilT: {fileID: 610238556}
+  gasT: {fileID: 739950322}
   displaytext: {fileID: 1692063595}
 --- !u!60 &1509729909
 PolygonCollider2D:
@@ -9041,9 +10563,70 @@ MonoBehaviour:
   Name: Ternopil region
   Population: 1137764
   Gdp: 1763534200
+  economy: {fileID: 0}
+  clock: {fileID: 569217447}
+  coal: 0
+  iron: 0
+  oil: 0
+  gas: 0
+  Coal: 0
+  Iron: 0
+  Oil: 0
+  Gas: 0
+  CoalLim: 0
+  IronLim: 0
+  OilLim: 0
+  GasLim: 0
+  Metal: 0
+  Auto: 0
+  Plane: 0
+  Ship: 0
+  Clothes: 0
+  Fuel: 0
+  Electronics: 0
+  It: 0
+  CoalMine: 0
+  IronMine: 0
+  OilTower: 0
+  GasTower: 0
+  MetalFactory: 0
+  AutoFactory: 0
+  PlaneFactory: 0
+  ShipDock: 0
+  SewingFactory: 0
+  FuelFactory: 0
+  ElectronicsFactory: 0
+  ItFactory: 0
+  CoalMinePrice: 0
+  IronMinePrice: 0
+  OilTowerPrice: 0
+  GasTowerPrice: 0
+  MetalFactoryPrice: 0
+  AutoFactoryPrice: 0
+  PlaneFactoryPrice: 0
+  ShipDockPrice: 0
+  SewingFactoryPrice: 0
+  FuelFactoryPrice: 0
+  ElectronicsFactoryPrice: 0
+  ItFactoryPrice: 0
+  CoalMineCapacity: 0
+  IronMineCapacity: 0
+  OilTowerCapacity: 0
+  GasTowerCapacity: 0
+  MetalFactoryCapacity: 0
+  AutoFactoryCapacity: 0
+  PlaneFactoryCapacity: 0
+  ShipDockCapacity: 0
+  SewingFactoryCapacity: 0
+  FuelFactoryCapacity: 0
+  ElectronicsFactoryCapacity: 0
+  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
-  gdp: {fileID: 312409684}
+  coalT: {fileID: 312409684}
+  ironT: {fileID: 257810851}
+  oilT: {fileID: 610238556}
+  gasT: {fileID: 739950322}
   displaytext: {fileID: 1692063595}
 --- !u!60 &1634771600
 PolygonCollider2D:
@@ -9261,8 +10844,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -141.98578, y: 140.85583}
-  m_SizeDelta: {x: 369.1071, y: 92.1902}
+  m_AnchoredPosition: {x: -93.43425, y: 173.22353}
+  m_SizeDelta: {x: 466.2102, y: 27.4548}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1842695178
 GameObject:
@@ -9367,9 +10950,70 @@ MonoBehaviour:
   Name: Rivne region
   Population: 1170337
   Gdp: 1814022350
+  economy: {fileID: 0}
+  clock: {fileID: 569217447}
+  coal: 0
+  iron: 0
+  oil: 0
+  gas: 0
+  Coal: 0
+  Iron: 0
+  Oil: 0
+  Gas: 0
+  CoalLim: 0
+  IronLim: 0
+  OilLim: 0
+  GasLim: 0
+  Metal: 0
+  Auto: 0
+  Plane: 0
+  Ship: 0
+  Clothes: 0
+  Fuel: 0
+  Electronics: 0
+  It: 0
+  CoalMine: 0
+  IronMine: 0
+  OilTower: 0
+  GasTower: 0
+  MetalFactory: 0
+  AutoFactory: 0
+  PlaneFactory: 0
+  ShipDock: 0
+  SewingFactory: 0
+  FuelFactory: 0
+  ElectronicsFactory: 0
+  ItFactory: 0
+  CoalMinePrice: 0
+  IronMinePrice: 0
+  OilTowerPrice: 0
+  GasTowerPrice: 0
+  MetalFactoryPrice: 0
+  AutoFactoryPrice: 0
+  PlaneFactoryPrice: 0
+  ShipDockPrice: 0
+  SewingFactoryPrice: 0
+  FuelFactoryPrice: 0
+  ElectronicsFactoryPrice: 0
+  ItFactoryPrice: 0
+  CoalMineCapacity: 0
+  IronMineCapacity: 0
+  OilTowerCapacity: 0
+  GasTowerCapacity: 0
+  MetalFactoryCapacity: 0
+  AutoFactoryCapacity: 0
+  PlaneFactoryCapacity: 0
+  ShipDockCapacity: 0
+  SewingFactoryCapacity: 0
+  FuelFactoryCapacity: 0
+  ElectronicsFactoryCapacity: 0
+  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
-  gdp: {fileID: 312409684}
+  coalT: {fileID: 312409684}
+  ironT: {fileID: 257810851}
+  oilT: {fileID: 610238556}
+  gasT: {fileID: 739950322}
   displaytext: {fileID: 1692063595}
 --- !u!60 &1842695182
 PolygonCollider2D:
@@ -10141,9 +11785,70 @@ MonoBehaviour:
   Name: Odesa region
   Population: 2457134
   Gdp: 3808557700
+  economy: {fileID: 0}
+  clock: {fileID: 569217447}
+  coal: 1
+  iron: 0
+  oil: 1
+  gas: 0
+  Coal: 0
+  Iron: 0
+  Oil: 0
+  Gas: 0
+  CoalLim: 3
+  IronLim: 0
+  OilLim: 3
+  GasLim: 0
+  Metal: 0
+  Auto: 0
+  Plane: 0
+  Ship: 0
+  Clothes: 0
+  Fuel: 0
+  Electronics: 0
+  It: 0
+  CoalMine: 1
+  IronMine: 0
+  OilTower: 0
+  GasTower: 0
+  MetalFactory: 0
+  AutoFactory: 0
+  PlaneFactory: 0
+  ShipDock: 0
+  SewingFactory: 0
+  FuelFactory: 0
+  ElectronicsFactory: 0
+  ItFactory: 0
+  CoalMinePrice: 0
+  IronMinePrice: 0
+  OilTowerPrice: 0
+  GasTowerPrice: 0
+  MetalFactoryPrice: 0
+  AutoFactoryPrice: 0
+  PlaneFactoryPrice: 0
+  ShipDockPrice: 0
+  SewingFactoryPrice: 0
+  FuelFactoryPrice: 0
+  ElectronicsFactoryPrice: 0
+  ItFactoryPrice: 0
+  CoalMineCapacity: 0
+  IronMineCapacity: 0
+  OilTowerCapacity: 0
+  GasTowerCapacity: 0
+  MetalFactoryCapacity: 0
+  AutoFactoryCapacity: 0
+  PlaneFactoryCapacity: 0
+  ShipDockCapacity: 0
+  SewingFactoryCapacity: 0
+  FuelFactoryCapacity: 0
+  ElectronicsFactoryCapacity: 0
+  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
-  gdp: {fileID: 312409684}
+  coalT: {fileID: 312409684}
+  ironT: {fileID: 257810851}
+  oilT: {fileID: 610238556}
+  gasT: {fileID: 739950322}
   displaytext: {fileID: 1692063595}
 --- !u!114 &1868859405
 MonoBehaviour:
@@ -10261,9 +11966,70 @@ MonoBehaviour:
   Name: Cherkasy region
   Population: 1393960
   Gdp: 2160638000
+  economy: {fileID: 0}
+  clock: {fileID: 569217447}
+  coal: 1
+  iron: 0
+  oil: 0
+  gas: 0
+  Coal: 0
+  Iron: 0
+  Oil: 0
+  Gas: 0
+  CoalLim: 4
+  IronLim: 0
+  OilLim: 0
+  GasLim: 0
+  Metal: 0
+  Auto: 0
+  Plane: 0
+  Ship: 0
+  Clothes: 0
+  Fuel: 0
+  Electronics: 0
+  It: 0
+  CoalMine: 0
+  IronMine: 0
+  OilTower: 0
+  GasTower: 0
+  MetalFactory: 0
+  AutoFactory: 0
+  PlaneFactory: 0
+  ShipDock: 0
+  SewingFactory: 0
+  FuelFactory: 0
+  ElectronicsFactory: 0
+  ItFactory: 0
+  CoalMinePrice: 0
+  IronMinePrice: 0
+  OilTowerPrice: 0
+  GasTowerPrice: 0
+  MetalFactoryPrice: 0
+  AutoFactoryPrice: 0
+  PlaneFactoryPrice: 0
+  ShipDockPrice: 0
+  SewingFactoryPrice: 0
+  FuelFactoryPrice: 0
+  ElectronicsFactoryPrice: 0
+  ItFactoryPrice: 0
+  CoalMineCapacity: 0
+  IronMineCapacity: 0
+  OilTowerCapacity: 0
+  GasTowerCapacity: 0
+  MetalFactoryCapacity: 0
+  AutoFactoryCapacity: 0
+  PlaneFactoryCapacity: 0
+  ShipDockCapacity: 0
+  SewingFactoryCapacity: 0
+  FuelFactoryCapacity: 0
+  ElectronicsFactoryCapacity: 0
+  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
-  gdp: {fileID: 312409684}
+  coalT: {fileID: 312409684}
+  ironT: {fileID: 257810851}
+  oilT: {fileID: 610238556}
+  gasT: {fileID: 739950322}
   displaytext: {fileID: 1692063595}
 --- !u!60 &1887822233
 PolygonCollider2D:
@@ -10760,9 +12526,70 @@ MonoBehaviour:
   Name: Volyn region
   Population: 1057283
   Gdp: 1638788650
+  economy: {fileID: 0}
+  clock: {fileID: 569217447}
+  coal: 1
+  iron: 0
+  oil: 1
+  gas: 0
+  Coal: 0
+  Iron: 0
+  Oil: 0
+  Gas: 0
+  CoalLim: 2
+  IronLim: 0
+  OilLim: 3
+  GasLim: 0
+  Metal: 0
+  Auto: 0
+  Plane: 0
+  Ship: 0
+  Clothes: 0
+  Fuel: 0
+  Electronics: 0
+  It: 0
+  CoalMine: 0
+  IronMine: 0
+  OilTower: 1
+  GasTower: 0
+  MetalFactory: 0
+  AutoFactory: 0
+  PlaneFactory: 0
+  ShipDock: 0
+  SewingFactory: 0
+  FuelFactory: 0
+  ElectronicsFactory: 0
+  ItFactory: 0
+  CoalMinePrice: 0
+  IronMinePrice: 0
+  OilTowerPrice: 0
+  GasTowerPrice: 0
+  MetalFactoryPrice: 0
+  AutoFactoryPrice: 0
+  PlaneFactoryPrice: 0
+  ShipDockPrice: 0
+  SewingFactoryPrice: 0
+  FuelFactoryPrice: 0
+  ElectronicsFactoryPrice: 0
+  ItFactoryPrice: 0
+  CoalMineCapacity: 0
+  IronMineCapacity: 0
+  OilTowerCapacity: 0
+  GasTowerCapacity: 0
+  MetalFactoryCapacity: 0
+  AutoFactoryCapacity: 0
+  PlaneFactoryCapacity: 0
+  ShipDockCapacity: 0
+  SewingFactoryCapacity: 0
+  FuelFactoryCapacity: 0
+  ElectronicsFactoryCapacity: 0
+  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
-  gdp: {fileID: 312409684}
+  coalT: {fileID: 312409684}
+  ironT: {fileID: 257810851}
+  oilT: {fileID: 610238556}
+  gasT: {fileID: 739950322}
   displaytext: {fileID: 1692063595}
 --- !u!60 &2071915242
 PolygonCollider2D:
@@ -11012,9 +12839,70 @@ MonoBehaviour:
   Name: Kyiv
   Population: 2616054
   Gdp: 4054883700
+  economy: {fileID: 0}
+  clock: {fileID: 569217447}
+  coal: 0
+  iron: 0
+  oil: 0
+  gas: 0
+  Coal: 0
+  Iron: 0
+  Oil: 0
+  Gas: 0
+  CoalLim: 0
+  IronLim: 0
+  OilLim: 0
+  GasLim: 0
+  Metal: 0
+  Auto: 0
+  Plane: 0
+  Ship: 0
+  Clothes: 0
+  Fuel: 0
+  Electronics: 0
+  It: 0
+  CoalMine: 0
+  IronMine: 0
+  OilTower: 0
+  GasTower: 0
+  MetalFactory: 0
+  AutoFactory: 0
+  PlaneFactory: 0
+  ShipDock: 0
+  SewingFactory: 0
+  FuelFactory: 0
+  ElectronicsFactory: 0
+  ItFactory: 0
+  CoalMinePrice: 0
+  IronMinePrice: 0
+  OilTowerPrice: 0
+  GasTowerPrice: 0
+  MetalFactoryPrice: 0
+  AutoFactoryPrice: 0
+  PlaneFactoryPrice: 0
+  ShipDockPrice: 0
+  SewingFactoryPrice: 0
+  FuelFactoryPrice: 0
+  ElectronicsFactoryPrice: 0
+  ItFactoryPrice: 0
+  CoalMineCapacity: 0
+  IronMineCapacity: 0
+  OilTowerCapacity: 0
+  GasTowerCapacity: 0
+  MetalFactoryCapacity: 0
+  AutoFactoryCapacity: 0
+  PlaneFactoryCapacity: 0
+  ShipDockCapacity: 0
+  SewingFactoryCapacity: 0
+  FuelFactoryCapacity: 0
+  ElectronicsFactoryCapacity: 0
+  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
-  gdp: {fileID: 312409684}
+  coalT: {fileID: 312409684}
+  ironT: {fileID: 257810851}
+  oilT: {fileID: 610238556}
+  gasT: {fileID: 739950322}
   displaytext: {fileID: 1692063595}
 --- !u!60 &2110831066
 PolygonCollider2D:

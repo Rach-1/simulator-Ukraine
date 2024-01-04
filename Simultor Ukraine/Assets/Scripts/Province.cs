@@ -88,7 +88,10 @@ public class Province : MonoBehaviour
 
     [SerializeField] new Text name;
     [SerializeField] Text population;
-    [SerializeField] Text gdp;
+    [SerializeField] Text coalT;
+    [SerializeField] Text ironT;
+    [SerializeField] Text oilT;
+    [SerializeField] Text gasT;
     [SerializeField] Text displaytext;
 
     void Awake()
@@ -149,7 +152,10 @@ public class Province : MonoBehaviour
         ProvMenu.SetActive(true);
         name.text = "Назва регіону: " + Name;
         population.text = "Населення регіону: " + (Population / 1000000.0).ToString("0.000") + " млн";
-        gdp.text = "ВВП регіону: " + (Gdp / 1000000000.0).ToString("0.000") + " млрд";
+        coalT.text = "Вугілля: " + CoalMine + "/" + CoalLim;
+        ironT.text = "Залізо: " + IronMine + "/" + IronLim;
+        oilT.text = "Нафта: " + OilTower + "/" + OilLim;
+        gasT.text = "Газ: " + GasTower + "/" + GasLim;
         string country;
         if (tagToWord.TryGetValue(tag, out country))
         {

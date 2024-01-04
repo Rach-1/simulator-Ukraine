@@ -27,3 +27,4 @@ public class Economy : MonoBehaviour
         taxes = (peoples * (Taxes / 100))/365;
     }
 }
+ 
