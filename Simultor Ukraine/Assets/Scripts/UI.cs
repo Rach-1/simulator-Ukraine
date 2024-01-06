@@ -29,7 +29,7 @@ public class UI : MonoBehaviour
         }
         totalPopulationText.text = (totalPopulation / 1000000.0).ToString("0.000") + " לכם";
         totalGdpText.text = (totalGdp / 1000000000.0).ToString("0.000") + " לכנה";
-        float totalIncome = totalGdp * incomeCoefficient;
-        totalIncomeText.text = (totalIncome / 1000000.0).ToString("0.000") + " לכם";
+        //float totalIncome = totalGdp * incomeCoefficient;
+        //totalIncomeText.text = (totalIncome / 1000000.0).ToString("0.000") + " לכם";
     }
 }

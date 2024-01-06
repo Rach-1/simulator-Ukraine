@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 11269300}
   - component: {fileID: 11269299}
   - component: {fileID: 11269301}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Hmelnickiy
   m_TagString: Ukr
   m_Icon: {fileID: 0}
@@ -226,7 +226,7 @@ MonoBehaviour:
   Name: Khmelnytsky region
   Population: 1422065
   Gdp: 2204200750
-  economy: {fileID: 0}
+  economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
   coal: 0
   iron: 0
@@ -260,18 +260,6 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMinePrice: 0
-  IronMinePrice: 0
-  OilTowerPrice: 0
-  GasTowerPrice: 0
-  MetalFactoryPrice: 0
-  AutoFactoryPrice: 0
-  PlaneFactoryPrice: 0
-  ShipDockPrice: 0
-  SewingFactoryPrice: 0
-  FuelFactoryPrice: 0
-  ElectronicsFactoryPrice: 0
-  ItFactoryPrice: 0
   CoalMineCapacity: 0
   IronMineCapacity: 0
   OilTowerCapacity: 0
@@ -506,7 +494,7 @@ GameObject:
   - component: {fileID: 31660228}
   - component: {fileID: 31660227}
   - component: {fileID: 31660229}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Poltava
   m_TagString: Ukr
   m_Icon: {fileID: 0}
@@ -596,7 +584,7 @@ MonoBehaviour:
   Name: Poltava region
   Population: 1618737
   Gdp: 2509042350
-  economy: {fileID: 0}
+  economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
   coal: 1
   iron: 1
@@ -630,18 +618,6 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMinePrice: 0
-  IronMinePrice: 0
-  OilTowerPrice: 0
-  GasTowerPrice: 0
-  MetalFactoryPrice: 0
-  AutoFactoryPrice: 0
-  PlaneFactoryPrice: 0
-  ShipDockPrice: 0
-  SewingFactoryPrice: 0
-  FuelFactoryPrice: 0
-  ElectronicsFactoryPrice: 0
-  ItFactoryPrice: 0
   CoalMineCapacity: 0
   IronMineCapacity: 0
   OilTowerCapacity: 0
@@ -878,6 +854,138 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 10
+--- !u!1 &48024716
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 48024717}
+  - component: {fileID: 48024720}
+  - component: {fileID: 48024719}
+  - component: {fileID: 48024718}
+  m_Layer: 5
+  m_Name: CoalB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &48024717
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48024716}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 236199366}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -78, y: 64.1}
+  m_SizeDelta: {x: 26.4164, y: 25.658}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &48024718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48024716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 48024719}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1527521981}
+        m_TargetAssemblyTypeName: Economy, Assembly-CSharp
+        m_MethodName: BuildCoalMine
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &48024719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48024716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &48024720
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48024716}
+  m_CullTransparentMesh: 1
 --- !u!1 &85603107
 GameObject:
   m_ObjectHideFlags: 0
@@ -891,7 +999,7 @@ GameObject:
   - component: {fileID: 85603111}
   - component: {fileID: 85603110}
   - component: {fileID: 85603112}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Zakarpatska
   m_TagString: Ukr
   m_Icon: {fileID: 0}
@@ -981,7 +1089,7 @@ MonoBehaviour:
   Name: Zakarpattia region
   Population: 1255567
   Gdp: 1946128850
-  economy: {fileID: 0}
+  economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
   coal: 1
   iron: 0
@@ -1015,18 +1123,6 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMinePrice: 0
-  IronMinePrice: 0
-  OilTowerPrice: 0
-  GasTowerPrice: 0
-  MetalFactoryPrice: 0
-  AutoFactoryPrice: 0
-  PlaneFactoryPrice: 0
-  ShipDockPrice: 0
-  SewingFactoryPrice: 0
-  FuelFactoryPrice: 0
-  ElectronicsFactoryPrice: 0
-  ItFactoryPrice: 0
   CoalMineCapacity: 0
   IronMineCapacity: 0
   OilTowerCapacity: 0
@@ -1254,6 +1350,138 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 87192889}
   m_CullTransparentMesh: 1
+--- !u!1 &96555077
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 96555078}
+  - component: {fileID: 96555081}
+  - component: {fileID: 96555080}
+  - component: {fileID: 96555079}
+  m_Layer: 5
+  m_Name: GasB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &96555078
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96555077}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 236199366}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -78, y: -25.3}
+  m_SizeDelta: {x: 26.4164, y: 25.658}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &96555079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96555077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 96555080}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1527521981}
+        m_TargetAssemblyTypeName: Economy, Assembly-CSharp
+        m_MethodName: BuildGasTower
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &96555080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96555077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &96555081
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96555077}
+  m_CullTransparentMesh: 1
 --- !u!1 &106650814
 GameObject:
   m_ObjectHideFlags: 0
@@ -1387,6 +1615,10 @@ RectTransform:
   - {fileID: 257810850}
   - {fileID: 610238555}
   - {fileID: 739950321}
+  - {fileID: 48024717}
+  - {fileID: 1327513261}
+  - {fileID: 1199302590}
+  - {fileID: 96555078}
   m_Father: {fileID: 1855320512}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1640,7 +1872,7 @@ GameObject:
   - component: {fileID: 407951332}
   - component: {fileID: 407951331}
   - component: {fileID: 407951333}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Harkiv
   m_TagString: Ukr
   m_Icon: {fileID: 0}
@@ -1730,7 +1962,7 @@ MonoBehaviour:
   Name: Kharkiv region
   Population: 2899436
   Gdp: 4494125800
-  economy: {fileID: 0}
+  economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
   coal: 0
   iron: 0
@@ -1764,18 +1996,6 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMinePrice: 0
-  IronMinePrice: 0
-  OilTowerPrice: 0
-  GasTowerPrice: 0
-  MetalFactoryPrice: 0
-  AutoFactoryPrice: 0
-  PlaneFactoryPrice: 0
-  ShipDockPrice: 0
-  SewingFactoryPrice: 0
-  FuelFactoryPrice: 0
-  ElectronicsFactoryPrice: 0
-  ItFactoryPrice: 0
   CoalMineCapacity: 0
   IronMineCapacity: 0
   OilTowerCapacity: 0
@@ -2073,7 +2293,7 @@ GameObject:
   - component: {fileID: 431560690}
   - component: {fileID: 431560689}
   - component: {fileID: 431560691}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Donetsk
   m_TagString: Ukr
   m_Icon: {fileID: 0}
@@ -2163,10 +2383,10 @@ MonoBehaviour:
   Name: Donetsk region
   Population: 4804567
   Gdp: 7447078850
-  economy: {fileID: 0}
+  economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
   coal: 1
-  iron: 0
+  iron: 1
   oil: 0
   gas: 1
   Coal: 0
@@ -2197,18 +2417,6 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMinePrice: 0
-  IronMinePrice: 0
-  OilTowerPrice: 0
-  GasTowerPrice: 0
-  MetalFactoryPrice: 0
-  AutoFactoryPrice: 0
-  PlaneFactoryPrice: 0
-  ShipDockPrice: 0
-  SewingFactoryPrice: 0
-  FuelFactoryPrice: 0
-  ElectronicsFactoryPrice: 0
-  ItFactoryPrice: 0
   CoalMineCapacity: 0
   IronMineCapacity: 0
   OilTowerCapacity: 0
@@ -3175,7 +3383,7 @@ GameObject:
   - component: {fileID: 578931882}
   - component: {fileID: 578931884}
   - component: {fileID: 578931885}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sevastopol
   m_TagString: Ukr
   m_Icon: {fileID: 0}
@@ -3331,7 +3539,7 @@ MonoBehaviour:
   Name: Sevastopol
   Population: 378959
   Gdp: 587386450
-  economy: {fileID: 0}
+  economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
   coal: 0
   iron: 0
@@ -3365,18 +3573,6 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMinePrice: 0
-  IronMinePrice: 0
-  OilTowerPrice: 0
-  GasTowerPrice: 0
-  MetalFactoryPrice: 0
-  AutoFactoryPrice: 0
-  PlaneFactoryPrice: 0
-  ShipDockPrice: 0
-  SewingFactoryPrice: 0
-  FuelFactoryPrice: 0
-  ElectronicsFactoryPrice: 0
-  ItFactoryPrice: 0
   CoalMineCapacity: 0
   IronMineCapacity: 0
   OilTowerCapacity: 0
@@ -3422,7 +3618,7 @@ GameObject:
   - component: {fileID: 601486106}
   - component: {fileID: 601486105}
   - component: {fileID: 601486107}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Vinnica
   m_TagString: Ukr
   m_Icon: {fileID: 0}
@@ -3512,7 +3708,7 @@ MonoBehaviour:
   Name: Vinnytsia region
   Population: 1762056
   Gdp: 2731186800
-  economy: {fileID: 0}
+  economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
   coal: 1
   iron: 0
@@ -3546,18 +3742,6 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMinePrice: 0
-  IronMinePrice: 0
-  OilTowerPrice: 0
-  GasTowerPrice: 0
-  MetalFactoryPrice: 0
-  AutoFactoryPrice: 0
-  PlaneFactoryPrice: 0
-  ShipDockPrice: 0
-  SewingFactoryPrice: 0
-  FuelFactoryPrice: 0
-  ElectronicsFactoryPrice: 0
-  ItFactoryPrice: 0
   CoalMineCapacity: 0
   IronMineCapacity: 0
   OilTowerCapacity: 0
@@ -3915,7 +4099,7 @@ GameObject:
   - component: {fileID: 652760366}
   - component: {fileID: 652760365}
   - component: {fileID: 652760367}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chernigiv
   m_TagString: Ukr
   m_Icon: {fileID: 0}
@@ -4005,7 +4189,7 @@ MonoBehaviour:
   Name: Chernihiv region
   Population: 1234250
   Gdp: 1913087500
-  economy: {fileID: 0}
+  economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
   coal: 0
   iron: 0
@@ -4039,18 +4223,6 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMinePrice: 0
-  IronMinePrice: 0
-  OilTowerPrice: 0
-  GasTowerPrice: 0
-  MetalFactoryPrice: 0
-  AutoFactoryPrice: 0
-  PlaneFactoryPrice: 0
-  ShipDockPrice: 0
-  SewingFactoryPrice: 0
-  FuelFactoryPrice: 0
-  ElectronicsFactoryPrice: 0
-  ItFactoryPrice: 0
   CoalMineCapacity: 0
   IronMineCapacity: 0
   OilTowerCapacity: 0
@@ -4400,7 +4572,7 @@ GameObject:
   - component: {fileID: 773724470}
   - component: {fileID: 773724469}
   - component: {fileID: 773724471}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chernivci
   m_TagString: Ukr
   m_Icon: {fileID: 0}
@@ -4490,7 +4662,7 @@ MonoBehaviour:
   Name: Chernivtsi region
   Population: 920151
   Gdp: 1426234050
-  economy: {fileID: 0}
+  economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
   coal: 0
   iron: 0
@@ -4524,18 +4696,6 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMinePrice: 0
-  IronMinePrice: 0
-  OilTowerPrice: 0
-  GasTowerPrice: 0
-  MetalFactoryPrice: 0
-  AutoFactoryPrice: 0
-  PlaneFactoryPrice: 0
-  ShipDockPrice: 0
-  SewingFactoryPrice: 0
-  FuelFactoryPrice: 0
-  ElectronicsFactoryPrice: 0
-  ItFactoryPrice: 0
   CoalMineCapacity: 0
   IronMineCapacity: 0
   OilTowerCapacity: 0
@@ -4713,7 +4873,7 @@ GameObject:
   - component: {fileID: 800635281}
   - component: {fileID: 800635280}
   - component: {fileID: 800635283}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: KyivReg
   m_TagString: Ukr
   m_Icon: {fileID: 0}
@@ -4751,7 +4911,7 @@ MonoBehaviour:
   Name: Kyiv region
   Population: 1816926
   Gdp: 2816235300
-  economy: {fileID: 0}
+  economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
   coal: 0
   iron: 0
@@ -4785,18 +4945,6 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMinePrice: 0
-  IronMinePrice: 0
-  OilTowerPrice: 0
-  GasTowerPrice: 0
-  MetalFactoryPrice: 0
-  AutoFactoryPrice: 0
-  PlaneFactoryPrice: 0
-  ShipDockPrice: 0
-  SewingFactoryPrice: 0
-  FuelFactoryPrice: 0
-  ElectronicsFactoryPrice: 0
-  ItFactoryPrice: 0
   CoalMineCapacity: 0
   IronMineCapacity: 0
   OilTowerCapacity: 0
@@ -5298,7 +5446,7 @@ GameObject:
   - component: {fileID: 964879158}
   - component: {fileID: 964879157}
   - component: {fileID: 964879159}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: IvanoFrankivsk
   m_TagString: Ukr
   m_Icon: {fileID: 0}
@@ -5388,7 +5536,7 @@ MonoBehaviour:
   Name: Ivano-Frankivsk region
   Population: 1406172
   Gdp: 2179566600
-  economy: {fileID: 0}
+  economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
   coal: 0
   iron: 0
@@ -5422,18 +5570,6 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMinePrice: 0
-  IronMinePrice: 0
-  OilTowerPrice: 0
-  GasTowerPrice: 0
-  MetalFactoryPrice: 0
-  AutoFactoryPrice: 0
-  PlaneFactoryPrice: 0
-  ShipDockPrice: 0
-  SewingFactoryPrice: 0
-  FuelFactoryPrice: 0
-  ElectronicsFactoryPrice: 0
-  ItFactoryPrice: 0
   CoalMineCapacity: 0
   IronMineCapacity: 0
   OilTowerCapacity: 0
@@ -5622,7 +5758,7 @@ GameObject:
   - component: {fileID: 975743657}
   - component: {fileID: 975743656}
   - component: {fileID: 975743658}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mykolaiv
   m_TagString: Ukr
   m_Icon: {fileID: 0}
@@ -5712,7 +5848,7 @@ MonoBehaviour:
   Name: Mykolaiv region
   Population: 1257547
   Gdp: 1949197850
-  economy: {fileID: 0}
+  economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
   coal: 0
   iron: 0
@@ -5746,18 +5882,6 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMinePrice: 0
-  IronMinePrice: 0
-  OilTowerPrice: 0
-  GasTowerPrice: 0
-  MetalFactoryPrice: 0
-  AutoFactoryPrice: 0
-  PlaneFactoryPrice: 0
-  ShipDockPrice: 0
-  SewingFactoryPrice: 0
-  FuelFactoryPrice: 0
-  ElectronicsFactoryPrice: 0
-  ItFactoryPrice: 0
   CoalMineCapacity: 0
   IronMineCapacity: 0
   OilTowerCapacity: 0
@@ -6328,7 +6452,7 @@ GameObject:
   - component: {fileID: 1108452874}
   - component: {fileID: 1108452873}
   - component: {fileID: 1108452875}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Lviv
   m_TagString: Ukr
   m_Icon: {fileID: 0}
@@ -6418,7 +6542,7 @@ MonoBehaviour:
   Name: Lviv region
   Population: 2716642
   Gdp: 4210795100
-  economy: {fileID: 0}
+  economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
   coal: 1
   iron: 0
@@ -6452,18 +6576,6 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMinePrice: 0
-  IronMinePrice: 0
-  OilTowerPrice: 0
-  GasTowerPrice: 0
-  MetalFactoryPrice: 0
-  AutoFactoryPrice: 0
-  PlaneFactoryPrice: 0
-  ShipDockPrice: 0
-  SewingFactoryPrice: 0
-  FuelFactoryPrice: 0
-  ElectronicsFactoryPrice: 0
-  ItFactoryPrice: 0
   CoalMineCapacity: 0
   IronMineCapacity: 0
   OilTowerCapacity: 0
@@ -6634,7 +6746,7 @@ GameObject:
   - component: {fileID: 1133882927}
   - component: {fileID: 1133882926}
   - component: {fileID: 1133882929}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Crimea 1
   m_TagString: Ukr
   m_Icon: {fileID: 0}
@@ -6672,7 +6784,7 @@ MonoBehaviour:
   Name: Crimea
   Population: 2025136
   Gdp: 3138960800
-  economy: {fileID: 0}
+  economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
   coal: 0
   iron: 1
@@ -6706,18 +6818,6 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMinePrice: 0
-  IronMinePrice: 0
-  OilTowerPrice: 0
-  GasTowerPrice: 0
-  MetalFactoryPrice: 0
-  AutoFactoryPrice: 0
-  PlaneFactoryPrice: 0
-  ShipDockPrice: 0
-  SewingFactoryPrice: 0
-  FuelFactoryPrice: 0
-  ElectronicsFactoryPrice: 0
-  ItFactoryPrice: 0
   CoalMineCapacity: 0
   IronMineCapacity: 0
   OilTowerCapacity: 0
@@ -6995,7 +7095,7 @@ GameObject:
   - component: {fileID: 1163496546}
   - component: {fileID: 1163496545}
   - component: {fileID: 1163496547}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Kropivnickiy
   m_TagString: Ukr
   m_Icon: {fileID: 0}
@@ -7085,7 +7185,7 @@ MonoBehaviour:
   Name: Kropyvnytskyi region
   Population: 1123517
   Gdp: 1741451350
-  economy: {fileID: 0}
+  economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
   coal: 1
   iron: 1
@@ -7119,18 +7219,6 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMinePrice: 0
-  IronMinePrice: 0
-  OilTowerPrice: 0
-  GasTowerPrice: 0
-  MetalFactoryPrice: 0
-  AutoFactoryPrice: 0
-  PlaneFactoryPrice: 0
-  ShipDockPrice: 0
-  SewingFactoryPrice: 0
-  FuelFactoryPrice: 0
-  ElectronicsFactoryPrice: 0
-  ItFactoryPrice: 0
   CoalMineCapacity: 0
   IronMineCapacity: 0
   OilTowerCapacity: 0
@@ -7497,7 +7585,7 @@ GameObject:
   - component: {fileID: 1197039031}
   - component: {fileID: 1197039030}
   - component: {fileID: 1197039032}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Zhitomyr
   m_TagString: Ukr
   m_Icon: {fileID: 0}
@@ -7587,7 +7675,7 @@ MonoBehaviour:
   Name: Zhytomyr region
   Population: 1380872
   Gdp: 2140351600
-  economy: {fileID: 0}
+  economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
   coal: 1
   iron: 0
@@ -7621,18 +7709,6 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMinePrice: 0
-  IronMinePrice: 0
-  OilTowerPrice: 0
-  GasTowerPrice: 0
-  MetalFactoryPrice: 0
-  AutoFactoryPrice: 0
-  PlaneFactoryPrice: 0
-  ShipDockPrice: 0
-  SewingFactoryPrice: 0
-  FuelFactoryPrice: 0
-  ElectronicsFactoryPrice: 0
-  ItFactoryPrice: 0
   CoalMineCapacity: 0
   IronMineCapacity: 0
   OilTowerCapacity: 0
@@ -7897,6 +7973,138 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 18
+--- !u!1 &1199302589
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1199302590}
+  - component: {fileID: 1199302593}
+  - component: {fileID: 1199302592}
+  - component: {fileID: 1199302591}
+  m_Layer: 5
+  m_Name: OilB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1199302590
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199302589}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 236199366}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -78, y: 4.3}
+  m_SizeDelta: {x: 26.4164, y: 25.658}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1199302591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199302589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1199302592}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1527521981}
+        m_TargetAssemblyTypeName: Economy, Assembly-CSharp
+        m_MethodName: BuildOilTower
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1199302592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199302589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1199302593
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199302589}
+  m_CullTransparentMesh: 1
 --- !u!1 &1233093329
 GameObject:
   m_ObjectHideFlags: 0
@@ -8061,6 +8269,138 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1290458139}
   m_CullTransparentMesh: 1
+--- !u!1 &1327513260
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1327513261}
+  - component: {fileID: 1327513264}
+  - component: {fileID: 1327513263}
+  - component: {fileID: 1327513262}
+  m_Layer: 5
+  m_Name: IronB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1327513261
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1327513260}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 236199366}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -78, y: 34.3}
+  m_SizeDelta: {x: 26.4164, y: 25.658}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1327513262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1327513260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1327513263}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1527521981}
+        m_TargetAssemblyTypeName: Economy, Assembly-CSharp
+        m_MethodName: BuildIronMine
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1327513263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1327513260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1327513264
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1327513260}
+  m_CullTransparentMesh: 1
 --- !u!1 &1355737708
 GameObject:
   m_ObjectHideFlags: 0
@@ -8074,7 +8414,7 @@ GameObject:
   - component: {fileID: 1355737712}
   - component: {fileID: 1355737711}
   - component: {fileID: 1355737713}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cherson
   m_TagString: Ukr
   m_Icon: {fileID: 0}
@@ -8164,7 +8504,7 @@ MonoBehaviour:
   Name: Kherson region
   Population: 1167407
   Gdp: 1809480850
-  economy: {fileID: 0}
+  economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
   coal: 0
   iron: 0
@@ -8198,18 +8538,6 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMinePrice: 0
-  IronMinePrice: 0
-  OilTowerPrice: 0
-  GasTowerPrice: 0
-  MetalFactoryPrice: 0
-  AutoFactoryPrice: 0
-  PlaneFactoryPrice: 0
-  ShipDockPrice: 0
-  SewingFactoryPrice: 0
-  FuelFactoryPrice: 0
-  ElectronicsFactoryPrice: 0
-  ItFactoryPrice: 0
   CoalMineCapacity: 0
   IronMineCapacity: 0
   OilTowerCapacity: 0
@@ -8519,7 +8847,7 @@ GameObject:
   - component: {fileID: 1375152173}
   - component: {fileID: 1375152172}
   - component: {fileID: 1375152174}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sumy
   m_TagString: Ukr
   m_Icon: {fileID: 0}
@@ -8609,7 +8937,7 @@ MonoBehaviour:
   Name: Sumy region
   Population: 1288909
   Gdp: 1997808950
-  economy: {fileID: 0}
+  economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
   coal: 0
   iron: 0
@@ -8643,18 +8971,6 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMinePrice: 0
-  IronMinePrice: 0
-  OilTowerPrice: 0
-  GasTowerPrice: 0
-  MetalFactoryPrice: 0
-  AutoFactoryPrice: 0
-  PlaneFactoryPrice: 0
-  ShipDockPrice: 0
-  SewingFactoryPrice: 0
-  FuelFactoryPrice: 0
-  ElectronicsFactoryPrice: 0
-  ItFactoryPrice: 0
   CoalMineCapacity: 0
   IronMineCapacity: 0
   OilTowerCapacity: 0
@@ -8947,7 +9263,7 @@ GameObject:
   - component: {fileID: 1455984600}
   - component: {fileID: 1455984599}
   - component: {fileID: 1455984601}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Luhansk
   m_TagString: Ukr
   m_Icon: {fileID: 0}
@@ -9037,7 +9353,7 @@ MonoBehaviour:
   Name: Luhansk region
   Population: 2524976
   Gdp: 3913712800
-  economy: {fileID: 0}
+  economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
   coal: 1
   iron: 0
@@ -9071,18 +9387,6 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMinePrice: 0
-  IronMinePrice: 0
-  OilTowerPrice: 0
-  GasTowerPrice: 0
-  MetalFactoryPrice: 0
-  AutoFactoryPrice: 0
-  PlaneFactoryPrice: 0
-  ShipDockPrice: 0
-  SewingFactoryPrice: 0
-  FuelFactoryPrice: 0
-  ElectronicsFactoryPrice: 0
-  ItFactoryPrice: 0
   CoalMineCapacity: 0
   IronMineCapacity: 0
   OilTowerCapacity: 0
@@ -9372,7 +9676,7 @@ GameObject:
   - component: {fileID: 1467813138}
   - component: {fileID: 1467813137}
   - component: {fileID: 1467813139}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Dnipro
   m_TagString: Ukr
   m_Icon: {fileID: 0}
@@ -9462,7 +9766,7 @@ MonoBehaviour:
   Name: Dnipro region
   Population: 3548132
   Gdp: 5499604600
-  economy: {fileID: 0}
+  economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
   coal: 1
   iron: 1
@@ -9496,18 +9800,6 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMinePrice: 0
-  IronMinePrice: 0
-  OilTowerPrice: 0
-  GasTowerPrice: 0
-  MetalFactoryPrice: 0
-  AutoFactoryPrice: 0
-  PlaneFactoryPrice: 0
-  ShipDockPrice: 0
-  SewingFactoryPrice: 0
-  FuelFactoryPrice: 0
-  ElectronicsFactoryPrice: 0
-  ItFactoryPrice: 0
   CoalMineCapacity: 0
   IronMineCapacity: 0
   OilTowerCapacity: 0
@@ -9936,7 +10228,7 @@ GameObject:
   - component: {fileID: 1509729909}
   - component: {fileID: 1509729908}
   - component: {fileID: 1509729910}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Zaporizhia
   m_TagString: Ukr
   m_Icon: {fileID: 0}
@@ -10026,7 +10318,7 @@ MonoBehaviour:
   Name: Zaporizhia region
   Population: 1918203
   Gdp: 2973214650
-  economy: {fileID: 0}
+  economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
   coal: 0
   iron: 1
@@ -10060,18 +10352,6 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMinePrice: 0
-  IronMinePrice: 0
-  OilTowerPrice: 0
-  GasTowerPrice: 0
-  MetalFactoryPrice: 0
-  AutoFactoryPrice: 0
-  PlaneFactoryPrice: 0
-  ShipDockPrice: 0
-  SewingFactoryPrice: 0
-  FuelFactoryPrice: 0
-  ElectronicsFactoryPrice: 0
-  ItFactoryPrice: 0
   CoalMineCapacity: 0
   IronMineCapacity: 0
   OilTowerCapacity: 0
@@ -10374,6 +10654,68 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 3
+--- !u!1 &1527521980
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1527521982}
+  - component: {fileID: 1527521981}
+  m_Layer: 0
+  m_Name: Economy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1527521981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527521980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cdfd1fd3e997ab43bcfd789fc8bf07a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prov: {fileID: 0}
+  Prov: {fileID: 0}
+  Taxes: 0
+  Money: 10000000
+  Income: 0
+  CoalMinePrice: 0
+  IronMinePrice: 0
+  OilTowerPrice: 0
+  GasTowerPrice: 0
+  MetalFactoryPrice: 0
+  AutoFactoryPrice: 0
+  PlaneFactoryPrice: 0
+  ShipDockPrice: 0
+  SewingFactoryPrice: 0
+  FuelFactoryPrice: 0
+  ElectronicsFactoryPrice: 0
+  ItFactoryPrice: 0
+  vat: 0
+--- !u!4 &1527521982
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527521980}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.8468614, y: 11.3898115, z: -16.437311}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1597554683
 GameObject:
   m_ObjectHideFlags: 0
@@ -10473,7 +10815,7 @@ GameObject:
   - component: {fileID: 1634771600}
   - component: {fileID: 1634771599}
   - component: {fileID: 1634771601}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ternopilska
   m_TagString: Ukr
   m_Icon: {fileID: 0}
@@ -10563,7 +10905,7 @@ MonoBehaviour:
   Name: Ternopil region
   Population: 1137764
   Gdp: 1763534200
-  economy: {fileID: 0}
+  economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
   coal: 0
   iron: 0
@@ -10597,18 +10939,6 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMinePrice: 0
-  IronMinePrice: 0
-  OilTowerPrice: 0
-  GasTowerPrice: 0
-  MetalFactoryPrice: 0
-  AutoFactoryPrice: 0
-  PlaneFactoryPrice: 0
-  ShipDockPrice: 0
-  SewingFactoryPrice: 0
-  FuelFactoryPrice: 0
-  ElectronicsFactoryPrice: 0
-  ItFactoryPrice: 0
   CoalMineCapacity: 0
   IronMineCapacity: 0
   OilTowerCapacity: 0
@@ -10860,7 +11190,7 @@ GameObject:
   - component: {fileID: 1842695182}
   - component: {fileID: 1842695181}
   - component: {fileID: 1842695183}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Rivne
   m_TagString: Ukr
   m_Icon: {fileID: 0}
@@ -10950,7 +11280,7 @@ MonoBehaviour:
   Name: Rivne region
   Population: 1170337
   Gdp: 1814022350
-  economy: {fileID: 0}
+  economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
   coal: 0
   iron: 0
@@ -10984,18 +11314,6 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMinePrice: 0
-  IronMinePrice: 0
-  OilTowerPrice: 0
-  GasTowerPrice: 0
-  MetalFactoryPrice: 0
-  AutoFactoryPrice: 0
-  PlaneFactoryPrice: 0
-  ShipDockPrice: 0
-  SewingFactoryPrice: 0
-  FuelFactoryPrice: 0
-  ElectronicsFactoryPrice: 0
-  ItFactoryPrice: 0
   CoalMineCapacity: 0
   IronMineCapacity: 0
   OilTowerCapacity: 0
@@ -11315,7 +11633,7 @@ GameObject:
   - component: {fileID: 1868859402}
   - component: {fileID: 1868859403}
   - component: {fileID: 1868859405}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Odessa
   m_TagString: Ukr
   m_Icon: {fileID: 0}
@@ -11785,7 +12103,7 @@ MonoBehaviour:
   Name: Odesa region
   Population: 2457134
   Gdp: 3808557700
-  economy: {fileID: 0}
+  economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
   coal: 1
   iron: 0
@@ -11819,18 +12137,6 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMinePrice: 0
-  IronMinePrice: 0
-  OilTowerPrice: 0
-  GasTowerPrice: 0
-  MetalFactoryPrice: 0
-  AutoFactoryPrice: 0
-  PlaneFactoryPrice: 0
-  ShipDockPrice: 0
-  SewingFactoryPrice: 0
-  FuelFactoryPrice: 0
-  ElectronicsFactoryPrice: 0
-  ItFactoryPrice: 0
   CoalMineCapacity: 0
   IronMineCapacity: 0
   OilTowerCapacity: 0
@@ -11876,7 +12182,7 @@ GameObject:
   - component: {fileID: 1887822233}
   - component: {fileID: 1887822232}
   - component: {fileID: 1887822234}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cherkasy
   m_TagString: Ukr
   m_Icon: {fileID: 0}
@@ -11966,7 +12272,7 @@ MonoBehaviour:
   Name: Cherkasy region
   Population: 1393960
   Gdp: 2160638000
-  economy: {fileID: 0}
+  economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
   coal: 1
   iron: 0
@@ -12000,18 +12306,6 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMinePrice: 0
-  IronMinePrice: 0
-  OilTowerPrice: 0
-  GasTowerPrice: 0
-  MetalFactoryPrice: 0
-  AutoFactoryPrice: 0
-  PlaneFactoryPrice: 0
-  ShipDockPrice: 0
-  SewingFactoryPrice: 0
-  FuelFactoryPrice: 0
-  ElectronicsFactoryPrice: 0
-  ItFactoryPrice: 0
   CoalMineCapacity: 0
   IronMineCapacity: 0
   OilTowerCapacity: 0
@@ -12436,7 +12730,7 @@ GameObject:
   - component: {fileID: 2071915242}
   - component: {fileID: 2071915241}
   - component: {fileID: 2071915243}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Lutsk
   m_TagString: Ukr
   m_Icon: {fileID: 0}
@@ -12526,7 +12820,7 @@ MonoBehaviour:
   Name: Volyn region
   Population: 1057283
   Gdp: 1638788650
-  economy: {fileID: 0}
+  economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
   coal: 1
   iron: 0
@@ -12560,18 +12854,6 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMinePrice: 0
-  IronMinePrice: 0
-  OilTowerPrice: 0
-  GasTowerPrice: 0
-  MetalFactoryPrice: 0
-  AutoFactoryPrice: 0
-  PlaneFactoryPrice: 0
-  ShipDockPrice: 0
-  SewingFactoryPrice: 0
-  FuelFactoryPrice: 0
-  ElectronicsFactoryPrice: 0
-  ItFactoryPrice: 0
   CoalMineCapacity: 0
   IronMineCapacity: 0
   OilTowerCapacity: 0
@@ -12749,7 +13031,7 @@ GameObject:
   - component: {fileID: 2110831066}
   - component: {fileID: 2110831065}
   - component: {fileID: 2110831067}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Kyiv
   m_TagString: Ukr
   m_Icon: {fileID: 0}
@@ -12839,7 +13121,7 @@ MonoBehaviour:
   Name: Kyiv
   Population: 2616054
   Gdp: 4054883700
-  economy: {fileID: 0}
+  economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
   coal: 0
   iron: 0
@@ -12873,18 +13155,6 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMinePrice: 0
-  IronMinePrice: 0
-  OilTowerPrice: 0
-  GasTowerPrice: 0
-  MetalFactoryPrice: 0
-  AutoFactoryPrice: 0
-  PlaneFactoryPrice: 0
-  ShipDockPrice: 0
-  SewingFactoryPrice: 0
-  FuelFactoryPrice: 0
-  ElectronicsFactoryPrice: 0
-  ItFactoryPrice: 0
   CoalMineCapacity: 0
   IronMineCapacity: 0
   OilTowerCapacity: 0
@@ -13017,3 +13287,4 @@ SceneRoots:
   - {fileID: 488244264}
   - {fileID: 1233093330}
   - {fileID: 569217448}
+  - {fileID: 1527521982}

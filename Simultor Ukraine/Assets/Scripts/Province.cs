@@ -58,20 +58,6 @@ public class Province : MonoBehaviour
     public int ElectronicsFactory;
     public int ItFactory;
 
-    //вартість подудови 
-    public int CoalMinePrice;
-    public int IronMinePrice;
-    public int OilTowerPrice;
-    public int GasTowerPrice;
-    public int MetalFactoryPrice;
-    public int AutoFactoryPrice;
-    public int PlaneFactoryPrice;
-    public int ShipDockPrice;
-    public int SewingFactoryPrice;
-    public int FuelFactoryPrice;
-    public int ElectronicsFactoryPrice;
-    public int ItFactoryPrice;
-
     //виробнича здатність кожного заводу
     [SerializeField] private int CoalMineCapacity;
     [SerializeField] private int IronMineCapacity;
@@ -112,10 +98,11 @@ public class Province : MonoBehaviour
             if (hitCollider != null && hitCollider.GetComponent<Province>() != null)
             {
                 hitCollider.GetComponent<Province>().OpenMenu();
+                economy.Prov = hitCollider.GetComponent<Province>();
             }
             else
             {
-                ProvMenu.SetActive(false);
+                //ProvMenu.SetActive(false);
             }
 
             //економіка
@@ -166,121 +153,81 @@ public class Province : MonoBehaviour
             displaytext.text = "Країна: Невідома";
         }
     }
-    public void BuildCoalMine()
+
+    public void AddCoalMine(int coalMinePrice)
     {
-        if(coal)
+        if (Coal < CoalLim)
         {
-            if (economy.Money > CoalMinePrice)
-            {
-                if (Coal < CoalLim)
-                {
-                    CoalMine++;
-                    economy.Money -= CoalMinePrice;
-                }
-            }
+            CoalMine++;
+            economy.BuySomething(coalMinePrice);
+            OpenMenu();
         }
     }
-    public void BuildIronMine()
+    public void AddIronMine(int ironMinePrice)
     {
-        if (iron)
+        if (Iron < IronLim)
         {
-            if (Iron < IronLim)
-            {
-                IronMine++;
-                economy.Money -= IronMinePrice;
-            }
+            IronMine++;
+            economy.BuySomething(ironMinePrice);
+            OpenMenu();
         }
     }
-    public void BuildOilTower()
+    public void AddOilTower(int oilTowerPrice)
     {
-        if (oil)
+        if (Oil < OilLim)
         {
-            if (economy.Money > OilTowerPrice)
-            {
-                if (Oil < OilLim)
-                {
-                    OilTower++;
-                    economy.Money -= OilTowerPrice;
-                }
-            }
+            OilTower++;
+            economy.BuySomething(oilTowerPrice);
+            OpenMenu();
         }
     }
-    public void BuildGasTower()
+    public void AddGasTower(int gasTowerPrice)
     {
-        if (gas)
+        if (Gas < GasLim)
         {
-            if (economy.Money > GasTowerPrice)
-            {
-                if (Gas < GasLim)
-                {
-                    GasTower++;
-                    economy.Money -= GasTowerPrice;
-                }
-            }
+            GasTower++;
+            economy.BuySomething(gasTowerPrice);
+            OpenMenu();
         }
     }
-    public void BuildMetalFactory()
+    public void AddMetalFactory()
     {
-        if(economy.Money > MetalFactoryPrice)
-        {
-            MetalFactory++;
-            economy.Money -= MetalFactoryPrice;
-        }
+        MetalFactory++;
+        OpenMenu();
     }
-    public void BuildAutoFactory()
+    public void AddAutoFactory()
     {
-        if (economy.Money > AutoFactoryPrice)
-        {
-            AutoFactory++;
-            economy.Money -= AutoFactoryPrice;
-        }
+        AutoFactory++;
+        OpenMenu();
     }
-    public void BuildPlaneFactory()
+    public void AddPlaneFactory()
     {
-        if (economy.Money > PlaneFactoryPrice)
-        {
-            PlaneFactory++;
-            economy.Money -= PlaneFactoryPrice;
-        }
+        PlaneFactory++;
+        OpenMenu();
     }
-    public void BuildShipDock()
+    public void AddShipDock()
     {
-        if (economy.Money > ShipDockPrice)
-        {
-            ShipDock++;
-            economy.Money -= ShipDockPrice;
-        }
+        ShipDock++;
+        OpenMenu();
     }
-    public void BuildSewingFactory()
+    public void AddSewingFactory()
     {
-        if (economy.Money > SewingFactoryPrice)
-        {
-            SewingFactory++;
-            economy.Money -= SewingFactoryPrice;
-        }
+        SewingFactory++;
+        OpenMenu();
     }
-    public void BuildFuelFactory()
+    public void AddFuelFactory()
     {
-        if (economy.Money > FuelFactoryPrice)
-        {
-            FuelFactory++;
-            economy.Money -= FuelFactoryPrice;
-        }
+        FuelFactory++;
+        OpenMenu();
     }
-    public void BuildElectronicsFactory()
+    public void AddElectronicsFactory()
     {
-        if (economy.Money > ElectronicsFactoryPrice)
-        {
-            ElectronicsFactory++;
-            economy.Money -= ElectronicsFactoryPrice;
-        }
+        ElectronicsFactory++;
+        OpenMenu();
     }
-    public void BuildITFactory()
+    public void AddItFactory()
     {
-        if (economy.Money > ItFactoryPrice)
-        {
-            ItFactory++;
-            economy.Money -= ItFactoryPrice;
-        }
+        ItFactory++;
+        OpenMenu();
     }
 }
