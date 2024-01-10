@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Data.SqlTypes;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class Province : MonoBehaviour
 {
     public GameObject ProvMenu;
     public string Name; // Назва регіону
     public long Population; // Населення
-    public long Gdp; // ВВП
     private Dictionary<string, string> tagToWord = new Dictionary<string, string>(); // Словник 
     public Economy economy;
     public Clock clock;
@@ -20,29 +20,11 @@ public class Province : MonoBehaviour
     public bool oil;//нафта
     public bool gas;
 
-    //скільки ресурсу на складах
-    public int Coal;
-    public int Iron;
-    public int Oil;//нафта
-    public int Gas;
-
     //ліміти
     public int CoalLim;
     public int IronLim;
     public int OilLim;//нафта
     public int GasLim;
-
-    //вторинні ресурси
-    public int Metal;
-
-    //продукція
-    public int Auto;
-    public int Plane;
-    public int Ship;
-    public int Clothes;
-    public int Fuel;
-    public int Electronics;
-    public int It;
 
     //заводи 
     public int CoalMine;
@@ -58,26 +40,20 @@ public class Province : MonoBehaviour
     public int ElectronicsFactory;
     public int ItFactory;
 
-    //виробнича здатність кожного заводу
-    [SerializeField] private int CoalMineCapacity;
-    [SerializeField] private int IronMineCapacity;
-    [SerializeField] private int OilTowerCapacity;
-    [SerializeField] private int GasTowerCapacity;
-    [SerializeField] private int MetalFactoryCapacity;
-    [SerializeField] private int AutoFactoryCapacity;
-    [SerializeField] private int PlaneFactoryCapacity;
-    [SerializeField] private int ShipDockCapacity;
-    [SerializeField] private int SewingFactoryCapacity;
-    [SerializeField] private int FuelFactoryCapacity;
-    [SerializeField] private int ElectronicsFactoryCapacity;
-    [SerializeField] private int ItFactoryCapacity;
-
     [SerializeField] new Text name;
     [SerializeField] Text population;
     [SerializeField] Text coalT;
     [SerializeField] Text ironT;
     [SerializeField] Text oilT;
     [SerializeField] Text gasT;
+    [SerializeField] Text metalT;
+    [SerializeField] Text fuelT;
+    [SerializeField] Text autoT;
+    [SerializeField] Text planeT;
+    [SerializeField] Text shipT;
+    [SerializeField] Text sewingT;
+    [SerializeField] Text electronicsT;
+    [SerializeField] Text ItT;
     [SerializeField] Text displaytext;
 
     void Awake()
@@ -97,39 +73,16 @@ public class Province : MonoBehaviour
 
             if (hitCollider != null && hitCollider.GetComponent<Province>() != null)
             {
+                if (EventSystem.current.IsPointerOverGameObject())//якщл над об'єктом є щось (ui)
+                {
+                    return;
+                }
                 hitCollider.GetComponent<Province>().OpenMenu();
                 economy.Prov = hitCollider.GetComponent<Province>();
             }
             else
             {
                 //ProvMenu.SetActive(false);
-            }
-
-            //економіка
-            if (clock.PickMonth)
-            {
-                Coal += CoalMine * CoalMineCapacity;
-                Iron += IronMine * IronMineCapacity;
-                Oil += OilTower * OilTowerCapacity;
-                Gas += GasTower * GasTowerCapacity;
-
-                Coal -= MetalFactory;
-                Iron -= MetalFactory;
-                Oil -= FuelFactory;
-                Gas -= AutoFactory + PlaneFactory + ShipDock + SewingFactory + ElectronicsFactory + ItFactory;
-
-                Metal += MetalFactory * MetalFactoryCapacity;
-                Auto += AutoFactory * AutoFactoryCapacity;
-                Plane += PlaneFactory * PlaneFactoryCapacity;
-                Ship += ShipDock * ShipDockCapacity;
-                Clothes += SewingFactory * SewingFactoryCapacity;
-                Fuel += FuelFactory * FuelFactoryCapacity;
-                Electronics += ElectronicsFactory * ElectronicsFactoryCapacity;
-                It += ItFactory * ItFactoryCapacity;
-
-                Metal -= AutoFactory + PlaneFactory + ShipDock + ElectronicsFactory;
-                Fuel -= AutoFactory + PlaneFactory + ShipDock;
-                Electronics -= AutoFactory + PlaneFactory + ShipDock + ItFactory;
             }
         }
     }
@@ -143,6 +96,15 @@ public class Province : MonoBehaviour
         ironT.text = "Залізо: " + IronMine + "/" + IronLim;
         oilT.text = "Нафта: " + OilTower + "/" + OilLim;
         gasT.text = "Газ: " + GasTower + "/" + GasLim;
+        metalT.text = MetalFactory.ToString();
+        fuelT.text = FuelFactory.ToString();
+        autoT.text = AutoFactory.ToString();
+        planeT.text = PlaneFactory.ToString();
+        shipT.text = ShipDock.ToString();
+        sewingT.text = SewingFactory.ToString();
+        electronicsT.text = ElectronicsFactory.ToString();
+        ItT.text = ItFactory.ToString();
+
         string country;
         if (tagToWord.TryGetValue(tag, out country))
         {
@@ -156,7 +118,7 @@ public class Province : MonoBehaviour
 
     public void AddCoalMine(int coalMinePrice)
     {
-        if (Coal < CoalLim)
+        if (CoalMine < CoalLim)
         {
             CoalMine++;
             economy.BuySomething(coalMinePrice);
@@ -165,7 +127,7 @@ public class Province : MonoBehaviour
     }
     public void AddIronMine(int ironMinePrice)
     {
-        if (Iron < IronLim)
+        if (IronMine < IronLim)
         {
             IronMine++;
             economy.BuySomething(ironMinePrice);
@@ -174,7 +136,7 @@ public class Province : MonoBehaviour
     }
     public void AddOilTower(int oilTowerPrice)
     {
-        if (Oil < OilLim)
+        if (OilTower < OilLim)
         {
             OilTower++;
             economy.BuySomething(oilTowerPrice);
@@ -183,7 +145,7 @@ public class Province : MonoBehaviour
     }
     public void AddGasTower(int gasTowerPrice)
     {
-        if (Gas < GasLim)
+        if (GasTower < GasLim)
         {
             GasTower++;
             economy.BuySomething(gasTowerPrice);

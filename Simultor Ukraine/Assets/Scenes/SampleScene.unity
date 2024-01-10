@@ -232,22 +232,10 @@ MonoBehaviour:
   iron: 0
   oil: 0
   gas: 0
-  Coal: 0
-  Iron: 0
-  Oil: 0
-  Gas: 0
   CoalLim: 0
   IronLim: 0
   OilLim: 0
   GasLim: 0
-  Metal: 0
-  Auto: 0
-  Plane: 0
-  Ship: 0
-  Clothes: 0
-  Fuel: 0
-  Electronics: 0
-  It: 0
   CoalMine: 0
   IronMine: 0
   OilTower: 0
@@ -260,24 +248,20 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMineCapacity: 0
-  IronMineCapacity: 0
-  OilTowerCapacity: 0
-  GasTowerCapacity: 0
-  MetalFactoryCapacity: 0
-  AutoFactoryCapacity: 0
-  PlaneFactoryCapacity: 0
-  ShipDockCapacity: 0
-  SewingFactoryCapacity: 0
-  FuelFactoryCapacity: 0
-  ElectronicsFactoryCapacity: 0
-  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
   gasT: {fileID: 739950322}
+  metalT: {fileID: 365983448}
+  fuelT: {fileID: 791614671}
+  autoT: {fileID: 67932043}
+  planeT: {fileID: 708174231}
+  shipT: {fileID: 14107230}
+  sewingT: {fileID: 974267224}
+  electronicsT: {fileID: 477514792}
+  ItT: {fileID: 663862058}
   displaytext: {fileID: 1692063595}
 --- !u!60 &11269300
 PolygonCollider2D:
@@ -481,6 +465,85 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 19
+--- !u!1 &14107228
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 14107229}
+  - component: {fileID: 14107231}
+  - component: {fileID: 14107230}
+  m_Layer: 5
+  m_Name: Ship
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &14107229
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 14107228}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 236199366}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -50, y: -80.1}
+  m_SizeDelta: {x: 45.6528, y: 29.9033}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &14107230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 14107228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Ship
+--- !u!222 &14107231
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 14107228}
+  m_CullTransparentMesh: 1
 --- !u!1 &31660224
 GameObject:
   m_ObjectHideFlags: 0
@@ -590,22 +653,10 @@ MonoBehaviour:
   iron: 1
   oil: 1
   gas: 1
-  Coal: 0
-  Iron: 0
-  Oil: 0
-  Gas: 0
   CoalLim: 2
   IronLim: 4
   OilLim: 6
   GasLim: 7
-  Metal: 0
-  Auto: 0
-  Plane: 0
-  Ship: 0
-  Clothes: 0
-  Fuel: 0
-  Electronics: 0
-  It: 0
   CoalMine: 0
   IronMine: 0
   OilTower: 1
@@ -618,24 +669,20 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMineCapacity: 0
-  IronMineCapacity: 0
-  OilTowerCapacity: 0
-  GasTowerCapacity: 0
-  MetalFactoryCapacity: 0
-  AutoFactoryCapacity: 0
-  PlaneFactoryCapacity: 0
-  ShipDockCapacity: 0
-  SewingFactoryCapacity: 0
-  FuelFactoryCapacity: 0
-  ElectronicsFactoryCapacity: 0
-  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
   gasT: {fileID: 739950322}
+  metalT: {fileID: 365983448}
+  fuelT: {fileID: 791614671}
+  autoT: {fileID: 67932043}
+  planeT: {fileID: 708174231}
+  shipT: {fileID: 14107230}
+  sewingT: {fileID: 974267224}
+  electronicsT: {fileID: 477514792}
+  ItT: {fileID: 663862058}
   displaytext: {fileID: 1692063595}
 --- !u!60 &31660228
 PolygonCollider2D:
@@ -986,6 +1033,85 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 48024716}
   m_CullTransparentMesh: 1
+--- !u!1 &67932041
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 67932042}
+  - component: {fileID: 67932044}
+  - component: {fileID: 67932043}
+  m_Layer: 5
+  m_Name: Auto
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &67932042
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67932041}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 236199366}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -250, y: -81.072}
+  m_SizeDelta: {x: 45.6528, y: 29.9033}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &67932043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67932041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Auto
+--- !u!222 &67932044
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67932041}
+  m_CullTransparentMesh: 1
 --- !u!1 &85603107
 GameObject:
   m_ObjectHideFlags: 0
@@ -1095,22 +1221,10 @@ MonoBehaviour:
   iron: 0
   oil: 0
   gas: 1
-  Coal: 0
-  Iron: 0
-  Oil: 0
-  Gas: 0
   CoalLim: 2
   IronLim: 0
   OilLim: 0
   GasLim: 3
-  Metal: 0
-  Auto: 0
-  Plane: 0
-  Ship: 0
-  Clothes: 0
-  Fuel: 0
-  Electronics: 0
-  It: 0
   CoalMine: 0
   IronMine: 0
   OilTower: 0
@@ -1123,24 +1237,20 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMineCapacity: 0
-  IronMineCapacity: 0
-  OilTowerCapacity: 0
-  GasTowerCapacity: 0
-  MetalFactoryCapacity: 0
-  AutoFactoryCapacity: 0
-  PlaneFactoryCapacity: 0
-  ShipDockCapacity: 0
-  SewingFactoryCapacity: 0
-  FuelFactoryCapacity: 0
-  ElectronicsFactoryCapacity: 0
-  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
   gasT: {fileID: 739950322}
+  metalT: {fileID: 365983448}
+  fuelT: {fileID: 791614671}
+  autoT: {fileID: 67932043}
+  planeT: {fileID: 708174231}
+  shipT: {fileID: 14107230}
+  sewingT: {fileID: 974267224}
+  electronicsT: {fileID: 477514792}
+  ItT: {fileID: 663862058}
   displaytext: {fileID: 1692063595}
 --- !u!60 &85603111
 PolygonCollider2D:
@@ -1619,6 +1729,22 @@ RectTransform:
   - {fileID: 1327513261}
   - {fileID: 1199302590}
   - {fileID: 96555078}
+  - {fileID: 1204400793}
+  - {fileID: 1640542143}
+  - {fileID: 1418553153}
+  - {fileID: 1105933752}
+  - {fileID: 827522730}
+  - {fileID: 664947278}
+  - {fileID: 1887216116}
+  - {fileID: 275514545}
+  - {fileID: 365983447}
+  - {fileID: 791614670}
+  - {fileID: 67932042}
+  - {fileID: 708174230}
+  - {fileID: 14107229}
+  - {fileID: 974267223}
+  - {fileID: 477514791}
+  - {fileID: 663862057}
   m_Father: {fileID: 1855320512}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1705,6 +1831,217 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 257810849}
   m_CullTransparentMesh: 1
+--- !u!1 &270703809
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 270703810}
+  - component: {fileID: 270703811}
+  - component: {fileID: 270703812}
+  m_Layer: 5
+  m_Name: Coal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &270703810
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270703809}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 536453539}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 63.64541, y: -20}
+  m_SizeDelta: {x: 36.9202, y: 26.121}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &270703811
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270703809}
+  m_CullTransparentMesh: 1
+--- !u!114 &270703812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270703809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: ab5ec13e41e199642a96cbcab28a6456, type: 3}
+    m_FontSize: 25
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Coal
+--- !u!1 &275514544
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 275514545}
+  - component: {fileID: 275514548}
+  - component: {fileID: 275514547}
+  - component: {fileID: 275514546}
+  m_Layer: 5
+  m_Name: ItB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &275514545
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 275514544}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 236199366}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 200, y: -81.07222}
+  m_SizeDelta: {x: 46.7445, y: 45.4025}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &275514546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 275514544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 275514547}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1527521981}
+        m_TargetAssemblyTypeName: Economy, Assembly-CSharp
+        m_MethodName: BuildItFactory
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &275514547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 275514544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &275514548
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 275514544}
+  m_CullTransparentMesh: 1
 --- !u!1 &312409683
 GameObject:
   m_ObjectHideFlags: 0
@@ -1784,6 +2121,85 @@ RectTransform:
   m_AnchoredPosition: {x: -214.13, y: 64.1}
   m_SizeDelta: {x: 224.8226, y: 29.9033}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &327490949
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 327490950}
+  - component: {fileID: 327490951}
+  - component: {fileID: 327490952}
+  m_Layer: 5
+  m_Name: Fuel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &327490950
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 327490949}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 536453539}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 63.64531, y: -220}
+  m_SizeDelta: {x: 36.9202, y: 26.121}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &327490951
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 327490949}
+  m_CullTransparentMesh: 1
+--- !u!114 &327490952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 327490949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: ab5ec13e41e199642a96cbcab28a6456, type: 3}
+    m_FontSize: 25
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Fuel
 --- !u!1 &359543207
 GameObject:
   m_ObjectHideFlags: 0
@@ -1858,6 +2274,85 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 359543207}
+  m_CullTransparentMesh: 1
+--- !u!1 &365983446
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 365983447}
+  - component: {fileID: 365983449}
+  - component: {fileID: 365983448}
+  m_Layer: 5
+  m_Name: Metal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &365983447
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365983446}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 236199366}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 70, y: 17.8}
+  m_SizeDelta: {x: 45.6528, y: 29.9033}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &365983448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365983446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Metal
+--- !u!222 &365983449
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365983446}
   m_CullTransparentMesh: 1
 --- !u!1 &407951328
 GameObject:
@@ -1968,22 +2463,10 @@ MonoBehaviour:
   iron: 0
   oil: 1
   gas: 1
-  Coal: 0
-  Iron: 0
-  Oil: 0
-  Gas: 0
   CoalLim: 0
   IronLim: 0
   OilLim: 3
   GasLim: 8
-  Metal: 0
-  Auto: 0
-  Plane: 0
-  Ship: 0
-  Clothes: 0
-  Fuel: 0
-  Electronics: 0
-  It: 0
   CoalMine: 0
   IronMine: 0
   OilTower: 1
@@ -1996,24 +2479,20 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMineCapacity: 0
-  IronMineCapacity: 0
-  OilTowerCapacity: 0
-  GasTowerCapacity: 0
-  MetalFactoryCapacity: 0
-  AutoFactoryCapacity: 0
-  PlaneFactoryCapacity: 0
-  ShipDockCapacity: 0
-  SewingFactoryCapacity: 0
-  FuelFactoryCapacity: 0
-  ElectronicsFactoryCapacity: 0
-  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
   gasT: {fileID: 739950322}
+  metalT: {fileID: 365983448}
+  fuelT: {fileID: 791614671}
+  autoT: {fileID: 67932043}
+  planeT: {fileID: 708174231}
+  shipT: {fileID: 14107230}
+  sewingT: {fileID: 974267224}
+  electronicsT: {fileID: 477514792}
+  ItT: {fileID: 663862058}
   displaytext: {fileID: 1692063595}
 --- !u!60 &407951332
 PolygonCollider2D:
@@ -2389,22 +2868,10 @@ MonoBehaviour:
   iron: 1
   oil: 0
   gas: 1
-  Coal: 0
-  Iron: 0
-  Oil: 0
-  Gas: 0
   CoalLim: 10
   IronLim: 3
   OilLim: 0
   GasLim: 5
-  Metal: 0
-  Auto: 0
-  Plane: 0
-  Ship: 0
-  Clothes: 0
-  Fuel: 0
-  Electronics: 0
-  It: 0
   CoalMine: 2
   IronMine: 1
   OilTower: 0
@@ -2417,24 +2884,20 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMineCapacity: 0
-  IronMineCapacity: 0
-  OilTowerCapacity: 0
-  GasTowerCapacity: 0
-  MetalFactoryCapacity: 0
-  AutoFactoryCapacity: 0
-  PlaneFactoryCapacity: 0
-  ShipDockCapacity: 0
-  SewingFactoryCapacity: 0
-  FuelFactoryCapacity: 0
-  ElectronicsFactoryCapacity: 0
-  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
   gasT: {fileID: 739950322}
+  metalT: {fileID: 365983448}
+  fuelT: {fileID: 791614671}
+  autoT: {fileID: 67932043}
+  planeT: {fileID: 708174231}
+  shipT: {fileID: 14107230}
+  sewingT: {fileID: 974267224}
+  electronicsT: {fileID: 477514792}
+  ItT: {fileID: 663862058}
   displaytext: {fileID: 1692063595}
 --- !u!60 &431560690
 PolygonCollider2D:
@@ -2798,7 +3261,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 441604527}
   m_CullTransparentMesh: 1
---- !u!1 &473087962
+--- !u!1 &477514790
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2806,98 +3269,45 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 473087963}
-  - component: {fileID: 473087964}
-  - component: {fileID: 473087966}
-  - component: {fileID: 473087965}
-  m_Layer: 0
-  m_Name: GDP
+  - component: {fileID: 477514791}
+  - component: {fileID: 477514793}
+  - component: {fileID: 477514792}
+  m_Layer: 5
+  m_Name: Electronics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &473087963
+--- !u!224 &477514791
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 473087962}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_GameObject: {fileID: 477514790}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 17.914476, y: 17.914476, z: 17.914476}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1597554684}
+  m_Father: {fileID: 236199366}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -652.1, y: 5}
-  m_SizeDelta: {x: 1.7137, y: 1.5748}
+  m_AnchoredPosition: {x: 150, y: -80.1}
+  m_SizeDelta: {x: 45.6528, y: 29.9033}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!212 &473087964
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 473087962}
-  m_Enabled: 0
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a339657e4b187904485a7bd9657ab63b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 40.710747, y: 39.2}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!114 &473087965
+--- !u!114 &477514792
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 473087962}
+  m_GameObject: {fileID: 477514790}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -2908,23 +3318,27 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a339657e4b187904485a7bd9657ab63b, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &473087966
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Electronics
+--- !u!222 &477514793
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 473087962}
+  m_GameObject: {fileID: 477514790}
   m_CullTransparentMesh: 1
 --- !u!1 &488244261
 GameObject:
@@ -3107,6 +3521,255 @@ MonoBehaviour:
   SmoothChange: 0.9
   MinCamSize: 10
   MaxCamSize: 300
+--- !u!1 &526372262
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 526372263}
+  - component: {fileID: 526372264}
+  - component: {fileID: 526372265}
+  m_Layer: 5
+  m_Name: Plane
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &526372263
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 526372262}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 536453539}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 63.64531, y: -300}
+  m_SizeDelta: {x: 36.9202, y: 26.121}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &526372264
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 526372262}
+  m_CullTransparentMesh: 1
+--- !u!114 &526372265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 526372262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: ab5ec13e41e199642a96cbcab28a6456, type: 3}
+    m_FontSize: 25
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Plane
+
+'
+--- !u!1 &536453538
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 536453539}
+  - component: {fileID: 536453541}
+  - component: {fileID: 536453540}
+  m_Layer: 5
+  m_Name: Resourses
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &536453539
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536453538}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 270703810}
+  - {fileID: 1610740349}
+  - {fileID: 1540601271}
+  - {fileID: 1325931421}
+  - {fileID: 777769229}
+  - {fileID: 327490950}
+  - {fileID: 1674506276}
+  - {fileID: 526372263}
+  - {fileID: 1904844101}
+  - {fileID: 724263446}
+  - {fileID: 2041621422}
+  - {fileID: 541711910}
+  m_Father: {fileID: 1855320512}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -913.15, y: 193.5}
+  m_SizeDelta: {x: -1826.3092, y: -529.3015}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &536453540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536453538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.392}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &536453541
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536453538}
+  m_CullTransparentMesh: 1
+--- !u!1 &541711909
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 541711910}
+  - component: {fileID: 541711911}
+  - component: {fileID: 541711912}
+  m_Layer: 5
+  m_Name: It
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &541711910
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541711909}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 536453539}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 63.64531, y: -460}
+  m_SizeDelta: {x: 36.9202, y: 26.121}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &541711911
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541711909}
+  m_CullTransparentMesh: 1
+--- !u!114 &541711912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541711909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: ab5ec13e41e199642a96cbcab28a6456, type: 3}
+    m_FontSize: 25
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'It
+
+'
 --- !u!1 &555413643
 GameObject:
   m_ObjectHideFlags: 0
@@ -3545,22 +4208,10 @@ MonoBehaviour:
   iron: 0
   oil: 0
   gas: 0
-  Coal: 0
-  Iron: 0
-  Oil: 0
-  Gas: 0
   CoalLim: 0
   IronLim: 0
   OilLim: 0
   GasLim: 0
-  Metal: 0
-  Auto: 0
-  Plane: 0
-  Ship: 0
-  Clothes: 0
-  Fuel: 0
-  Electronics: 0
-  It: 0
   CoalMine: 0
   IronMine: 0
   OilTower: 0
@@ -3573,24 +4224,20 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMineCapacity: 0
-  IronMineCapacity: 0
-  OilTowerCapacity: 0
-  GasTowerCapacity: 0
-  MetalFactoryCapacity: 0
-  AutoFactoryCapacity: 0
-  PlaneFactoryCapacity: 0
-  ShipDockCapacity: 0
-  SewingFactoryCapacity: 0
-  FuelFactoryCapacity: 0
-  ElectronicsFactoryCapacity: 0
-  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
   gasT: {fileID: 739950322}
+  metalT: {fileID: 365983448}
+  fuelT: {fileID: 791614671}
+  autoT: {fileID: 67932043}
+  planeT: {fileID: 708174231}
+  shipT: {fileID: 14107230}
+  sewingT: {fileID: 974267224}
+  electronicsT: {fileID: 477514792}
+  ItT: {fileID: 663862058}
   displaytext: {fileID: 1692063595}
 --- !u!114 &578931885
 MonoBehaviour:
@@ -3714,22 +4361,10 @@ MonoBehaviour:
   iron: 0
   oil: 0
   gas: 0
-  Coal: 0
-  Iron: 0
-  Oil: 0
-  Gas: 0
   CoalLim: 2
   IronLim: 0
   OilLim: 0
   GasLim: 0
-  Metal: 0
-  Auto: 0
-  Plane: 0
-  Ship: 0
-  Clothes: 0
-  Fuel: 0
-  Electronics: 0
-  It: 0
   CoalMine: 0
   IronMine: 0
   OilTower: 0
@@ -3742,24 +4377,20 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMineCapacity: 0
-  IronMineCapacity: 0
-  OilTowerCapacity: 0
-  GasTowerCapacity: 0
-  MetalFactoryCapacity: 0
-  AutoFactoryCapacity: 0
-  PlaneFactoryCapacity: 0
-  ShipDockCapacity: 0
-  SewingFactoryCapacity: 0
-  FuelFactoryCapacity: 0
-  ElectronicsFactoryCapacity: 0
-  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
   gasT: {fileID: 739950322}
+  metalT: {fileID: 365983448}
+  fuelT: {fileID: 791614671}
+  autoT: {fileID: 67932043}
+  planeT: {fileID: 708174231}
+  shipT: {fileID: 14107230}
+  sewingT: {fileID: 974267224}
+  electronicsT: {fileID: 477514792}
+  ItT: {fileID: 663862058}
   displaytext: {fileID: 1692063595}
 --- !u!60 &601486106
 PolygonCollider2D:
@@ -4195,22 +4826,10 @@ MonoBehaviour:
   iron: 0
   oil: 1
   gas: 1
-  Coal: 0
-  Iron: 0
-  Oil: 0
-  Gas: 0
   CoalLim: 0
   IronLim: 0
   OilLim: 5
   GasLim: 6
-  Metal: 0
-  Auto: 0
-  Plane: 0
-  Ship: 0
-  Clothes: 0
-  Fuel: 0
-  Electronics: 0
-  It: 0
   CoalMine: 0
   IronMine: 0
   OilTower: 0
@@ -4223,24 +4842,20 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMineCapacity: 0
-  IronMineCapacity: 0
-  OilTowerCapacity: 0
-  GasTowerCapacity: 0
-  MetalFactoryCapacity: 0
-  AutoFactoryCapacity: 0
-  PlaneFactoryCapacity: 0
-  ShipDockCapacity: 0
-  SewingFactoryCapacity: 0
-  FuelFactoryCapacity: 0
-  ElectronicsFactoryCapacity: 0
-  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
   gasT: {fileID: 739950322}
+  metalT: {fileID: 365983448}
+  fuelT: {fileID: 791614671}
+  autoT: {fileID: 67932043}
+  planeT: {fileID: 708174231}
+  shipT: {fileID: 14107230}
+  sewingT: {fileID: 974267224}
+  electronicsT: {fileID: 477514792}
+  ItT: {fileID: 663862058}
   displaytext: {fileID: 1692063595}
 --- !u!60 &652760366
 PolygonCollider2D:
@@ -4480,6 +5095,377 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 13
+--- !u!1 &663862056
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 663862057}
+  - component: {fileID: 663862059}
+  - component: {fileID: 663862058}
+  m_Layer: 5
+  m_Name: It
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &663862057
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 663862056}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 236199366}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 250, y: -80.1}
+  m_SizeDelta: {x: 45.6528, y: 29.9033}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &663862058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 663862056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: It
+--- !u!222 &663862059
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 663862056}
+  m_CullTransparentMesh: 1
+--- !u!1 &664947277
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 664947278}
+  - component: {fileID: 664947281}
+  - component: {fileID: 664947280}
+  - component: {fileID: 664947279}
+  m_Layer: 5
+  m_Name: SewingB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &664947278
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664947277}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 236199366}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -81.07222}
+  m_SizeDelta: {x: 46.7445, y: 45.4025}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &664947279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664947277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 664947280}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1527521981}
+        m_TargetAssemblyTypeName: Economy, Assembly-CSharp
+        m_MethodName: BuildSewingFactory
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &664947280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664947277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &664947281
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664947277}
+  m_CullTransparentMesh: 1
+--- !u!1 &708174229
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 708174230}
+  - component: {fileID: 708174232}
+  - component: {fileID: 708174231}
+  m_Layer: 5
+  m_Name: Plane
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &708174230
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 708174229}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 236199366}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -150, y: -80.1}
+  m_SizeDelta: {x: 45.6528, y: 29.9033}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &708174231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 708174229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Plane
+--- !u!222 &708174232
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 708174229}
+  m_CullTransparentMesh: 1
+--- !u!1 &724263445
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 724263446}
+  - component: {fileID: 724263447}
+  - component: {fileID: 724263448}
+  m_Layer: 5
+  m_Name: Clothes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &724263446
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724263445}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 536453539}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 63.64531, y: -380}
+  m_SizeDelta: {x: 36.9202, y: 26.121}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &724263447
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724263445}
+  m_CullTransparentMesh: 1
+--- !u!114 &724263448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724263445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: ab5ec13e41e199642a96cbcab28a6456, type: 3}
+    m_FontSize: 25
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Clothes
+
+'
 --- !u!1 &739950320
 GameObject:
   m_ObjectHideFlags: 0
@@ -4668,22 +5654,10 @@ MonoBehaviour:
   iron: 0
   oil: 1
   gas: 0
-  Coal: 0
-  Iron: 0
-  Oil: 0
-  Gas: 0
   CoalLim: 0
   IronLim: 0
   OilLim: 4
   GasLim: 0
-  Metal: 0
-  Auto: 0
-  Plane: 0
-  Ship: 0
-  Clothes: 0
-  Fuel: 0
-  Electronics: 0
-  It: 0
   CoalMine: 0
   IronMine: 0
   OilTower: 1
@@ -4696,24 +5670,20 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMineCapacity: 0
-  IronMineCapacity: 0
-  OilTowerCapacity: 0
-  GasTowerCapacity: 0
-  MetalFactoryCapacity: 0
-  AutoFactoryCapacity: 0
-  PlaneFactoryCapacity: 0
-  ShipDockCapacity: 0
-  SewingFactoryCapacity: 0
-  FuelFactoryCapacity: 0
-  ElectronicsFactoryCapacity: 0
-  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
   gasT: {fileID: 739950322}
+  metalT: {fileID: 365983448}
+  fuelT: {fileID: 791614671}
+  autoT: {fileID: 67932043}
+  planeT: {fileID: 708174231}
+  shipT: {fileID: 14107230}
+  sewingT: {fileID: 974267224}
+  electronicsT: {fileID: 477514792}
+  ItT: {fileID: 663862058}
   displaytext: {fileID: 1692063595}
 --- !u!60 &773724470
 PolygonCollider2D:
@@ -4860,6 +5830,164 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 20
+--- !u!1 &777769228
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 777769229}
+  - component: {fileID: 777769230}
+  - component: {fileID: 777769231}
+  m_Layer: 5
+  m_Name: Metal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &777769229
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777769228}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 536453539}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 63.64531, y: -180}
+  m_SizeDelta: {x: 36.9202, y: 26.121}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &777769230
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777769228}
+  m_CullTransparentMesh: 1
+--- !u!114 &777769231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777769228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: ab5ec13e41e199642a96cbcab28a6456, type: 3}
+    m_FontSize: 25
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Metal
+--- !u!1 &791614669
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 791614670}
+  - component: {fileID: 791614672}
+  - component: {fileID: 791614671}
+  m_Layer: 5
+  m_Name: Fuel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &791614670
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791614669}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 236199366}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 170, y: 17.8}
+  m_SizeDelta: {x: 45.6528, y: 29.9033}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &791614671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791614669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Fuel
+--- !u!222 &791614672
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791614669}
+  m_CullTransparentMesh: 1
 --- !u!1 &800635278
 GameObject:
   m_ObjectHideFlags: 0
@@ -4917,22 +6045,10 @@ MonoBehaviour:
   iron: 0
   oil: 0
   gas: 0
-  Coal: 0
-  Iron: 0
-  Oil: 0
-  Gas: 0
   CoalLim: 0
   IronLim: 0
   OilLim: 0
   GasLim: 0
-  Metal: 0
-  Auto: 0
-  Plane: 0
-  Ship: 0
-  Clothes: 0
-  Fuel: 0
-  Electronics: 0
-  It: 0
   CoalMine: 0
   IronMine: 0
   OilTower: 0
@@ -4945,24 +6061,20 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMineCapacity: 0
-  IronMineCapacity: 0
-  OilTowerCapacity: 0
-  GasTowerCapacity: 0
-  MetalFactoryCapacity: 0
-  AutoFactoryCapacity: 0
-  PlaneFactoryCapacity: 0
-  ShipDockCapacity: 0
-  SewingFactoryCapacity: 0
-  FuelFactoryCapacity: 0
-  ElectronicsFactoryCapacity: 0
-  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
   gasT: {fileID: 739950322}
+  metalT: {fileID: 365983448}
+  fuelT: {fileID: 791614671}
+  autoT: {fileID: 67932043}
+  planeT: {fileID: 708174231}
+  shipT: {fileID: 14107230}
+  sewingT: {fileID: 974267224}
+  electronicsT: {fileID: 477514792}
+  ItT: {fileID: 663862058}
   displaytext: {fileID: 1692063595}
 --- !u!60 &800635281
 PolygonCollider2D:
@@ -5433,6 +6545,138 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 14
+--- !u!1 &827522729
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 827522730}
+  - component: {fileID: 827522733}
+  - component: {fileID: 827522732}
+  - component: {fileID: 827522731}
+  m_Layer: 5
+  m_Name: ShipB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &827522730
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827522729}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 236199366}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -100, y: -81.07222}
+  m_SizeDelta: {x: 46.7445, y: 45.4025}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &827522731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827522729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 827522732}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1527521981}
+        m_TargetAssemblyTypeName: Economy, Assembly-CSharp
+        m_MethodName: BuildShipDock
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &827522732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827522729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &827522733
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827522729}
+  m_CullTransparentMesh: 1
 --- !u!1 &964879154
 GameObject:
   m_ObjectHideFlags: 0
@@ -5542,22 +6786,10 @@ MonoBehaviour:
   iron: 0
   oil: 1
   gas: 1
-  Coal: 0
-  Iron: 0
-  Oil: 0
-  Gas: 0
   CoalLim: 0
   IronLim: 0
   OilLim: 5
   GasLim: 5
-  Metal: 0
-  Auto: 0
-  Plane: 0
-  Ship: 0
-  Clothes: 0
-  Fuel: 0
-  Electronics: 0
-  It: 0
   CoalMine: 0
   IronMine: 0
   OilTower: 1
@@ -5570,24 +6802,20 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMineCapacity: 0
-  IronMineCapacity: 0
-  OilTowerCapacity: 0
-  GasTowerCapacity: 0
-  MetalFactoryCapacity: 0
-  AutoFactoryCapacity: 0
-  PlaneFactoryCapacity: 0
-  ShipDockCapacity: 0
-  SewingFactoryCapacity: 0
-  FuelFactoryCapacity: 0
-  ElectronicsFactoryCapacity: 0
-  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
   gasT: {fileID: 739950322}
+  metalT: {fileID: 365983448}
+  fuelT: {fileID: 791614671}
+  autoT: {fileID: 67932043}
+  planeT: {fileID: 708174231}
+  shipT: {fileID: 14107230}
+  sewingT: {fileID: 974267224}
+  electronicsT: {fileID: 477514792}
+  ItT: {fileID: 663862058}
   displaytext: {fileID: 1692063595}
 --- !u!60 &964879158
 PolygonCollider2D:
@@ -5745,6 +6973,85 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 23
+--- !u!1 &974267222
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 974267223}
+  - component: {fileID: 974267225}
+  - component: {fileID: 974267224}
+  m_Layer: 5
+  m_Name: Sewing
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &974267223
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 974267222}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 236199366}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 50, y: -80.1}
+  m_SizeDelta: {x: 45.6528, y: 29.9033}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &974267224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 974267222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Sewing
+--- !u!222 &974267225
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 974267222}
+  m_CullTransparentMesh: 1
 --- !u!1 &975743652
 GameObject:
   m_ObjectHideFlags: 0
@@ -5854,22 +7161,10 @@ MonoBehaviour:
   iron: 0
   oil: 0
   gas: 0
-  Coal: 0
-  Iron: 0
-  Oil: 0
-  Gas: 0
   CoalLim: 0
   IronLim: 0
   OilLim: 0
   GasLim: 0
-  Metal: 0
-  Auto: 0
-  Plane: 0
-  Ship: 0
-  Clothes: 0
-  Fuel: 0
-  Electronics: 0
-  It: 0
   CoalMine: 0
   IronMine: 0
   OilTower: 0
@@ -5882,24 +7177,20 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMineCapacity: 0
-  IronMineCapacity: 0
-  OilTowerCapacity: 0
-  GasTowerCapacity: 0
-  MetalFactoryCapacity: 0
-  AutoFactoryCapacity: 0
-  PlaneFactoryCapacity: 0
-  ShipDockCapacity: 0
-  SewingFactoryCapacity: 0
-  FuelFactoryCapacity: 0
-  ElectronicsFactoryCapacity: 0
-  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
   gasT: {fileID: 739950322}
+  metalT: {fileID: 365983448}
+  fuelT: {fileID: 791614671}
+  autoT: {fileID: 67932043}
+  planeT: {fileID: 708174231}
+  shipT: {fileID: 14107230}
+  sewingT: {fileID: 974267224}
+  electronicsT: {fileID: 477514792}
+  ItT: {fileID: 663862058}
   displaytext: {fileID: 1692063595}
 --- !u!60 &975743657
 PolygonCollider2D:
@@ -6439,6 +7730,138 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1092383487}
   m_CullTransparentMesh: 1
+--- !u!1 &1105933751
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1105933752}
+  - component: {fileID: 1105933755}
+  - component: {fileID: 1105933754}
+  - component: {fileID: 1105933753}
+  m_Layer: 5
+  m_Name: PlaneB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1105933752
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105933751}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 236199366}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -200, y: -81.07222}
+  m_SizeDelta: {x: 46.7445, y: 45.4025}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1105933753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105933751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1105933754}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1527521981}
+        m_TargetAssemblyTypeName: Economy, Assembly-CSharp
+        m_MethodName: BuildPlaneFactory
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1105933754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105933751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1105933755
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105933751}
+  m_CullTransparentMesh: 1
 --- !u!1 &1108452870
 GameObject:
   m_ObjectHideFlags: 0
@@ -6548,22 +7971,10 @@ MonoBehaviour:
   iron: 0
   oil: 1
   gas: 1
-  Coal: 0
-  Iron: 0
-  Oil: 0
-  Gas: 0
   CoalLim: 3
   IronLim: 0
   OilLim: 7
   GasLim: 7
-  Metal: 0
-  Auto: 0
-  Plane: 0
-  Ship: 0
-  Clothes: 0
-  Fuel: 0
-  Electronics: 0
-  It: 0
   CoalMine: 1
   IronMine: 0
   OilTower: 2
@@ -6576,24 +7987,20 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMineCapacity: 0
-  IronMineCapacity: 0
-  OilTowerCapacity: 0
-  GasTowerCapacity: 0
-  MetalFactoryCapacity: 0
-  AutoFactoryCapacity: 0
-  PlaneFactoryCapacity: 0
-  ShipDockCapacity: 0
-  SewingFactoryCapacity: 0
-  FuelFactoryCapacity: 0
-  ElectronicsFactoryCapacity: 0
-  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
   gasT: {fileID: 739950322}
+  metalT: {fileID: 365983448}
+  fuelT: {fileID: 791614671}
+  autoT: {fileID: 67932043}
+  planeT: {fileID: 708174231}
+  shipT: {fileID: 14107230}
+  sewingT: {fileID: 974267224}
+  electronicsT: {fileID: 477514792}
+  ItT: {fileID: 663862058}
   displaytext: {fileID: 1692063595}
 --- !u!60 &1108452874
 PolygonCollider2D:
@@ -6790,22 +8197,10 @@ MonoBehaviour:
   iron: 1
   oil: 1
   gas: 1
-  Coal: 0
-  Iron: 1
-  Oil: 0
-  Gas: 2
   CoalLim: 0
   IronLim: 5
   OilLim: 3
   GasLim: 10
-  Metal: 0
-  Auto: 0
-  Plane: 0
-  Ship: 0
-  Clothes: 0
-  Fuel: 0
-  Electronics: 0
-  It: 0
   CoalMine: 0
   IronMine: 0
   OilTower: 0
@@ -6818,24 +8213,20 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMineCapacity: 0
-  IronMineCapacity: 0
-  OilTowerCapacity: 0
-  GasTowerCapacity: 0
-  MetalFactoryCapacity: 0
-  AutoFactoryCapacity: 0
-  PlaneFactoryCapacity: 0
-  ShipDockCapacity: 0
-  SewingFactoryCapacity: 0
-  FuelFactoryCapacity: 0
-  ElectronicsFactoryCapacity: 0
-  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
   gasT: {fileID: 739950322}
+  metalT: {fileID: 365983448}
+  fuelT: {fileID: 791614671}
+  autoT: {fileID: 67932043}
+  planeT: {fileID: 708174231}
+  shipT: {fileID: 14107230}
+  sewingT: {fileID: 974267224}
+  electronicsT: {fileID: 477514792}
+  ItT: {fileID: 663862058}
   displaytext: {fileID: 1692063595}
 --- !u!60 &1133882927
 PolygonCollider2D:
@@ -7191,22 +8582,10 @@ MonoBehaviour:
   iron: 1
   oil: 0
   gas: 0
-  Coal: 0
-  Iron: 0
-  Oil: 0
-  Gas: 0
   CoalLim: 5
   IronLim: 2
   OilLim: 0
   GasLim: 0
-  Metal: 0
-  Auto: 0
-  Plane: 0
-  Ship: 0
-  Clothes: 0
-  Fuel: 0
-  Electronics: 0
-  It: 0
   CoalMine: 1
   IronMine: 1
   OilTower: 0
@@ -7219,24 +8598,20 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMineCapacity: 0
-  IronMineCapacity: 0
-  OilTowerCapacity: 0
-  GasTowerCapacity: 0
-  MetalFactoryCapacity: 0
-  AutoFactoryCapacity: 0
-  PlaneFactoryCapacity: 0
-  ShipDockCapacity: 0
-  SewingFactoryCapacity: 0
-  FuelFactoryCapacity: 0
-  ElectronicsFactoryCapacity: 0
-  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
   gasT: {fileID: 739950322}
+  metalT: {fileID: 365983448}
+  fuelT: {fileID: 791614671}
+  autoT: {fileID: 67932043}
+  planeT: {fileID: 708174231}
+  shipT: {fileID: 14107230}
+  sewingT: {fileID: 974267224}
+  electronicsT: {fileID: 477514792}
+  ItT: {fileID: 663862058}
   displaytext: {fileID: 1692063595}
 --- !u!60 &1163496546
 PolygonCollider2D:
@@ -7681,22 +9056,10 @@ MonoBehaviour:
   iron: 0
   oil: 0
   gas: 0
-  Coal: 0
-  Iron: 0
-  Oil: 0
-  Gas: 0
   CoalLim: 3
   IronLim: 0
   OilLim: 0
   GasLim: 0
-  Metal: 0
-  Auto: 0
-  Plane: 0
-  Ship: 0
-  Clothes: 0
-  Fuel: 0
-  Electronics: 0
-  It: 0
   CoalMine: 1
   IronMine: 0
   OilTower: 0
@@ -7709,24 +9072,20 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMineCapacity: 0
-  IronMineCapacity: 0
-  OilTowerCapacity: 0
-  GasTowerCapacity: 0
-  MetalFactoryCapacity: 0
-  AutoFactoryCapacity: 0
-  PlaneFactoryCapacity: 0
-  ShipDockCapacity: 0
-  SewingFactoryCapacity: 0
-  FuelFactoryCapacity: 0
-  ElectronicsFactoryCapacity: 0
-  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
   gasT: {fileID: 739950322}
+  metalT: {fileID: 365983448}
+  fuelT: {fileID: 791614671}
+  autoT: {fileID: 67932043}
+  planeT: {fileID: 708174231}
+  shipT: {fileID: 14107230}
+  sewingT: {fileID: 974267224}
+  electronicsT: {fileID: 477514792}
+  ItT: {fileID: 663862058}
   displaytext: {fileID: 1692063595}
 --- !u!60 &1197039031
 PolygonCollider2D:
@@ -8105,6 +9464,138 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1199302589}
   m_CullTransparentMesh: 1
+--- !u!1 &1204400792
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1204400793}
+  - component: {fileID: 1204400796}
+  - component: {fileID: 1204400795}
+  - component: {fileID: 1204400794}
+  m_Layer: 5
+  m_Name: MetalB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1204400793
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204400792}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 236199366}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 20, y: 17.8}
+  m_SizeDelta: {x: 46.7445, y: 45.4025}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1204400794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204400792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1204400795}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1527521981}
+        m_TargetAssemblyTypeName: Economy, Assembly-CSharp
+        m_MethodName: BuildMetalFactory
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1204400795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204400792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1204400796
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204400792}
+  m_CullTransparentMesh: 1
 --- !u!1 &1233093329
 GameObject:
   m_ObjectHideFlags: 0
@@ -8269,6 +9760,85 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1290458139}
   m_CullTransparentMesh: 1
+--- !u!1 &1325931420
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1325931421}
+  - component: {fileID: 1325931422}
+  - component: {fileID: 1325931423}
+  m_Layer: 5
+  m_Name: Gas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1325931421
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1325931420}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 536453539}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 63.64531, y: -140}
+  m_SizeDelta: {x: 36.9202, y: 26.121}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1325931422
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1325931420}
+  m_CullTransparentMesh: 1
+--- !u!114 &1325931423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1325931420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: ab5ec13e41e199642a96cbcab28a6456, type: 3}
+    m_FontSize: 25
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Gas
 --- !u!1 &1327513260
 GameObject:
   m_ObjectHideFlags: 0
@@ -8510,22 +10080,10 @@ MonoBehaviour:
   iron: 0
   oil: 0
   gas: 0
-  Coal: 0
-  Iron: 0
-  Oil: 0
-  Gas: 0
   CoalLim: 0
   IronLim: 0
   OilLim: 0
   GasLim: 0
-  Metal: 0
-  Auto: 0
-  Plane: 0
-  Ship: 0
-  Clothes: 0
-  Fuel: 0
-  Electronics: 0
-  It: 0
   CoalMine: 0
   IronMine: 0
   OilTower: 0
@@ -8538,24 +10096,20 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMineCapacity: 0
-  IronMineCapacity: 0
-  OilTowerCapacity: 0
-  GasTowerCapacity: 0
-  MetalFactoryCapacity: 0
-  AutoFactoryCapacity: 0
-  PlaneFactoryCapacity: 0
-  ShipDockCapacity: 0
-  SewingFactoryCapacity: 0
-  FuelFactoryCapacity: 0
-  ElectronicsFactoryCapacity: 0
-  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
   gasT: {fileID: 739950322}
+  metalT: {fileID: 365983448}
+  fuelT: {fileID: 791614671}
+  autoT: {fileID: 67932043}
+  planeT: {fileID: 708174231}
+  shipT: {fileID: 14107230}
+  sewingT: {fileID: 974267224}
+  electronicsT: {fileID: 477514792}
+  ItT: {fileID: 663862058}
   displaytext: {fileID: 1692063595}
 --- !u!60 &1355737712
 PolygonCollider2D:
@@ -8943,22 +10497,10 @@ MonoBehaviour:
   iron: 0
   oil: 1
   gas: 0
-  Coal: 0
-  Iron: 0
-  Oil: 0
-  Gas: 0
   CoalLim: 0
   IronLim: 0
   OilLim: 4
   GasLim: 0
-  Metal: 0
-  Auto: 0
-  Plane: 0
-  Ship: 0
-  Clothes: 0
-  Fuel: 0
-  Electronics: 0
-  It: 0
   CoalMine: 0
   IronMine: 0
   OilTower: 0
@@ -8971,24 +10513,20 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMineCapacity: 0
-  IronMineCapacity: 0
-  OilTowerCapacity: 0
-  GasTowerCapacity: 0
-  MetalFactoryCapacity: 0
-  AutoFactoryCapacity: 0
-  PlaneFactoryCapacity: 0
-  ShipDockCapacity: 0
-  SewingFactoryCapacity: 0
-  FuelFactoryCapacity: 0
-  ElectronicsFactoryCapacity: 0
-  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
   gasT: {fileID: 739950322}
+  metalT: {fileID: 365983448}
+  fuelT: {fileID: 791614671}
+  autoT: {fileID: 67932043}
+  planeT: {fileID: 708174231}
+  shipT: {fileID: 14107230}
+  sewingT: {fileID: 974267224}
+  electronicsT: {fileID: 477514792}
+  ItT: {fileID: 663862058}
   displaytext: {fileID: 1692063595}
 --- !u!60 &1375152173
 PolygonCollider2D:
@@ -9250,6 +10788,138 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 12
+--- !u!1 &1418553152
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1418553153}
+  - component: {fileID: 1418553156}
+  - component: {fileID: 1418553155}
+  - component: {fileID: 1418553154}
+  m_Layer: 5
+  m_Name: AutoB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1418553153
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1418553152}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 236199366}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -300, y: -81.07222}
+  m_SizeDelta: {x: 46.7445, y: 45.4025}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1418553154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1418553152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1418553155}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1527521981}
+        m_TargetAssemblyTypeName: Economy, Assembly-CSharp
+        m_MethodName: BuildAutoFactory
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1418553155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1418553152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1418553156
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1418553152}
+  m_CullTransparentMesh: 1
 --- !u!1 &1455984596
 GameObject:
   m_ObjectHideFlags: 0
@@ -9359,22 +11029,10 @@ MonoBehaviour:
   iron: 0
   oil: 1
   gas: 0
-  Coal: 0
-  Iron: 0
-  Oil: 0
-  Gas: 0
   CoalLim: 7
   IronLim: 0
   OilLim: 3
   GasLim: 0
-  Metal: 0
-  Auto: 0
-  Plane: 0
-  Ship: 0
-  Clothes: 0
-  Fuel: 0
-  Electronics: 0
-  It: 0
   CoalMine: 2
   IronMine: 0
   OilTower: 1
@@ -9387,24 +11045,20 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMineCapacity: 0
-  IronMineCapacity: 0
-  OilTowerCapacity: 0
-  GasTowerCapacity: 0
-  MetalFactoryCapacity: 0
-  AutoFactoryCapacity: 0
-  PlaneFactoryCapacity: 0
-  ShipDockCapacity: 0
-  SewingFactoryCapacity: 0
-  FuelFactoryCapacity: 0
-  ElectronicsFactoryCapacity: 0
-  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
   gasT: {fileID: 739950322}
+  metalT: {fileID: 365983448}
+  fuelT: {fileID: 791614671}
+  autoT: {fileID: 67932043}
+  planeT: {fileID: 708174231}
+  shipT: {fileID: 14107230}
+  sewingT: {fileID: 974267224}
+  electronicsT: {fileID: 477514792}
+  ItT: {fileID: 663862058}
   displaytext: {fileID: 1692063595}
 --- !u!60 &1455984600
 PolygonCollider2D:
@@ -9772,22 +11426,10 @@ MonoBehaviour:
   iron: 1
   oil: 0
   gas: 0
-  Coal: 0
-  Iron: 0
-  Oil: 0
-  Gas: 0
   CoalLim: 5
   IronLim: 3
   OilLim: 0
   GasLim: 0
-  Metal: 0
-  Auto: 0
-  Plane: 0
-  Ship: 0
-  Clothes: 0
-  Fuel: 0
-  Electronics: 0
-  It: 0
   CoalMine: 2
   IronMine: 1
   OilTower: 0
@@ -9800,24 +11442,20 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMineCapacity: 0
-  IronMineCapacity: 0
-  OilTowerCapacity: 0
-  GasTowerCapacity: 0
-  MetalFactoryCapacity: 0
-  AutoFactoryCapacity: 0
-  PlaneFactoryCapacity: 0
-  ShipDockCapacity: 0
-  SewingFactoryCapacity: 0
-  FuelFactoryCapacity: 0
-  ElectronicsFactoryCapacity: 0
-  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
   gasT: {fileID: 739950322}
+  metalT: {fileID: 365983448}
+  fuelT: {fileID: 791614671}
+  autoT: {fileID: 67932043}
+  planeT: {fileID: 708174231}
+  shipT: {fileID: 14107230}
+  sewingT: {fileID: 974267224}
+  electronicsT: {fileID: 477514792}
+  ItT: {fileID: 663862058}
   displaytext: {fileID: 1692063595}
 --- !u!60 &1467813138
 PolygonCollider2D:
@@ -10115,106 +11753,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 5
---- !u!1 &1506245411
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1506245412}
-  - component: {fileID: 1506245415}
-  - component: {fileID: 1506245414}
-  - component: {fileID: 1506245413}
-  m_Layer: 5
-  m_Name: GDPUI
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1506245412
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1506245411}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1597554684}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 510.7, y: -38.429}
-  m_SizeDelta: {x: 140.713, y: 32.0111}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1506245413
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1506245411}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e14b7c02adf14548b9725e490c98a3b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  provinceTag: Ukr
-  provinces: []
-  totalPopulationText: {fileID: 555413646}
-  totalGdpText: {fileID: 1506245414}
-  totalIncomeText: {fileID: 0}
-  totalPopulation: 0
-  totalGdp: 0
-  totalIncome: 0
---- !u!114 &1506245414
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1506245411}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: ab5ec13e41e199642a96cbcab28a6456, type: 3}
-    m_FontSize: 25
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 2
-    m_MaxSize: 40
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: GDP
---- !u!222 &1506245415
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1506245411}
-  m_CullTransparentMesh: 1
 --- !u!1 &1509729905
 GameObject:
   m_ObjectHideFlags: 0
@@ -10324,22 +11862,10 @@ MonoBehaviour:
   iron: 1
   oil: 0
   gas: 1
-  Coal: 0
-  Iron: 0
-  Oil: 0
-  Gas: 0
   CoalLim: 0
   IronLim: 8
   OilLim: 0
   GasLim: 2
-  Metal: 0
-  Auto: 0
-  Plane: 0
-  Ship: 0
-  Clothes: 0
-  Fuel: 0
-  Electronics: 0
-  It: 0
   CoalMine: 0
   IronMine: 2
   OilTower: 0
@@ -10352,24 +11878,20 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMineCapacity: 0
-  IronMineCapacity: 0
-  OilTowerCapacity: 0
-  GasTowerCapacity: 0
-  MetalFactoryCapacity: 0
-  AutoFactoryCapacity: 0
-  PlaneFactoryCapacity: 0
-  ShipDockCapacity: 0
-  SewingFactoryCapacity: 0
-  FuelFactoryCapacity: 0
-  ElectronicsFactoryCapacity: 0
-  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
   gasT: {fileID: 739950322}
+  metalT: {fileID: 365983448}
+  fuelT: {fileID: 791614671}
+  autoT: {fileID: 67932043}
+  planeT: {fileID: 708174231}
+  shipT: {fileID: 14107230}
+  sewingT: {fileID: 974267224}
+  electronicsT: {fileID: 477514792}
+  ItT: {fileID: 663862058}
   displaytext: {fileID: 1692063595}
 --- !u!60 &1509729909
 PolygonCollider2D:
@@ -10700,7 +12222,60 @@ MonoBehaviour:
   FuelFactoryPrice: 0
   ElectronicsFactoryPrice: 0
   ItFactoryPrice: 0
-  vat: 0
+  AllCoalMine: 0
+  AllIronMine: 0
+  AllOilTower: 0
+  AllGasTower: 0
+  AllMetalFactory: 0
+  AllAutoFactory: 0
+  AllPlaneFactory: 0
+  AllShipDock: 0
+  AllSewingFactory: 0
+  AllFuelFactory: 0
+  AllElectronicsFactory: 0
+  AllItFactory: 0
+  Coal: 0
+  Iron: 0
+  Oil: 0
+  Gas: 0
+  Metal: 0
+  Fuel: 0
+  Auto: 0
+  Plane: 0
+  Ship: 0
+  Clothes: 0
+  Electronics: 0
+  It: 0
+  CoalMineCapacity: 4
+  IronMineCapacity: 4
+  OilTowerCapacity: 4
+  GasTowerCapacity: 4
+  MetalFactoryCapacity: 2
+  AutoFactoryCapacity: 1
+  PlaneFactoryCapacity: 1
+  ShipDockCapacity: 1
+  SewingFactoryCapacity: 1
+  FuelFactoryCapacity: 2
+  ElectronicsFactoryCapacity: 2
+  ItFactoryCapacity: 1
+  coal: {fileID: 270703812}
+  iron: {fileID: 1610740351}
+  oil: {fileID: 1540601273}
+  gas: {fileID: 1325931423}
+  metal: {fileID: 777769231}
+  fuel: {fileID: 327490952}
+  auto: {fileID: 1674506278}
+  plane: {fileID: 526372265}
+  ship: {fileID: 1904844103}
+  clothes: {fileID: 724263448}
+  electronics: {fileID: 2041621424}
+  it: {fileID: 541711912}
+  provinceTag: Ukr
+  totalPopulationText: {fileID: 555413646}
+  totalGdpText: {fileID: 0}
+  totalIncomeText: {fileID: 0}
+  totalPopulation: 0
+  clock: {fileID: 569217447}
 --- !u!4 &1527521982
 Transform:
   m_ObjectHideFlags: 0
@@ -10716,6 +12291,85 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1540601270
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1540601271}
+  - component: {fileID: 1540601272}
+  - component: {fileID: 1540601273}
+  m_Layer: 5
+  m_Name: Oil
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1540601271
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1540601270}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 536453539}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 63.64531, y: -100}
+  m_SizeDelta: {x: 36.9202, y: 26.121}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1540601272
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1540601270}
+  m_CullTransparentMesh: 1
+--- !u!114 &1540601273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1540601270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: ab5ec13e41e199642a96cbcab28a6456, type: 3}
+    m_FontSize: 25
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Oil
 --- !u!1 &1597554683
 GameObject:
   m_ObjectHideFlags: 0
@@ -10746,8 +12400,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 473087963}
-  - {fileID: 1506245412}
   - {fileID: 555413644}
   - {fileID: 1076302519}
   - {fileID: 1182001004}
@@ -10756,7 +12408,6 @@ RectTransform:
   - {fileID: 1290458140}
   - {fileID: 359543208}
   - {fileID: 1019990798}
-  - {fileID: 1934379823}
   m_Father: {fileID: 1855320512}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
@@ -10802,6 +12453,85 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1597554683}
   m_CullTransparentMesh: 1
+--- !u!1 &1610740348
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1610740349}
+  - component: {fileID: 1610740350}
+  - component: {fileID: 1610740351}
+  m_Layer: 5
+  m_Name: Iron
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1610740349
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610740348}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 536453539}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 63.64531, y: -60}
+  m_SizeDelta: {x: 36.9202, y: 26.121}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1610740350
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610740348}
+  m_CullTransparentMesh: 1
+--- !u!114 &1610740351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610740348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: ab5ec13e41e199642a96cbcab28a6456, type: 3}
+    m_FontSize: 25
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Iron
 --- !u!1 &1634771596
 GameObject:
   m_ObjectHideFlags: 0
@@ -10911,22 +12641,10 @@ MonoBehaviour:
   iron: 0
   oil: 0
   gas: 0
-  Coal: 0
-  Iron: 0
-  Oil: 0
-  Gas: 0
   CoalLim: 0
   IronLim: 0
   OilLim: 0
   GasLim: 0
-  Metal: 0
-  Auto: 0
-  Plane: 0
-  Ship: 0
-  Clothes: 0
-  Fuel: 0
-  Electronics: 0
-  It: 0
   CoalMine: 0
   IronMine: 0
   OilTower: 0
@@ -10939,24 +12657,20 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMineCapacity: 0
-  IronMineCapacity: 0
-  OilTowerCapacity: 0
-  GasTowerCapacity: 0
-  MetalFactoryCapacity: 0
-  AutoFactoryCapacity: 0
-  PlaneFactoryCapacity: 0
-  ShipDockCapacity: 0
-  SewingFactoryCapacity: 0
-  FuelFactoryCapacity: 0
-  ElectronicsFactoryCapacity: 0
-  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
   gasT: {fileID: 739950322}
+  metalT: {fileID: 365983448}
+  fuelT: {fileID: 791614671}
+  autoT: {fileID: 67932043}
+  planeT: {fileID: 708174231}
+  shipT: {fileID: 14107230}
+  sewingT: {fileID: 974267224}
+  electronicsT: {fileID: 477514792}
+  ItT: {fileID: 663862058}
   displaytext: {fileID: 1692063595}
 --- !u!60 &1634771600
 PolygonCollider2D:
@@ -11098,6 +12812,219 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 21
+--- !u!1 &1640542142
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1640542143}
+  - component: {fileID: 1640542146}
+  - component: {fileID: 1640542145}
+  - component: {fileID: 1640542144}
+  m_Layer: 5
+  m_Name: FuelB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1640542143
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640542142}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 236199366}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 120, y: 17.8}
+  m_SizeDelta: {x: 46.7445, y: 45.4025}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1640542144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640542142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1640542145}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1527521981}
+        m_TargetAssemblyTypeName: Economy, Assembly-CSharp
+        m_MethodName: BuildFuelFactory
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1640542145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640542142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1640542146
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640542142}
+  m_CullTransparentMesh: 1
+--- !u!1 &1674506275
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1674506276}
+  - component: {fileID: 1674506277}
+  - component: {fileID: 1674506278}
+  m_Layer: 5
+  m_Name: Auto
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1674506276
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1674506275}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 536453539}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 63.64531, y: -260}
+  m_SizeDelta: {x: 36.9202, y: 26.121}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1674506277
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1674506275}
+  m_CullTransparentMesh: 1
+--- !u!114 &1674506278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1674506275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: ab5ec13e41e199642a96cbcab28a6456, type: 3}
+    m_FontSize: 25
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Auto
+
+'
 --- !u!1 &1692063594
 GameObject:
   m_ObjectHideFlags: 0
@@ -11286,22 +13213,10 @@ MonoBehaviour:
   iron: 0
   oil: 0
   gas: 0
-  Coal: 0
-  Iron: 0
-  Oil: 0
-  Gas: 0
   CoalLim: 0
   IronLim: 0
   OilLim: 0
   GasLim: 0
-  Metal: 0
-  Auto: 0
-  Plane: 0
-  Ship: 0
-  Clothes: 0
-  Fuel: 0
-  Electronics: 0
-  It: 0
   CoalMine: 0
   IronMine: 0
   OilTower: 0
@@ -11314,24 +13229,20 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMineCapacity: 0
-  IronMineCapacity: 0
-  OilTowerCapacity: 0
-  GasTowerCapacity: 0
-  MetalFactoryCapacity: 0
-  AutoFactoryCapacity: 0
-  PlaneFactoryCapacity: 0
-  ShipDockCapacity: 0
-  SewingFactoryCapacity: 0
-  FuelFactoryCapacity: 0
-  ElectronicsFactoryCapacity: 0
-  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
   gasT: {fileID: 739950322}
+  metalT: {fileID: 365983448}
+  fuelT: {fileID: 791614671}
+  autoT: {fileID: 67932043}
+  planeT: {fileID: 708174231}
+  shipT: {fileID: 14107230}
+  sewingT: {fileID: 974267224}
+  electronicsT: {fileID: 477514792}
+  ItT: {fileID: 663862058}
   displaytext: {fileID: 1692063595}
 --- !u!60 &1842695182
 PolygonCollider2D:
@@ -11613,6 +13524,7 @@ RectTransform:
   m_Children:
   - {fileID: 236199366}
   - {fileID: 1597554684}
+  - {fileID: 536453539}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -12109,22 +14021,10 @@ MonoBehaviour:
   iron: 0
   oil: 1
   gas: 0
-  Coal: 0
-  Iron: 0
-  Oil: 0
-  Gas: 0
   CoalLim: 3
   IronLim: 0
   OilLim: 3
   GasLim: 0
-  Metal: 0
-  Auto: 0
-  Plane: 0
-  Ship: 0
-  Clothes: 0
-  Fuel: 0
-  Electronics: 0
-  It: 0
   CoalMine: 1
   IronMine: 0
   OilTower: 0
@@ -12137,24 +14037,20 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMineCapacity: 0
-  IronMineCapacity: 0
-  OilTowerCapacity: 0
-  GasTowerCapacity: 0
-  MetalFactoryCapacity: 0
-  AutoFactoryCapacity: 0
-  PlaneFactoryCapacity: 0
-  ShipDockCapacity: 0
-  SewingFactoryCapacity: 0
-  FuelFactoryCapacity: 0
-  ElectronicsFactoryCapacity: 0
-  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
   gasT: {fileID: 739950322}
+  metalT: {fileID: 365983448}
+  fuelT: {fileID: 791614671}
+  autoT: {fileID: 67932043}
+  planeT: {fileID: 708174231}
+  shipT: {fileID: 14107230}
+  sewingT: {fileID: 974267224}
+  electronicsT: {fileID: 477514792}
+  ItT: {fileID: 663862058}
   displaytext: {fileID: 1692063595}
 --- !u!114 &1868859405
 MonoBehaviour:
@@ -12169,6 +14065,138 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 1
+--- !u!1 &1887216115
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1887216116}
+  - component: {fileID: 1887216119}
+  - component: {fileID: 1887216118}
+  - component: {fileID: 1887216117}
+  m_Layer: 5
+  m_Name: ElectronicsB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1887216116
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1887216115}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 236199366}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 100, y: -81.07222}
+  m_SizeDelta: {x: 46.7445, y: 45.4025}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1887216117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1887216115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1887216118}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1527521981}
+        m_TargetAssemblyTypeName: Economy, Assembly-CSharp
+        m_MethodName: BuildElectronicsFactory
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1887216118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1887216115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1887216119
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1887216115}
+  m_CullTransparentMesh: 1
 --- !u!1 &1887822229
 GameObject:
   m_ObjectHideFlags: 0
@@ -12278,22 +14306,10 @@ MonoBehaviour:
   iron: 0
   oil: 0
   gas: 0
-  Coal: 0
-  Iron: 0
-  Oil: 0
-  Gas: 0
   CoalLim: 4
   IronLim: 0
   OilLim: 0
   GasLim: 0
-  Metal: 0
-  Auto: 0
-  Plane: 0
-  Ship: 0
-  Clothes: 0
-  Fuel: 0
-  Electronics: 0
-  It: 0
   CoalMine: 0
   IronMine: 0
   OilTower: 0
@@ -12306,24 +14322,20 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMineCapacity: 0
-  IronMineCapacity: 0
-  OilTowerCapacity: 0
-  GasTowerCapacity: 0
-  MetalFactoryCapacity: 0
-  AutoFactoryCapacity: 0
-  PlaneFactoryCapacity: 0
-  ShipDockCapacity: 0
-  SewingFactoryCapacity: 0
-  FuelFactoryCapacity: 0
-  ElectronicsFactoryCapacity: 0
-  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
   gasT: {fileID: 739950322}
+  metalT: {fileID: 365983448}
+  fuelT: {fileID: 791614671}
+  autoT: {fileID: 67932043}
+  planeT: {fileID: 708174231}
+  shipT: {fileID: 14107230}
+  sewingT: {fileID: 974267224}
+  electronicsT: {fileID: 477514792}
+  ItT: {fileID: 663862058}
   displaytext: {fileID: 1692063595}
 --- !u!60 &1887822233
 PolygonCollider2D:
@@ -12583,7 +14595,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 7
---- !u!1 &1934379822
+--- !u!1 &1904844100
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12591,45 +14603,53 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1934379823}
-  - component: {fileID: 1934379825}
-  - component: {fileID: 1934379824}
+  - component: {fileID: 1904844101}
+  - component: {fileID: 1904844102}
+  - component: {fileID: 1904844103}
   m_Layer: 5
-  m_Name: Income
+  m_Name: Ship
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &1934379823
+--- !u!224 &1904844101
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1934379822}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_GameObject: {fileID: 1904844100}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1597554684}
+  m_Father: {fileID: 536453539}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -123.4865, y: -3.0801}
-  m_SizeDelta: {x: 347.7588, y: 44.682}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 63.64531, y: -340}
+  m_SizeDelta: {x: 36.9202, y: 26.121}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1934379824
+--- !u!222 &1904844102
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904844100}
+  m_CullTransparentMesh: 1
+--- !u!114 &1904844103
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1934379822}
+  m_GameObject: {fileID: 1904844100}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -12640,83 +14660,101 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Income
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: -1.2144504}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1934379825
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: ab5ec13e41e199642a96cbcab28a6456, type: 3}
+    m_FontSize: 25
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Ship
+--- !u!1 &2041621421
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2041621422}
+  - component: {fileID: 2041621423}
+  - component: {fileID: 2041621424}
+  m_Layer: 5
+  m_Name: Electronics
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2041621422
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2041621421}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 536453539}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 63.64531, y: -420}
+  m_SizeDelta: {x: 36.9202, y: 26.121}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &2041621423
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1934379822}
+  m_GameObject: {fileID: 2041621421}
   m_CullTransparentMesh: 1
+--- !u!114 &2041621424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2041621421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: ab5ec13e41e199642a96cbcab28a6456, type: 3}
+    m_FontSize: 25
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Electronics
+
+'
 --- !u!1 &2071915238
 GameObject:
   m_ObjectHideFlags: 0
@@ -12826,22 +14864,10 @@ MonoBehaviour:
   iron: 0
   oil: 1
   gas: 0
-  Coal: 0
-  Iron: 0
-  Oil: 0
-  Gas: 0
   CoalLim: 2
   IronLim: 0
   OilLim: 3
   GasLim: 0
-  Metal: 0
-  Auto: 0
-  Plane: 0
-  Ship: 0
-  Clothes: 0
-  Fuel: 0
-  Electronics: 0
-  It: 0
   CoalMine: 0
   IronMine: 0
   OilTower: 1
@@ -12854,24 +14880,20 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMineCapacity: 0
-  IronMineCapacity: 0
-  OilTowerCapacity: 0
-  GasTowerCapacity: 0
-  MetalFactoryCapacity: 0
-  AutoFactoryCapacity: 0
-  PlaneFactoryCapacity: 0
-  ShipDockCapacity: 0
-  SewingFactoryCapacity: 0
-  FuelFactoryCapacity: 0
-  ElectronicsFactoryCapacity: 0
-  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
   gasT: {fileID: 739950322}
+  metalT: {fileID: 365983448}
+  fuelT: {fileID: 791614671}
+  autoT: {fileID: 67932043}
+  planeT: {fileID: 708174231}
+  shipT: {fileID: 14107230}
+  sewingT: {fileID: 974267224}
+  electronicsT: {fileID: 477514792}
+  ItT: {fileID: 663862058}
   displaytext: {fileID: 1692063595}
 --- !u!60 &2071915242
 PolygonCollider2D:
@@ -13127,22 +15149,10 @@ MonoBehaviour:
   iron: 0
   oil: 0
   gas: 0
-  Coal: 0
-  Iron: 0
-  Oil: 0
-  Gas: 0
   CoalLim: 0
   IronLim: 0
   OilLim: 0
   GasLim: 0
-  Metal: 0
-  Auto: 0
-  Plane: 0
-  Ship: 0
-  Clothes: 0
-  Fuel: 0
-  Electronics: 0
-  It: 0
   CoalMine: 0
   IronMine: 0
   OilTower: 0
@@ -13155,24 +15165,20 @@ MonoBehaviour:
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
-  CoalMineCapacity: 0
-  IronMineCapacity: 0
-  OilTowerCapacity: 0
-  GasTowerCapacity: 0
-  MetalFactoryCapacity: 0
-  AutoFactoryCapacity: 0
-  PlaneFactoryCapacity: 0
-  ShipDockCapacity: 0
-  SewingFactoryCapacity: 0
-  FuelFactoryCapacity: 0
-  ElectronicsFactoryCapacity: 0
-  ItFactoryCapacity: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
   gasT: {fileID: 739950322}
+  metalT: {fileID: 365983448}
+  fuelT: {fileID: 791614671}
+  autoT: {fileID: 67932043}
+  planeT: {fileID: 708174231}
+  shipT: {fileID: 14107230}
+  sewingT: {fileID: 974267224}
+  electronicsT: {fileID: 477514792}
+  ItT: {fileID: 663862058}
   displaytext: {fileID: 1692063595}
 --- !u!60 &2110831066
 PolygonCollider2D:

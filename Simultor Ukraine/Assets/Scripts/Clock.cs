@@ -78,10 +78,6 @@ public class Clock : MonoBehaviour
                             month = 1;
                         }
                     }
-                    else
-                    {
-                        PickMonth = false;
-                    }
                 }
             }
             SetTimeDateString();
@@ -91,6 +87,7 @@ public class Clock : MonoBehaviour
         else
         {
             timer += Time.deltaTime;
+            PickMonth = false;
         }
     }
 
