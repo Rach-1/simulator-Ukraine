@@ -63,16 +63,17 @@ public class Clock : MonoBehaviour
             {
                 min = 0;
                 hr++;
-                if(hr >= maxHr)
+                PickMonth = false;
+                if (hr >= maxHr)
                 {
                     hr = 0;
                     day++;
-                    if(day >= maxDay)
+                    if (day >= maxDay)
                     {
                         day = 1;
                         month++;
                         PickMonth = true;
-                        if(month > maxMonth)
+                        if (month > maxMonth)
                         {
                             year++;
                             month = 1;

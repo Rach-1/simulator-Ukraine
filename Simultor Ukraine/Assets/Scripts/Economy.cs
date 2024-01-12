@@ -60,6 +60,19 @@ public class Economy : MonoBehaviour
     public int Electronics;
     public int It;
 
+    public int CoalPrice;
+    public int IronPrice;
+    public int OilPrice;
+    public int GasPrice;
+    public int MetalPrice;
+    public int FuelPrice;
+    public int AutoPrice;
+    public int PlanePrice;
+    public int ShipPrice;
+    public int ClothesPrice;
+    public int ElectronicsPrice;
+    public int ItPrice;
+
     //виробнича потужність кожного заводу
     [SerializeField] private int CoalMineCapacity;
     [SerializeField] private int IronMineCapacity;
@@ -94,6 +107,15 @@ public class Economy : MonoBehaviour
     [SerializeField] Text totalIncomeText;
     public long totalPopulation = 0;
 
+    public int SellKoef = 5; //коефіцієнт продажу
+
+    public int CoalImportPrice;
+    public int IronImportPrice;
+    public int OilImportPrice;
+    public int GasImportPrice;
+    public int MetalImportPrice;
+    public int FuelImportPrice;
+    public int ElectronicsImportPrice;
 
     public Clock clock;
 
@@ -188,22 +210,295 @@ public class Economy : MonoBehaviour
             Metal -= AllAutoFactory + AllPlaneFactory + AllShipDock + AllElectronicsFactory;
             Fuel -= AllAutoFactory + AllPlaneFactory + AllShipDock;
             Electronics -= AllAutoFactory + AllPlaneFactory + AllShipDock + AllItFactory;
-
-            coal.text = Coal.ToString();
-            iron.text = Iron.ToString();
-            oil.text = Oil.ToString();
-            gas.text = Gas.ToString();
-            metal.text = metal.ToString();
-            fuel.text = Fuel.ToString();
-            auto.text = Auto.ToString();
-            plane.text = Plane.ToString();
-            ship.text = Ship.ToString();
-            clothes.text = Clothes.ToString();
-            electronics.text = Electronics.ToString();
-            it.text = it.ToString();
+            Import();
+            
+            ResTextUpdate();
             return;
         }
     }
+
+    public void ResTextUpdate()
+    {
+        coal.text = Coal.ToString();
+        iron.text = Iron.ToString();
+        oil.text = Oil.ToString();
+        gas.text = Gas.ToString();
+        metal.text = Metal.ToString();
+        fuel.text = Fuel.ToString();
+        auto.text = Auto.ToString();
+        plane.text = Plane.ToString();
+        ship.text = Ship.ToString();
+        clothes.text = Clothes.ToString();
+        electronics.text = Electronics.ToString();
+        it.text = It.ToString();
+    }
+
+    public void Import()
+    {
+        if (Coal < 0)
+        {
+            if(Money >= Coal * CoalImportPrice)
+            {
+                Money -= Coal * CoalImportPrice;
+                Coal = 0;
+            }
+        }
+        if (Iron < 0)
+        {
+            if (Iron >= Iron * IronImportPrice)
+            {
+                Money -= Iron * IronImportPrice;
+                Iron = 0;
+            }
+        }
+        if (Oil < 0)
+        {
+            if (Money >= Oil * OilImportPrice)
+            {
+                Money -= Oil * OilImportPrice;
+                Oil = 0;
+            }
+        }
+        if (Gas < 0)
+        {
+            if (Money >= Gas * GasImportPrice)
+            {
+                Money -= Gas * GasImportPrice;
+                Gas = 0;
+            }
+        }
+        if (Metal < 0)
+        {
+            if (Money >= Metal * MetalImportPrice)
+            {
+                Money -= Metal * MetalImportPrice;
+                Metal = 0;
+            }
+        }
+        if (Fuel < 0)
+        {
+            if (Money >= Fuel * FuelImportPrice)
+            {
+                Money -= Fuel * FuelImportPrice;
+                Fuel = 0;
+            }
+        }
+        if (Electronics < 0)
+        {
+            if (Money >= Electronics * ElectronicsImportPrice)
+            {
+                Money -= Electronics * ElectronicsImportPrice;
+                Electronics = 0;
+            }
+        }
+    }
+
+    //продажа ресурсів
+    public void SellCoal(bool koef)
+    {
+        if (Coal > 0)
+        {
+            if (koef) //якщо з коефіцієнтом
+            {
+                Coal -= SellKoef;
+                Money += SellKoef * CoalPrice;
+            }
+            else
+            {
+                Money += Coal * CoalPrice;
+                Coal = 0;
+            }
+            ResTextUpdate();
+        }
+    }
+    public void SellIron(bool koef)
+    {
+        if (Iron > 0)
+        {
+            if (koef) //якщо з коефіцієнтом
+            {
+                Iron -= SellKoef;
+                Money += SellKoef * IronPrice;
+            }
+            else
+            {
+                Money += Iron * IronPrice;
+                Iron = 0;
+            }
+            ResTextUpdate();
+        }
+    }
+    public void SellOil(bool koef)
+    {
+        if (Oil > 0)
+        {
+            if (koef) //якщо з коефіцієнтом
+            {
+                Oil -= SellKoef;
+                Money += SellKoef * OilPrice;
+            }
+            else
+            {
+                Money += Oil * OilPrice;
+                Oil = 0;
+            }
+            ResTextUpdate();
+        }
+    }
+    public void SellGas(bool koef)
+    {
+        if (Gas > 0)
+        {
+            if (koef) //якщо з коефіцієнтом
+            {
+                Gas -= SellKoef;
+                Money += SellKoef * GasPrice;
+            }
+            else
+            {
+                Money += Gas * GasPrice;
+                Gas = 0;
+            }
+            ResTextUpdate();
+        }
+    }
+    public void SellMetal(bool koef)
+    {
+        if (Metal > 0)
+        {
+            if (koef) //якщо з коефіцієнтом
+            {
+                Metal -= SellKoef;
+                Money += SellKoef * MetalPrice;
+            }
+            else
+            {
+                Money += Metal * MetalPrice;
+                Metal = 0;
+            }
+            ResTextUpdate();
+        }
+    }
+    public void SellFuel(bool koef)
+    {
+        if (Fuel > 0)
+        {
+            if (koef) //якщо з коефіцієнтом
+            {
+                Fuel -= SellKoef;
+                Money += SellKoef * FuelPrice;
+            }
+            else
+            {
+                Money += Fuel * FuelPrice;
+                Fuel = 0;
+            }
+            ResTextUpdate();
+        }
+    }
+    public void SellAuto(bool koef)
+    {
+        if (Auto > 0)
+        {
+            if (koef) //якщо з коефіцієнтом
+            {
+                Auto -= SellKoef;
+                Money += SellKoef * AutoPrice;
+            }
+            else
+            {
+                Money += Auto * AutoPrice;
+                Auto = 0;
+            }
+            ResTextUpdate();
+        }
+    }
+    public void SellPlane(bool koef)
+    {
+        if (Plane > 0)
+        {
+            if (koef) //якщо з коефіцієнтом
+            {
+                Plane -= SellKoef;
+                Money += SellKoef * PlanePrice;
+            }
+            else
+            {
+                Money += Plane * PlanePrice;
+                Plane = 0;
+            }
+            ResTextUpdate();
+        }
+    }
+    public void SellShip(bool koef)
+    {
+        if (Ship > 0)
+        {
+            if (koef) //якщо з коефіцієнтом
+            {
+                Ship -= SellKoef;
+                Money += SellKoef * ShipPrice;
+            }
+            else
+            {
+                Money += Ship * ShipPrice;
+                Ship = 0;
+            }
+            ResTextUpdate();
+        }
+    }
+    public void SellClothes(bool koef)
+    {
+        if (Clothes > 0)
+        {
+            if (koef) //якщо з коефіцієнтом
+            {
+                Clothes -= SellKoef;
+                Money += SellKoef * ClothesPrice;
+            }
+            else
+            {
+                Money += Clothes * ClothesPrice;
+                Clothes = 0;
+            }
+            ResTextUpdate();
+        }
+    }
+    public void SellElectronics(bool koef)
+    {
+        if (Electronics > 0)
+        {
+            if (koef) //якщо з коефіцієнтом
+            {
+                Electronics -= SellKoef;
+                Money += SellKoef * ElectronicsPrice;
+            }
+            else
+            {
+                Money += Electronics * ElectronicsPrice;
+                Electronics = 0;
+            }
+            ResTextUpdate();
+        }
+    }
+    public void SellIt(bool koef)
+    {
+        if (It > 0)
+        {
+            if (koef) //якщо з коефіцієнтом
+            {
+                It -= SellKoef;
+                Money += SellKoef * ItPrice;
+            }
+            else
+            {
+                Money += It * ItPrice;
+                It = 0;
+            }
+            ResTextUpdate();
+        }
+    }
+
     public void BuildCoalMine()
     {
         if (Prov.coal)
