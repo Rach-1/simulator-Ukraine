@@ -243,9 +243,9 @@ MonoBehaviour:
   AutoFactory: 0
   PlaneFactory: 0
   ShipDock: 0
-  SewingFactory: 0
+  SewingFactory: 1
   FuelFactory: 0
-  ElectronicsFactory: 0
+  ElectronicsFactory: 1
   ItFactory: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
@@ -1491,12 +1491,12 @@ MonoBehaviour:
   OilTower: 0
   GasTower: 0
   MetalFactory: 0
-  AutoFactory: 0
+  AutoFactory: 1
   PlaneFactory: 0
   ShipDock: 0
   SewingFactory: 0
-  FuelFactory: 0
-  ElectronicsFactory: 0
+  FuelFactory: 1
+  ElectronicsFactory: 1
   ItFactory: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
@@ -5369,9 +5369,9 @@ MonoBehaviour:
   AutoFactory: 0
   PlaneFactory: 0
   ShipDock: 0
-  SewingFactory: 0
+  SewingFactory: 1
   FuelFactory: 0
-  ElectronicsFactory: 0
+  ElectronicsFactory: 1
   ItFactory: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
@@ -7208,7 +7208,7 @@ MonoBehaviour:
   IronMine: 0
   OilTower: 1
   GasTower: 0
-  MetalFactory: 0
+  MetalFactory: 1
   AutoFactory: 0
   PlaneFactory: 0
   ShipDock: 0
@@ -7731,10 +7731,10 @@ MonoBehaviour:
   OilTower: 0
   GasTower: 0
   MetalFactory: 0
-  AutoFactory: 0
+  AutoFactory: 1
   PlaneFactory: 0
   ShipDock: 0
-  SewingFactory: 0
+  SewingFactory: 2
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
@@ -8738,8 +8738,8 @@ MonoBehaviour:
   AutoFactory: 0
   PlaneFactory: 0
   ShipDock: 0
-  SewingFactory: 0
-  FuelFactory: 0
+  SewingFactory: 1
+  FuelFactory: 1
   ElectronicsFactory: 0
   ItFactory: 0
   name: {fileID: 441604529}
@@ -10050,11 +10050,11 @@ MonoBehaviour:
   OilTower: 2
   GasTower: 3
   MetalFactory: 0
-  AutoFactory: 0
+  AutoFactory: 2
   PlaneFactory: 0
   ShipDock: 0
-  SewingFactory: 0
-  FuelFactory: 0
+  SewingFactory: 2
+  FuelFactory: 1
   ElectronicsFactory: 0
   ItFactory: 0
   name: {fileID: 441604529}
@@ -10542,7 +10542,7 @@ MonoBehaviour:
   AutoFactory: 0
   PlaneFactory: 0
   ShipDock: 0
-  SewingFactory: 0
+  SewingFactory: 1
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
@@ -11478,7 +11478,7 @@ MonoBehaviour:
   AutoFactory: 0
   PlaneFactory: 0
   ShipDock: 0
-  SewingFactory: 0
+  SewingFactory: 1
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
@@ -15417,23 +15417,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cdfd1fd3e997ab43bcfd789fc8bf07a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  taxes: 0
   prov: {fileID: 0}
   Prov: {fileID: 0}
-  Taxes: 0
-  Money: 10000000
+  Taxes: 10
+  Money: 1000
   Income: 0
-  CoalMinePrice: 0
-  IronMinePrice: 0
-  OilTowerPrice: 0
-  GasTowerPrice: 0
-  MetalFactoryPrice: 0
-  AutoFactoryPrice: 0
-  PlaneFactoryPrice: 0
-  ShipDockPrice: 0
-  SewingFactoryPrice: 0
-  FuelFactoryPrice: 0
-  ElectronicsFactoryPrice: 0
-  ItFactoryPrice: 0
+  CoalMinePrice: 100
+  IronMinePrice: 100
+  OilTowerPrice: 150
+  GasTowerPrice: 150
+  MetalFactoryPrice: 250
+  AutoFactoryPrice: 500
+  PlaneFactoryPrice: 800
+  ShipDockPrice: 1000
+  SewingFactoryPrice: 200
+  FuelFactoryPrice: 300
+  ElectronicsFactoryPrice: 350
+  ItFactoryPrice: 600
   AllCoalMine: 0
   AllIronMine: 0
   AllOilTower: 0
@@ -15446,30 +15447,30 @@ MonoBehaviour:
   AllFuelFactory: 0
   AllElectronicsFactory: 0
   AllItFactory: 0
-  Coal: 0
-  Iron: 0
-  Oil: 0
-  Gas: 0
-  Metal: 0
-  Fuel: 0
-  Auto: 0
-  Plane: 0
-  Ship: 0
-  Clothes: 0
-  Electronics: 0
+  Coal: 50
+  Iron: 50
+  Oil: 30
+  Gas: 30
+  Metal: 20
+  Fuel: 20
+  Auto: 10
+  Plane: 10
+  Ship: 10
+  Clothes: 10
+  Electronics: 20
   It: 0
-  CoalPrice: 0
-  IronPrice: 0
-  OilPrice: 0
-  GasPrice: 0
-  MetalPrice: 0
-  FuelPrice: 0
-  AutoPrice: 0
-  PlanePrice: 0
-  ShipPrice: 0
-  ClothesPrice: 0
-  ElectronicsPrice: 0
-  ItPrice: 0
+  CoalPrice: 3
+  IronPrice: 3
+  OilPrice: 5
+  GasPrice: 40
+  MetalPrice: 15
+  FuelPrice: 20
+  AutoPrice: 65
+  PlanePrice: 150
+  ShipPrice: 200
+  ClothesPrice: 30
+  ElectronicsPrice: 70
+  ItPrice: 120
   CoalMineCapacity: 4
   IronMineCapacity: 4
   OilTowerCapacity: 4
@@ -15496,10 +15497,17 @@ MonoBehaviour:
   it: {fileID: 541711912}
   provinceTag: Ukr
   totalPopulationText: {fileID: 555413646}
-  totalGdpText: {fileID: 0}
+  moneyText: {fileID: 1892194189}
   totalIncomeText: {fileID: 0}
   totalPopulation: 0
   SellKoef: 5
+  CoalImportPrice: 5
+  IronImportPrice: 5
+  OilImportPrice: 8
+  GasImportPrice: 45
+  MetalImportPrice: 30
+  FuelImportPrice: 35
+  ElectronicsImportPrice: 90
   clock: {fileID: 569217447}
 --- !u!4 &1527521982
 Transform:
@@ -15758,6 +15766,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 555413644}
+  - {fileID: 1892194188}
   - {fileID: 1076302519}
   - {fileID: 1182001004}
   - {fileID: 1092383488}
@@ -16006,12 +16015,12 @@ MonoBehaviour:
   OilTower: 0
   GasTower: 0
   MetalFactory: 0
-  AutoFactory: 0
+  AutoFactory: 1
   PlaneFactory: 0
   ShipDock: 0
-  SewingFactory: 0
+  SewingFactory: 1
   FuelFactory: 0
-  ElectronicsFactory: 0
+  ElectronicsFactory: 1
   ItFactory: 0
   name: {fileID: 441604529}
   population: {fileID: 87192891}
@@ -17345,7 +17354,7 @@ MonoBehaviour:
   AutoFactory: 0
   PlaneFactory: 0
   ShipDock: 0
-  SewingFactory: 0
+  SewingFactory: 1
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
@@ -18646,10 +18655,10 @@ MonoBehaviour:
   OilTower: 0
   GasTower: 0
   MetalFactory: 0
-  AutoFactory: 0
+  AutoFactory: 1
   PlaneFactory: 0
   ShipDock: 0
-  SewingFactory: 0
+  SewingFactory: 2
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0
@@ -18926,6 +18935,85 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 7
+--- !u!1 &1892194187
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1892194188}
+  - component: {fileID: 1892194190}
+  - component: {fileID: 1892194189}
+  m_Layer: 5
+  m_Name: Money
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1892194188
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1892194187}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1597554684}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 470.2, y: -35.484}
+  m_SizeDelta: {x: 136.5121, y: 26.121}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1892194189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1892194187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: ab5ec13e41e199642a96cbcab28a6456, type: 3}
+    m_FontSize: 25
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Money
+--- !u!222 &1892194190
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1892194187}
+  m_CullTransparentMesh: 1
 --- !u!1 &1904844100
 GameObject:
   m_ObjectHideFlags: 0
@@ -19417,7 +19505,7 @@ MonoBehaviour:
   AutoFactory: 0
   PlaneFactory: 0
   ShipDock: 0
-  SewingFactory: 0
+  SewingFactory: 1
   FuelFactory: 0
   ElectronicsFactory: 0
   ItFactory: 0

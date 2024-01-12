@@ -56,14 +56,14 @@ public class Clock : MonoBehaviour
 
     void Update()
     {
-        if(timer >= SecPerMin)
+        PickMonth = false;
+        if (timer >= SecPerMin)
         {
             min += 60;
             if(min >= maxMin)
             {
                 min = 0;
                 hr++;
-                PickMonth = false;
                 if (hr >= maxHr)
                 {
                     hr = 0;

@@ -6,12 +6,12 @@ using UnityEngine.UI;
 public class Economy : MonoBehaviour
 {
     private long peoples;
-    private float taxes;
+    public float taxes;
     public GameObject prov;
     public Province Prov;
 
     public float Taxes;
-    public long Money;
+    public int Money;
     public long Income;
 
     //вартість подудови 
@@ -103,7 +103,7 @@ public class Economy : MonoBehaviour
     public string provinceTag = "Ukr"; 
     private Province[] provinces;
     [SerializeField] Text totalPopulationText;
-    [SerializeField] Text totalGdpText;
+    [SerializeField] Text moneyText;
     [SerializeField] Text totalIncomeText;
     public long totalPopulation = 0;
 
@@ -128,6 +128,7 @@ public class Economy : MonoBehaviour
             totalPopulation += province.Population;
         }
         totalPopulationText.text = (totalPopulation / 1000000.0).ToString("0.000") + " млн";
+        ResTextUpdate();
         //float totalIncome = totalGdp * incomeCoefficient;
         //totalIncomeText.text = (totalIncome / 1000000.0).ToString("0.000") + " млн";
     }
@@ -137,8 +138,6 @@ public class Economy : MonoBehaviour
     {
         ProvLenght();//потім перенести в захоплення провінцій і тд
         FactotyProd();
-        Money += (long)taxes;
-        taxes = (peoples * (Taxes / 100))/365;
     }
 
     public void ProvLenght()
@@ -211,7 +210,10 @@ public class Economy : MonoBehaviour
             Fuel -= AllAutoFactory + AllPlaneFactory + AllShipDock;
             Electronics -= AllAutoFactory + AllPlaneFactory + AllShipDock + AllItFactory;
             Import();
-            
+
+            taxes = (totalPopulation * (Taxes / 40000)) / 12;
+            Money += (int)taxes;
+
             ResTextUpdate();
             return;
         }
@@ -231,6 +233,8 @@ public class Economy : MonoBehaviour
         clothes.text = Clothes.ToString();
         electronics.text = Electronics.ToString();
         it.text = It.ToString();
+
+        moneyText.text = Money.ToString();
     }
 
     public void Import()
@@ -239,7 +243,7 @@ public class Economy : MonoBehaviour
         {
             if(Money >= Coal * CoalImportPrice)
             {
-                Money -= Coal * CoalImportPrice;
+                Money += Coal * CoalImportPrice;
                 Coal = 0;
             }
         }
@@ -247,7 +251,7 @@ public class Economy : MonoBehaviour
         {
             if (Iron >= Iron * IronImportPrice)
             {
-                Money -= Iron * IronImportPrice;
+                Money += Iron * IronImportPrice;
                 Iron = 0;
             }
         }
@@ -255,7 +259,7 @@ public class Economy : MonoBehaviour
         {
             if (Money >= Oil * OilImportPrice)
             {
-                Money -= Oil * OilImportPrice;
+                Money += Oil * OilImportPrice;
                 Oil = 0;
             }
         }
@@ -263,7 +267,7 @@ public class Economy : MonoBehaviour
         {
             if (Money >= Gas * GasImportPrice)
             {
-                Money -= Gas * GasImportPrice;
+                Money += Gas * GasImportPrice;
                 Gas = 0;
             }
         }
@@ -271,7 +275,7 @@ public class Economy : MonoBehaviour
         {
             if (Money >= Metal * MetalImportPrice)
             {
-                Money -= Metal * MetalImportPrice;
+                Money += Metal * MetalImportPrice;
                 Metal = 0;
             }
         }
@@ -279,7 +283,7 @@ public class Economy : MonoBehaviour
         {
             if (Money >= Fuel * FuelImportPrice)
             {
-                Money -= Fuel * FuelImportPrice;
+                Money += Fuel * FuelImportPrice;
                 Fuel = 0;
             }
         }
@@ -287,7 +291,7 @@ public class Economy : MonoBehaviour
         {
             if (Money >= Electronics * ElectronicsImportPrice)
             {
-                Money -= Electronics * ElectronicsImportPrice;
+                Money += Electronics * ElectronicsImportPrice;
                 Electronics = 0;
             }
         }
