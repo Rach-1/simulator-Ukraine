@@ -73,6 +73,21 @@ public class Economy : MonoBehaviour
     public int ElectronicsPrice;
     public int ItPrice;
 
+    public bool CoalAutoSale = false;
+    public bool IronAutoSale = false;
+    public bool OilAutoSale = false;
+    public bool GasAutoSale = false;
+    public bool MetalAutoSale = true;
+    public bool FuelAutoSale = true;
+    public bool AutoAutoSale = true;
+    public bool PlaneAutoSale = true;
+    public bool ShipAutoSale = true;
+    public bool ClothesAutoSale = true;
+    public bool ElectronicsAutoSale = true;
+    public bool ItAutoSale = true;
+
+    [SerializeField] private int minSave = 50;
+
     //виробнича потужність кожного заводу
     [SerializeField] private int CoalMineCapacity;
     [SerializeField] private int IronMineCapacity;
@@ -214,8 +229,109 @@ public class Economy : MonoBehaviour
             taxes = (totalPopulation * (Taxes / 40000)) / 12;
             Money += (int)taxes;
 
+            AutoSale();
             ResTextUpdate();
             return;
+        }
+    }
+
+    public void AutoSale()
+    {
+        if(CoalAutoSale)
+        {
+            if(Coal >= minSave)
+            {
+                Money += (Coal - minSave) * CoalPrice; 
+                Coal = minSave;
+            }
+        }
+        if(IronAutoSale)
+        {
+            if (Iron >= minSave)
+            {
+                Money += (Iron - minSave) * IronPrice;
+                Iron = minSave;
+            }
+        }
+        if (OilAutoSale)
+        {
+            if (Oil >= minSave)
+            {
+                Money += (Oil - minSave) * OilPrice;
+                Oil = minSave;
+            }
+        }
+        if (GasAutoSale)
+        {
+            if (Gas >= minSave)
+            {
+                Money += (Gas - minSave) * GasPrice;
+                Gas = minSave;
+            }
+        }
+        if (MetalAutoSale)
+        {
+            if (Metal >= minSave)
+            {
+                Money += (Metal - minSave) * MetalPrice;
+                Metal = minSave;
+            }
+        }
+        if (FuelAutoSale)
+        {
+            if (Fuel >= minSave)
+            {
+                Money += (Fuel - minSave) * FuelPrice;
+                Fuel = minSave;
+            }
+        }
+        if (AutoAutoSale)
+        {
+            if (Auto >= minSave)
+            {
+                Money += (Auto - minSave) * AutoPrice;
+                Auto = minSave;
+            }
+        }
+        if (PlaneAutoSale)
+        {
+            if (Plane >= minSave)
+            {
+                Money += (Plane - minSave) * PlanePrice;
+                Plane = minSave;
+            }
+        }
+        if (ShipAutoSale)
+        {
+            if (Ship >= minSave)
+            {
+                Money += (Ship - minSave) * ShipPrice;
+                Ship = minSave;
+            }
+        }
+        if (ClothesAutoSale)
+        {
+            if (Clothes >= minSave)
+            {
+                Money += (Clothes - minSave) * ClothesPrice;
+                Clothes = minSave;
+            }
+        }
+        if (ElectronicsAutoSale)
+        {
+            if (Electronics >= minSave)
+            {
+                Money += (Electronics - minSave) * ElectronicsPrice;
+                Electronics = minSave;
+            }
+        }
+        if (ItAutoSale)
+        {
+            if (It >= minSave)
+            {
+                Money += (It - minSave) * ItPrice;
+                It = minSave;
+            }
         }
     }
 
@@ -547,70 +663,197 @@ public class Economy : MonoBehaviour
     {
         if(Money >= MetalFactoryPrice)
         {
-            Prov.AddMetalFactory();
-            Money -= MetalFactoryPrice;
+            Prov.AddMetalFactory(MetalFactoryPrice);
         }
     }
     public void BuildAutoFactory()
     {
         if (Money >= AutoFactoryPrice)
         {
-            Prov.AddAutoFactory();
-            Money -= AutoFactoryPrice;
+            Prov.AddAutoFactory(AutoFactoryPrice);
         }
     }
     public void BuildPlaneFactory()
     {
         if (Money >= PlaneFactoryPrice)
         {
-            Prov.AddPlaneFactory();
-            Money -= PlaneFactoryPrice;
+            Prov.AddPlaneFactory(PlaneFactoryPrice);
         }
     }
     public void BuildShipDock()
     {
         if (Money >= ShipDockPrice)
         {
-            Prov.AddShipDock();
-            Money -= ShipDockPrice;
+            Prov.AddShipDock(ShipDockPrice);
         }
     }
     public void BuildSewingFactory()
     {
         if (Money >= SewingFactoryPrice)
         {
-            Prov.AddSewingFactory();
-            Money -= SewingFactoryPrice;
+            Prov.AddSewingFactory(SewingFactoryPrice);
         }
     }
     public void BuildFuelFactory()
     {
         if (Money >= FuelFactoryPrice)
         {
-            Prov.AddFuelFactory();
-            Money -= FuelFactoryPrice;
+            Prov.AddFuelFactory(FuelFactoryPrice);
         }
     }
     public void BuildElectronicsFactory()
     {
         if (Money >= ElectronicsFactoryPrice)
         {
-            Prov.AddElectronicsFactory();
-            Money -= ElectronicsFactoryPrice;
+            Prov.AddElectronicsFactory(ElectronicsFactoryPrice);
         }
     }
     public void BuildItFactory()
     {
         if (Money >= ItFactoryPrice)
         {
-            Prov.AddItFactory();
-            Money -= ItFactoryPrice;
+            Prov.AddItFactory(ItFactoryPrice);
         }
     }
     public void BuySomething(int price)
     {
         Money -= price;
         AllFactories();
+        ResTextUpdate();
+    }
+    
+    //функції автопродажу для тумблера
+    public void AutoSellCoal()
+    {
+        if(CoalAutoSale)
+        {
+            CoalAutoSale = false;
+        }
+        else
+        {
+            CoalAutoSale = true;
+        }
+    }
+    public void AutoSellIron()
+    {
+        if (IronAutoSale)
+        {
+            IronAutoSale = false;
+        }
+        else
+        {
+            IronAutoSale = true;
+        }
+    }
+    public void AutoSellOil()
+    {
+        if (OilAutoSale)
+        {
+            OilAutoSale = false;
+        }
+        else
+        {
+            OilAutoSale = true;
+        }
+    }
+    public void AutoSellGas()
+    {
+        if (GasAutoSale)
+        {
+            GasAutoSale = false;
+        }
+        else
+        {
+            GasAutoSale = true;
+        }
+    }
+    public void AutoSellMetal()
+    {
+        if (MetalAutoSale)
+        {
+            MetalAutoSale = false;
+        }
+        else
+        {
+            MetalAutoSale = true;
+        }
+    }
+    public void AutoSellFuel()
+    {
+        if (FuelAutoSale)
+        {
+            FuelAutoSale = false;
+        }
+        else
+        {
+            FuelAutoSale = true;
+        }
+    }
+    public void AutoSellAuto()
+    {
+        if (AutoAutoSale)
+        {
+            AutoAutoSale = false;
+        }
+        else
+        {
+            AutoAutoSale = true;
+        }
+    }
+    public void AutoSellPlane()
+    {
+        if (PlaneAutoSale)
+        {
+            PlaneAutoSale = false;
+        }
+        else
+        {
+            PlaneAutoSale = true;
+        }
+    }
+    public void AutoSellShip()
+    {
+        if (ShipAutoSale)
+        {
+            ShipAutoSale = false;
+        }
+        else
+        {
+            ShipAutoSale = true;
+        }
+    }
+    public void AutoSellClothes()
+    {
+        if (ClothesAutoSale)
+        {
+            ClothesAutoSale = false;
+        }
+        else
+        {
+            ClothesAutoSale = true;
+        }
+    }
+    public void AutoSellElectronics()
+    {
+        if (ElectronicsAutoSale)
+        {
+            ElectronicsAutoSale = false;
+        }
+        else
+        {
+            ElectronicsAutoSale = true;
+        }
+    }
+    public void AutoSellIt()
+    {
+        if (ItAutoSale)
+        {
+            ItAutoSale = false;
+        }
+        else
+        {
+            ItAutoSale = true;
+        }
     }
 }
  

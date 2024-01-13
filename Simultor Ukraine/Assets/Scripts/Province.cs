@@ -152,44 +152,52 @@ public class Province : MonoBehaviour
             OpenMenu();
         }
     }
-    public void AddMetalFactory()
+    public void AddMetalFactory(int metalFactoryPrice)
     {
         MetalFactory++;
+        economy.BuySomething(metalFactoryPrice);
         OpenMenu();
     }
-    public void AddAutoFactory()
+    public void AddAutoFactory(int autoFactoryPrice)
     {
         AutoFactory++;
+        economy.BuySomething(autoFactoryPrice);
         OpenMenu();
     }
-    public void AddPlaneFactory()
+    public void AddPlaneFactory(int planeFactoryPrice)
     {
         PlaneFactory++;
+        economy.BuySomething(planeFactoryPrice);
         OpenMenu();
     }
-    public void AddShipDock()
+    public void AddShipDock(int shipFactoryPrice)
     {
         ShipDock++;
+        economy.BuySomething(shipFactoryPrice);
         OpenMenu();
     }
-    public void AddSewingFactory()
+    public void AddSewingFactory(int sewingFactoryPrice)
     {
         SewingFactory++;
+        economy.BuySomething(sewingFactoryPrice);
         OpenMenu();
     }
-    public void AddFuelFactory()
+    public void AddFuelFactory(int fuelFactoryPrice)
     {
         FuelFactory++;
+        economy.BuySomething(fuelFactoryPrice);
         OpenMenu();
     }
-    public void AddElectronicsFactory()
+    public void AddElectronicsFactory(int electronicsFactoryPrice)
     {
         ElectronicsFactory++;
+        economy.BuySomething(electronicsFactoryPrice);
         OpenMenu();
     }
-    public void AddItFactory()
+    public void AddItFactory(int itFactoryPrice)
     {
         ItFactory++;
+        economy.BuySomething(itFactoryPrice);
         OpenMenu();
     }
 }
