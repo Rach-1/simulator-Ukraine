@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Ukr
   - Pol
+  - Mol
+  - Pmr
+  - Bel
   layers:
   - Default
   - TransparentFX

@@ -13,6 +13,8 @@ public class Economy : MonoBehaviour
     public float Taxes;
     public int Money;
     public long Income;
+    public float Corruption;
+    public int CorruptionEffect;
 
     //вартість подудови 
     public int CoalMinePrice;
@@ -120,6 +122,7 @@ public class Economy : MonoBehaviour
     [SerializeField] Text totalPopulationText;
     [SerializeField] Text moneyText;
     [SerializeField] Text totalIncomeText;
+    [SerializeField] Text corruptionText;
     public long totalPopulation = 0;
 
     public int SellKoef = 5; //коефіцієнт продажу
@@ -226,7 +229,7 @@ public class Economy : MonoBehaviour
             Electronics -= AllAutoFactory + AllPlaneFactory + AllShipDock + AllItFactory;
             Import();
 
-            taxes = (totalPopulation * (Taxes / 40000)) / 12;
+            taxes = (totalPopulation * ((Taxes / 100)) / 12) / (Corruption / CorruptionEffect);
             Money += (int)taxes;
 
             AutoSale();
@@ -235,6 +238,13 @@ public class Economy : MonoBehaviour
         }
     }
 
+    public void CorruptionCgange(float change, int price)
+    {
+        Corruption -= change;
+        Money -= price;
+        ResTextUpdate();
+    }
+    //автопродаж ресурсів
     public void AutoSale()
     {
         if(CoalAutoSale)
@@ -351,6 +361,7 @@ public class Economy : MonoBehaviour
         it.text = It.ToString();
 
         moneyText.text = Money.ToString();
+        corruptionText.text = Corruption.ToString();
     }
 
     public void Import()
@@ -359,7 +370,7 @@ public class Economy : MonoBehaviour
         {
             if(Money >= Coal * CoalImportPrice)
             {
-                Money += Coal * CoalImportPrice;
+                Money += (Coal * CoalImportPrice) * ((int)Corruption / CorruptionEffect);
                 Coal = 0;
             }
         }
@@ -367,7 +378,7 @@ public class Economy : MonoBehaviour
         {
             if (Iron >= Iron * IronImportPrice)
             {
-                Money += Iron * IronImportPrice;
+                Money += (Iron * IronImportPrice) * ((int)Corruption / CorruptionEffect);
                 Iron = 0;
             }
         }
@@ -375,7 +386,7 @@ public class Economy : MonoBehaviour
         {
             if (Money >= Oil * OilImportPrice)
             {
-                Money += Oil * OilImportPrice;
+                Money += (Oil * OilImportPrice) * ((int)Corruption / CorruptionEffect);
                 Oil = 0;
             }
         }
@@ -383,7 +394,7 @@ public class Economy : MonoBehaviour
         {
             if (Money >= Gas * GasImportPrice)
             {
-                Money += Gas * GasImportPrice;
+                Money += (Gas * GasImportPrice) * ((int)Corruption / CorruptionEffect);
                 Gas = 0;
             }
         }
@@ -391,7 +402,7 @@ public class Economy : MonoBehaviour
         {
             if (Money >= Metal * MetalImportPrice)
             {
-                Money += Metal * MetalImportPrice;
+                Money += (Metal * MetalImportPrice) * ((int)Corruption / CorruptionEffect);
                 Metal = 0;
             }
         }
@@ -399,7 +410,7 @@ public class Economy : MonoBehaviour
         {
             if (Money >= Fuel * FuelImportPrice)
             {
-                Money += Fuel * FuelImportPrice;
+                Money += (Fuel * FuelImportPrice) * ((int)Corruption / CorruptionEffect);
                 Fuel = 0;
             }
         }
@@ -407,7 +418,7 @@ public class Economy : MonoBehaviour
         {
             if (Money >= Electronics * ElectronicsImportPrice)
             {
-                Money += Electronics * ElectronicsImportPrice;
+                Money += (Electronics * ElectronicsImportPrice) * ((int)Corruption / CorruptionEffect);
                 Electronics = 0;
             }
         }
@@ -717,7 +728,7 @@ public class Economy : MonoBehaviour
     }
     public void BuySomething(int price)
     {
-        Money -= price;
+        Money -= price * ((int)Corruption / CorruptionEffect);
         AllFactories();
         ResTextUpdate();
     }

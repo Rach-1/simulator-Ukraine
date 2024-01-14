@@ -9,8 +9,11 @@ public class ColorMapWorld : MonoBehaviour
     {
         PlayerPrefs.GetInt("ID", 0);
         // Додавання різних тегів і колорів
-        tagColors.Add("Pol", Color.green);
+        tagColors.Add("Pol", Color.gray);
         tagColors.Add("Ukr", Color.blue);
+        tagColors.Add("Mol", Color.yellow);
+        tagColors.Add("Pmr", Color.red);
+        tagColors.Add("Bel", Color.green);
 
         // Присвоєння кольору кожному об'єкту знайденому за тегом
         foreach (var kvp in tagColors)
