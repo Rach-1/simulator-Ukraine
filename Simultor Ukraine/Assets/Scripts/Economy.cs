@@ -5,14 +5,15 @@ using UnityEngine.UI;
 
 public class Economy : MonoBehaviour
 {
-    private long peoples;
     public float taxes;
     public GameObject prov;
     public Province Prov;
+    public Population population;
 
     public float Taxes;
     public int Money;
     public long Income;
+    public long Outcome;
     public float Corruption;
     public int CorruptionEffect;
 
@@ -119,11 +120,11 @@ public class Economy : MonoBehaviour
 
     public string provinceTag = "Ukr"; 
     private Province[] provinces;
-    [SerializeField] Text totalPopulationText;
     [SerializeField] Text moneyText;
     [SerializeField] Text totalIncomeText;
     [SerializeField] Text corruptionText;
-    public long totalPopulation = 0;
+    [SerializeField] Text incomeText;
+    [SerializeField] Text outcomeText;
 
     public int SellKoef = 5; //коефіцієнт продажу
 
@@ -141,11 +142,6 @@ public class Economy : MonoBehaviour
     {
         ProvLenght();
         AllFactories();
-        foreach (Province province in provinces)
-        {
-            totalPopulation += province.Population;
-        }
-        totalPopulationText.text = (totalPopulation / 1000000.0).ToString("0.000") + " млн";
         ResTextUpdate();
         //float totalIncome = totalGdp * incomeCoefficient;
         //totalIncomeText.text = (totalIncome / 1000000.0).ToString("0.000") + " млн";
@@ -229,11 +225,19 @@ public class Economy : MonoBehaviour
             Electronics -= AllAutoFactory + AllPlaneFactory + AllShipDock + AllItFactory;
             Import();
 
-            taxes = (totalPopulation * ((Taxes / 100)) / 12) / (Corruption / CorruptionEffect);
-            Money += (int)taxes;
+            taxes = (population.TotalPopulation * ((Taxes / 100)) / 12) / (Corruption / CorruptionEffect);
+            Income += (int)taxes;
 
             AutoSale();
+
+            Money += (int)Income;
+            Money += (int)Outcome;
+
             ResTextUpdate();
+
+            Income = 0;
+            Outcome = 0;
+
             return;
         }
     }
@@ -241,7 +245,7 @@ public class Economy : MonoBehaviour
     public void CorruptionCgange(float change, int price)
     {
         Corruption -= change;
-        Money -= price;
+        Outcome -= price;
         ResTextUpdate();
     }
     //автопродаж ресурсів
@@ -251,7 +255,7 @@ public class Economy : MonoBehaviour
         {
             if(Coal >= minSave)
             {
-                Money += (Coal - minSave) * CoalPrice; 
+                Income += (Coal - minSave) * CoalPrice;
                 Coal = minSave;
             }
         }
@@ -259,7 +263,7 @@ public class Economy : MonoBehaviour
         {
             if (Iron >= minSave)
             {
-                Money += (Iron - minSave) * IronPrice;
+                Income += (Iron - minSave) * IronPrice;
                 Iron = minSave;
             }
         }
@@ -267,7 +271,7 @@ public class Economy : MonoBehaviour
         {
             if (Oil >= minSave)
             {
-                Money += (Oil - minSave) * OilPrice;
+                Income += (Oil - minSave) * OilPrice;
                 Oil = minSave;
             }
         }
@@ -275,7 +279,7 @@ public class Economy : MonoBehaviour
         {
             if (Gas >= minSave)
             {
-                Money += (Gas - minSave) * GasPrice;
+                Income += (Gas - minSave) * GasPrice;
                 Gas = minSave;
             }
         }
@@ -283,7 +287,7 @@ public class Economy : MonoBehaviour
         {
             if (Metal >= minSave)
             {
-                Money += (Metal - minSave) * MetalPrice;
+                Income += (Metal - minSave) * MetalPrice;
                 Metal = minSave;
             }
         }
@@ -291,7 +295,7 @@ public class Economy : MonoBehaviour
         {
             if (Fuel >= minSave)
             {
-                Money += (Fuel - minSave) * FuelPrice;
+                Income += (Fuel - minSave) * FuelPrice;
                 Fuel = minSave;
             }
         }
@@ -299,7 +303,7 @@ public class Economy : MonoBehaviour
         {
             if (Auto >= minSave)
             {
-                Money += (Auto - minSave) * AutoPrice;
+                Income += (Auto - minSave) * AutoPrice;
                 Auto = minSave;
             }
         }
@@ -307,7 +311,7 @@ public class Economy : MonoBehaviour
         {
             if (Plane >= minSave)
             {
-                Money += (Plane - minSave) * PlanePrice;
+                Income += (Plane - minSave) * PlanePrice;
                 Plane = minSave;
             }
         }
@@ -315,7 +319,7 @@ public class Economy : MonoBehaviour
         {
             if (Ship >= minSave)
             {
-                Money += (Ship - minSave) * ShipPrice;
+                Income += (Ship - minSave) * ShipPrice;
                 Ship = minSave;
             }
         }
@@ -323,7 +327,7 @@ public class Economy : MonoBehaviour
         {
             if (Clothes >= minSave)
             {
-                Money += (Clothes - minSave) * ClothesPrice;
+                Income += (Clothes - minSave) * ClothesPrice;
                 Clothes = minSave;
             }
         }
@@ -331,7 +335,7 @@ public class Economy : MonoBehaviour
         {
             if (Electronics >= minSave)
             {
-                Money += (Electronics - minSave) * ElectronicsPrice;
+                Income += (Electronics - minSave) * ElectronicsPrice;
                 Electronics = minSave;
             }
         }
@@ -339,7 +343,7 @@ public class Economy : MonoBehaviour
         {
             if (It >= minSave)
             {
-                Money += (It - minSave) * ItPrice;
+                Income += (It - minSave) * ItPrice;
                 It = minSave;
             }
         }
@@ -362,6 +366,8 @@ public class Economy : MonoBehaviour
 
         moneyText.text = Money.ToString();
         corruptionText.text = Corruption.ToString();
+        incomeText.text = Income.ToString();
+        outcomeText.text = Outcome.ToString();
     }
 
     public void Import()
@@ -370,7 +376,7 @@ public class Economy : MonoBehaviour
         {
             if(Money >= Coal * CoalImportPrice)
             {
-                Money += (Coal * CoalImportPrice) * ((int)Corruption / CorruptionEffect);
+                Outcome += (Coal * CoalImportPrice) * ((int)Corruption / CorruptionEffect);
                 Coal = 0;
             }
         }
@@ -378,7 +384,7 @@ public class Economy : MonoBehaviour
         {
             if (Iron >= Iron * IronImportPrice)
             {
-                Money += (Iron * IronImportPrice) * ((int)Corruption / CorruptionEffect);
+                Outcome += (Iron * IronImportPrice) * ((int)Corruption / CorruptionEffect);
                 Iron = 0;
             }
         }
@@ -386,7 +392,7 @@ public class Economy : MonoBehaviour
         {
             if (Money >= Oil * OilImportPrice)
             {
-                Money += (Oil * OilImportPrice) * ((int)Corruption / CorruptionEffect);
+                Outcome += (Oil * OilImportPrice) * ((int)Corruption / CorruptionEffect);
                 Oil = 0;
             }
         }
@@ -394,7 +400,7 @@ public class Economy : MonoBehaviour
         {
             if (Money >= Gas * GasImportPrice)
             {
-                Money += (Gas * GasImportPrice) * ((int)Corruption / CorruptionEffect);
+                Outcome += (Gas * GasImportPrice) * ((int)Corruption / CorruptionEffect);
                 Gas = 0;
             }
         }
@@ -402,7 +408,7 @@ public class Economy : MonoBehaviour
         {
             if (Money >= Metal * MetalImportPrice)
             {
-                Money += (Metal * MetalImportPrice) * ((int)Corruption / CorruptionEffect);
+                Outcome += (Metal * MetalImportPrice) * ((int)Corruption / CorruptionEffect);
                 Metal = 0;
             }
         }
@@ -410,7 +416,7 @@ public class Economy : MonoBehaviour
         {
             if (Money >= Fuel * FuelImportPrice)
             {
-                Money += (Fuel * FuelImportPrice) * ((int)Corruption / CorruptionEffect);
+                Outcome += (Fuel * FuelImportPrice) * ((int)Corruption / CorruptionEffect);
                 Fuel = 0;
             }
         }
@@ -418,7 +424,7 @@ public class Economy : MonoBehaviour
         {
             if (Money >= Electronics * ElectronicsImportPrice)
             {
-                Money += (Electronics * ElectronicsImportPrice) * ((int)Corruption / CorruptionEffect);
+                Outcome += (Electronics * ElectronicsImportPrice) * ((int)Corruption / CorruptionEffect);
                 Electronics = 0;
             }
         }

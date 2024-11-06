@@ -142,7 +142,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &11269297
 Transform:
   m_ObjectHideFlags: 0
@@ -224,9 +224,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
   Name: Khmelnytsky region
-  Population: 1422065
+  Pop: 0
+  PopIncrease: 0
+  Develompment: 0
+  DevCost: 0
+  DevCostIncrease: 0
   economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
+  population: {fileID: 0}
   coal: 0
   iron: 0
   oil: 0
@@ -248,7 +253,8 @@ MonoBehaviour:
   ElectronicsFactory: 1
   ItFactory: 0
   name: {fileID: 441604529}
-  population: {fileID: 87192891}
+  populationT: {fileID: 0}
+  develompmentT: {fileID: 0}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
@@ -694,7 +700,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &31660225
 Transform:
   m_ObjectHideFlags: 0
@@ -776,9 +782,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
   Name: Poltava region
-  Population: 1618737
+  Pop: 0
+  PopIncrease: 0
+  Develompment: 0
+  DevCost: 0
+  DevCostIncrease: 0
   economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
+  population: {fileID: 0}
   coal: 1
   iron: 1
   oil: 1
@@ -800,7 +811,8 @@ MonoBehaviour:
   ElectronicsFactory: 0
   ItFactory: 0
   name: {fileID: 441604529}
-  population: {fileID: 87192891}
+  populationT: {fileID: 0}
+  develompmentT: {fileID: 0}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
@@ -1255,7 +1267,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &35209819
 Transform:
   m_ObjectHideFlags: 0
@@ -1916,7 +1928,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &85603108
 Transform:
   m_ObjectHideFlags: 0
@@ -1998,9 +2010,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
   Name: Zakarpattia region
-  Population: 1255567
+  Pop: 0
+  PopIncrease: 0
+  Develompment: 0
+  DevCost: 0
+  DevCostIncrease: 0
   economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
+  population: {fileID: 0}
   coal: 1
   iron: 0
   oil: 0
@@ -2022,7 +2039,8 @@ MonoBehaviour:
   ElectronicsFactory: 1
   ItFactory: 0
   name: {fileID: 441604529}
-  population: {fileID: 87192891}
+  populationT: {fileID: 0}
+  develompmentT: {fileID: 0}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
@@ -2199,7 +2217,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -114.03, y: 117.33}
+  m_AnchoredPosition: {x: -114.03, y: 132.66002}
   m_SizeDelta: {x: 425.0154, y: 29.4165}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &87192891
@@ -2600,7 +2618,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &110192300
 Transform:
   m_ObjectHideFlags: 0
@@ -3243,10 +3261,12 @@ RectTransform:
   - {fileID: 441604528}
   - {fileID: 1692063597}
   - {fileID: 87192890}
+  - {fileID: 1448620045}
   - {fileID: 312409686}
   - {fileID: 257810850}
   - {fileID: 610238555}
   - {fileID: 739950321}
+  - {fileID: 1751870009}
   - {fileID: 48024717}
   - {fileID: 1327513261}
   - {fileID: 1199302590}
@@ -3365,7 +3385,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &247283694
 Transform:
   m_ObjectHideFlags: 0
@@ -3744,7 +3764,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &263243917
 Transform:
   m_ObjectHideFlags: 0
@@ -4181,6 +4201,85 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Fuel
+--- !u!1 &331100512
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 331100515}
+  - component: {fileID: 331100514}
+  - component: {fileID: 331100513}
+  m_Layer: 5
+  m_Name: Develompment
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &331100513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 331100512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: ab5ec13e41e199642a96cbcab28a6456, type: 3}
+    m_FontSize: 25
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Development
+--- !u!222 &331100514
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 331100512}
+  m_CullTransparentMesh: 1
+--- !u!224 &331100515
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 331100512}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1597554684}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 720.61, y: -35.484}
+  m_SizeDelta: {x: 136.5121, y: 26.121}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &334940781
 GameObject:
   m_ObjectHideFlags: 0
@@ -4562,7 +4661,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &407951329
 Transform:
   m_ObjectHideFlags: 0
@@ -4644,9 +4743,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
   Name: Kharkiv region
-  Population: 2899436
+  Pop: 0
+  PopIncrease: 0
+  Develompment: 0
+  DevCost: 0
+  DevCostIncrease: 0
   economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
+  population: {fileID: 0}
   coal: 0
   iron: 0
   oil: 1
@@ -4668,7 +4772,8 @@ MonoBehaviour:
   ElectronicsFactory: 2
   ItFactory: 0
   name: {fileID: 441604529}
-  population: {fileID: 87192891}
+  populationT: {fileID: 0}
+  develompmentT: {fileID: 0}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
@@ -4962,7 +5067,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &408906994
 Transform:
   m_ObjectHideFlags: 0
@@ -5010,7 +5115,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &411312100
 Transform:
   m_ObjectHideFlags: 0
@@ -5078,6 +5183,87 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &421384003
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 421384004}
+  - component: {fileID: 421384006}
+  - component: {fileID: 421384005}
+  m_Layer: 5
+  m_Name: IncomeT
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &421384004
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421384003}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1366042332}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -89.8, y: -277}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &421384005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421384003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: ab5ec13e41e199642a96cbcab28a6456, type: 3}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 0
+  m_Text: '
+
+'
+--- !u!222 &421384006
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421384003}
+  m_CullTransparentMesh: 1
 --- !u!1 &429689944
 GameObject:
   m_ObjectHideFlags: 0
@@ -5094,7 +5280,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &429689945
 Transform:
   m_ObjectHideFlags: 0
@@ -5181,7 +5367,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &431560687
 Transform:
   m_ObjectHideFlags: 0
@@ -5263,9 +5449,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
   Name: Donetsk region
-  Population: 4804567
+  Pop: 0
+  PopIncrease: 0
+  Develompment: 0
+  DevCost: 0
+  DevCostIncrease: 0
   economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
+  population: {fileID: 0}
   coal: 1
   iron: 1
   oil: 0
@@ -5287,7 +5478,8 @@ MonoBehaviour:
   ElectronicsFactory: 2
   ItFactory: 0
   name: {fileID: 441604529}
-  population: {fileID: 87192891}
+  populationT: {fileID: 0}
+  develompmentT: {fileID: 0}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
@@ -5693,7 +5885,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -120.41, y: 145.77}
+  m_AnchoredPosition: {x: -120.41, y: 161.1}
   m_SizeDelta: {x: 412.264, y: 27.4548}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &441604529
@@ -7132,7 +7324,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &578931881
 Transform:
   m_ObjectHideFlags: 0
@@ -7280,9 +7472,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
   Name: Sevastopol
-  Population: 378959
+  Pop: 0
+  PopIncrease: 0
+  Develompment: 0
+  DevCost: 0
+  DevCostIncrease: 0
   economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
+  population: {fileID: 0}
   coal: 0
   iron: 0
   oil: 0
@@ -7304,7 +7501,8 @@ MonoBehaviour:
   ElectronicsFactory: 0
   ItFactory: 0
   name: {fileID: 441604529}
-  population: {fileID: 87192891}
+  populationT: {fileID: 0}
+  develompmentT: {fileID: 0}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
@@ -7347,7 +7545,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &588833913
 Transform:
   m_ObjectHideFlags: 0
@@ -7509,7 +7707,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &601486103
 Transform:
   m_ObjectHideFlags: 0
@@ -7591,9 +7789,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
   Name: Vinnytsia region
-  Population: 1762056
+  Pop: 0
+  PopIncrease: 0
+  Develompment: 0
+  DevCost: 0
+  DevCostIncrease: 0
   economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
+  population: {fileID: 0}
   coal: 1
   iron: 0
   oil: 0
@@ -7615,7 +7818,8 @@ MonoBehaviour:
   ElectronicsFactory: 1
   ItFactory: 0
   name: {fileID: 441604529}
-  population: {fileID: 87192891}
+  populationT: {fileID: 0}
+  develompmentT: {fileID: 0}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
@@ -8048,7 +8252,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &652760363
 Transform:
   m_ObjectHideFlags: 0
@@ -8130,9 +8334,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
   Name: Chernihiv region
-  Population: 1234250
+  Pop: 0
+  PopIncrease: 0
+  Develompment: 0
+  DevCost: 0
+  DevCostIncrease: 0
   economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
+  population: {fileID: 0}
   coal: 0
   iron: 0
   oil: 1
@@ -8154,7 +8363,8 @@ MonoBehaviour:
   ElectronicsFactory: 0
   ItFactory: 0
   name: {fileID: 441604529}
-  population: {fileID: 87192891}
+  populationT: {fileID: 0}
+  develompmentT: {fileID: 0}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
@@ -10472,7 +10682,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &773724467
 Transform:
   m_ObjectHideFlags: 0
@@ -10554,9 +10764,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
   Name: Chernivtsi region
-  Population: 920151
+  Pop: 0
+  PopIncrease: 0
+  Develompment: 0
+  DevCost: 0
+  DevCostIncrease: 0
   economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
+  population: {fileID: 0}
   coal: 0
   iron: 0
   oil: 1
@@ -10578,7 +10793,8 @@ MonoBehaviour:
   ElectronicsFactory: 0
   ItFactory: 0
   name: {fileID: 441604529}
-  population: {fileID: 87192891}
+  populationT: {fileID: 0}
+  develompmentT: {fileID: 0}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
@@ -11057,7 +11273,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AntiCorruptionDepartment: 20
-  AntiCorruptionDepartmentPrice: 200
+  AntiCorruptionDepartmentPrice: 400
   clock: {fileID: 569217447}
   economy: {fileID: 1527521981}
 --- !u!4 &794558574
@@ -11094,7 +11310,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &800635279
 Transform:
   m_ObjectHideFlags: 0
@@ -11124,9 +11340,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
   Name: Kyiv region
-  Population: 1816926
+  Pop: 0
+  PopIncrease: 0
+  Develompment: 0
+  DevCost: 0
+  DevCostIncrease: 0
   economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
+  population: {fileID: 0}
   coal: 0
   iron: 0
   oil: 0
@@ -11148,7 +11369,8 @@ MonoBehaviour:
   ElectronicsFactory: 0
   ItFactory: 0
   name: {fileID: 441604529}
-  population: {fileID: 87192891}
+  populationT: {fileID: 0}
+  develompmentT: {fileID: 0}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
@@ -11707,6 +11929,87 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 801758525}
   m_CullTransparentMesh: 1
+--- !u!1 &821719221
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 821719222}
+  - component: {fileID: 821719224}
+  - component: {fileID: 821719223}
+  m_Layer: 5
+  m_Name: OutcomeT
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &821719222
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821719221}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1366042332}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 260.7, y: -277}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &821719223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821719221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: ab5ec13e41e199642a96cbcab28a6456, type: 3}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 0
+  m_Text: '
+
+'
+--- !u!222 &821719224
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821719221}
+  m_CullTransparentMesh: 1
 --- !u!1 &827522729
 GameObject:
   m_ObjectHideFlags: 0
@@ -11855,7 +12158,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &857915807
 Transform:
   m_ObjectHideFlags: 0
@@ -12458,7 +12761,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &964879155
 Transform:
   m_ObjectHideFlags: 0
@@ -12540,9 +12843,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
   Name: Ivano-Frankivsk region
-  Population: 1406172
+  Pop: 0
+  PopIncrease: 0
+  Develompment: 0
+  DevCost: 0
+  DevCostIncrease: 0
   economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
+  population: {fileID: 0}
   coal: 0
   iron: 0
   oil: 1
@@ -12564,7 +12872,8 @@ MonoBehaviour:
   ElectronicsFactory: 0
   ItFactory: 0
   name: {fileID: 441604529}
-  population: {fileID: 87192891}
+  populationT: {fileID: 0}
+  develompmentT: {fileID: 0}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
@@ -12914,9 +13223,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
   Name: Mykolaiv region
-  Population: 1257547
+  Pop: 3000040
+  PopIncrease: 0
+  Develompment: 1
+  DevCost: 20
+  DevCostIncrease: 5
   economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
+  population: {fileID: 1800534406}
   coal: 0
   iron: 0
   oil: 0
@@ -12938,7 +13252,8 @@ MonoBehaviour:
   ElectronicsFactory: 0
   ItFactory: 0
   name: {fileID: 441604529}
-  population: {fileID: 87192891}
+  populationT: {fileID: 87192891}
+  develompmentT: {fileID: 1448620046}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
@@ -13396,7 +13711,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1024398173
 Transform:
   m_ObjectHideFlags: 0
@@ -14280,7 +14595,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1108452871
 Transform:
   m_ObjectHideFlags: 0
@@ -14362,9 +14677,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
   Name: Lviv region
-  Population: 2716642
+  Pop: 0
+  PopIncrease: 0
+  Develompment: 0
+  DevCost: 0
+  DevCostIncrease: 0
   economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
+  population: {fileID: 0}
   coal: 1
   iron: 0
   oil: 1
@@ -14386,7 +14706,8 @@ MonoBehaviour:
   ElectronicsFactory: 0
   ItFactory: 0
   name: {fileID: 441604529}
-  population: {fileID: 87192891}
+  populationT: {fileID: 0}
+  develompmentT: {fileID: 0}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
@@ -14897,7 +15218,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1133882925
 Transform:
   m_ObjectHideFlags: 0
@@ -14927,9 +15248,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
   Name: Crimea
-  Population: 2025136
+  Pop: 0
+  PopIncrease: 0
+  Develompment: 0
+  DevCost: 0
+  DevCostIncrease: 0
   economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
+  population: {fileID: 0}
   coal: 0
   iron: 1
   oil: 1
@@ -14951,7 +15277,8 @@ MonoBehaviour:
   ElectronicsFactory: 0
   ItFactory: 0
   name: {fileID: 441604529}
-  population: {fileID: 87192891}
+  populationT: {fileID: 0}
+  develompmentT: {fileID: 0}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
@@ -15345,7 +15672,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1163496543
 Transform:
   m_ObjectHideFlags: 0
@@ -15427,9 +15754,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
   Name: Kropyvnytskyi region
-  Population: 1123517
+  Pop: 0
+  PopIncrease: 0
+  Develompment: 0
+  DevCost: 0
+  DevCostIncrease: 0
   economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
+  population: {fileID: 0}
   coal: 1
   iron: 1
   oil: 0
@@ -15451,7 +15783,8 @@ MonoBehaviour:
   ElectronicsFactory: 0
   ItFactory: 0
   name: {fileID: 441604529}
-  population: {fileID: 87192891}
+  populationT: {fileID: 0}
+  develompmentT: {fileID: 0}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
@@ -15972,7 +16305,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1197039028
 Transform:
   m_ObjectHideFlags: 0
@@ -16054,9 +16387,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
   Name: Zhytomyr region
-  Population: 1380872
+  Pop: 0
+  PopIncrease: 0
+  Develompment: 0
+  DevCost: 0
+  DevCostIncrease: 0
   economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
+  population: {fileID: 0}
   coal: 1
   iron: 0
   oil: 0
@@ -16078,7 +16416,8 @@ MonoBehaviour:
   ElectronicsFactory: 0
   ItFactory: 0
   name: {fileID: 441604529}
-  population: {fileID: 87192891}
+  populationT: {fileID: 0}
+  develompmentT: {fileID: 0}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
@@ -17261,7 +17600,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1290721810
 Transform:
   m_ObjectHideFlags: 0
@@ -17889,9 +18228,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
   Name: Kherson region
-  Population: 1167407
+  Pop: 3362230
+  PopIncrease: 0
+  Develompment: 1
+  DevCost: 20
+  DevCostIncrease: 5
   economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
+  population: {fileID: 1800534406}
   coal: 0
   iron: 0
   oil: 0
@@ -17913,7 +18257,8 @@ MonoBehaviour:
   ElectronicsFactory: 0
   ItFactory: 0
   name: {fileID: 441604529}
-  population: {fileID: 87192891}
+  populationT: {fileID: 87192891}
+  develompmentT: {fileID: 1448620046}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
@@ -18285,6 +18630,10 @@ RectTransform:
   - {fileID: 1012260221}
   - {fileID: 1645749651}
   - {fileID: 951664465}
+  - {fileID: 1493440120}
+  - {fileID: 421384004}
+  - {fileID: 1702012205}
+  - {fileID: 821719222}
   m_Father: {fileID: 1855320512}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -18349,7 +18698,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1375152170
 Transform:
   m_ObjectHideFlags: 0
@@ -18431,9 +18780,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
   Name: Sumy region
-  Population: 1288909
+  Pop: 0
+  PopIncrease: 0
+  Develompment: 0
+  DevCost: 0
+  DevCostIncrease: 0
   economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
+  population: {fileID: 0}
   coal: 0
   iron: 0
   oil: 1
@@ -18455,7 +18809,8 @@ MonoBehaviour:
   ElectronicsFactory: 0
   ItFactory: 0
   name: {fileID: 441604529}
-  population: {fileID: 87192891}
+  populationT: {fileID: 0}
+  develompmentT: {fileID: 0}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
@@ -18903,7 +19258,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1418190517
 Transform:
   m_ObjectHideFlags: 0
@@ -19332,6 +19687,85 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1437174485}
   m_CullTransparentMesh: 1
+--- !u!1 &1448620044
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1448620045}
+  - component: {fileID: 1448620047}
+  - component: {fileID: 1448620046}
+  m_Layer: 5
+  m_Name: Development
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1448620045
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448620044}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 236199366}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -114.03, y: 103.24}
+  m_SizeDelta: {x: 425.0154, y: 29.4165}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1448620046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448620044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Development
+--- !u!222 &1448620047
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448620044}
+  m_CullTransparentMesh: 1
 --- !u!1 &1455984596
 GameObject:
   m_ObjectHideFlags: 0
@@ -19351,7 +19785,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1455984597
 Transform:
   m_ObjectHideFlags: 0
@@ -19433,9 +19867,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
   Name: Luhansk region
-  Population: 2524976
+  Pop: 0
+  PopIncrease: 0
+  Develompment: 0
+  DevCost: 0
+  DevCostIncrease: 0
   economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
+  population: {fileID: 0}
   coal: 1
   iron: 0
   oil: 1
@@ -19457,7 +19896,8 @@ MonoBehaviour:
   ElectronicsFactory: 1
   ItFactory: 0
   name: {fileID: 441604529}
-  population: {fileID: 87192891}
+  populationT: {fileID: 0}
+  develompmentT: {fileID: 0}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
@@ -19831,7 +20271,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1467813135
 Transform:
   m_ObjectHideFlags: 0
@@ -19913,9 +20353,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
   Name: Dnipro region
-  Population: 3548132
+  Pop: 0
+  PopIncrease: 0
+  Develompment: 0
+  DevCost: 0
+  DevCostIncrease: 0
   economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
+  population: {fileID: 0}
   coal: 1
   iron: 1
   oil: 0
@@ -19937,7 +20382,8 @@ MonoBehaviour:
   ElectronicsFactory: 0
   ItFactory: 0
   name: {fileID: 441604529}
-  population: {fileID: 87192891}
+  populationT: {fileID: 0}
+  develompmentT: {fileID: 0}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
@@ -20326,6 +20772,87 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1479580620}
   m_CullTransparentMesh: 1
+--- !u!1 &1493440119
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1493440120}
+  - component: {fileID: 1493440122}
+  - component: {fileID: 1493440121}
+  m_Layer: 5
+  m_Name: IncomeText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1493440120
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1493440119}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1366042332}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -153.82, y: -277}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1493440121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1493440119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: ab5ec13e41e199642a96cbcab28a6456, type: 3}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 0
+  m_Text: 'Income:
+
+'
+--- !u!222 &1493440122
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1493440119}
+  m_CullTransparentMesh: 1
 --- !u!1 &1509729905
 GameObject:
   m_ObjectHideFlags: 0
@@ -20427,9 +20954,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
   Name: Zaporizhia region
-  Population: 1918203
+  Pop: 2333450
+  PopIncrease: 0
+  Develompment: 3
+  DevCost: 30
+  DevCostIncrease: 5
   economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
+  population: {fileID: 1800534406}
   coal: 0
   iron: 1
   oil: 0
@@ -20451,7 +20983,8 @@ MonoBehaviour:
   ElectronicsFactory: 0
   ItFactory: 0
   name: {fileID: 441604529}
-  population: {fileID: 87192891}
+  populationT: {fileID: 87192891}
+  develompmentT: {fileID: 1448620046}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
@@ -20855,9 +21388,11 @@ MonoBehaviour:
   taxes: 0
   prov: {fileID: 0}
   Prov: {fileID: 0}
+  population: {fileID: 1800534406}
   Taxes: 10
   Money: 1000
   Income: 0
+  Outcome: 0
   Corruption: 60
   CorruptionEffect: 20
   CoalMinePrice: 100
@@ -20894,8 +21429,8 @@ MonoBehaviour:
   Plane: 10
   Ship: 10
   Clothes: 10
-  Electronics: 20
-  It: 0
+  Electronics: 10
+  It: 10
   CoalPrice: 3
   IronPrice: 3
   OilPrice: 5
@@ -20946,11 +21481,11 @@ MonoBehaviour:
   electronics: {fileID: 2041621424}
   it: {fileID: 541711912}
   provinceTag: Ukr
-  totalPopulationText: {fileID: 555413646}
   moneyText: {fileID: 1892194189}
   totalIncomeText: {fileID: 0}
   corruptionText: {fileID: 980675999}
-  totalPopulation: 0
+  incomeText: {fileID: 421384005}
+  outcomeText: {fileID: 821719223}
   SellKoef: 5
   CoalImportPrice: 5
   IronImportPrice: 5
@@ -20990,7 +21525,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1533348442
 Transform:
   m_ObjectHideFlags: 0
@@ -21391,7 +21926,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1577838892
 Transform:
   m_ObjectHideFlags: 0
@@ -21651,6 +22186,7 @@ RectTransform:
   - {fileID: 555413644}
   - {fileID: 1892194188}
   - {fileID: 980675998}
+  - {fileID: 331100515}
   - {fileID: 1076302519}
   - {fileID: 1182001004}
   - {fileID: 1092383488}
@@ -21801,7 +22337,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1634771597
 Transform:
   m_ObjectHideFlags: 0
@@ -21883,9 +22419,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
   Name: Ternopil region
-  Population: 1137764
+  Pop: 0
+  PopIncrease: 0
+  Develompment: 0
+  DevCost: 0
+  DevCostIncrease: 0
   economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
+  population: {fileID: 0}
   coal: 0
   iron: 0
   oil: 0
@@ -21907,7 +22448,8 @@ MonoBehaviour:
   ElectronicsFactory: 1
   ItFactory: 0
   name: {fileID: 441604529}
-  population: {fileID: 87192891}
+  populationT: {fileID: 0}
+  develompmentT: {fileID: 0}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
@@ -22808,9 +23350,90 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -93.43425, y: 173.22353}
+  m_AnchoredPosition: {x: -93.43425, y: 188.55354}
   m_SizeDelta: {x: 466.2102, y: 27.4548}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1702012204
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1702012205}
+  - component: {fileID: 1702012207}
+  - component: {fileID: 1702012206}
+  m_Layer: 5
+  m_Name: OutcomeText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1702012205
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702012204}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1366042332}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 179.5, y: -277}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1702012206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702012204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: ab5ec13e41e199642a96cbcab28a6456, type: 3}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 0
+  m_Text: 'Outcome:
+
+'
+--- !u!222 &1702012207
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702012204}
+  m_CullTransparentMesh: 1
 --- !u!1 &1702537130
 GameObject:
   m_ObjectHideFlags: 0
@@ -22977,7 +23600,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1724419599
 Transform:
   m_ObjectHideFlags: 0
@@ -23350,6 +23973,138 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1744214713}
   m_CullTransparentMesh: 1
+--- !u!1 &1751870008
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1751870009}
+  - component: {fileID: 1751870012}
+  - component: {fileID: 1751870011}
+  - component: {fileID: 1751870010}
+  m_Layer: 5
+  m_Name: DevelopmentB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1751870009
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751870008}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 236199366}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -78, y: 105.12}
+  m_SizeDelta: {x: 26.4164, y: 25.658}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1751870010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751870008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1751870011}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1800534406}
+        m_TargetAssemblyTypeName: Population, Assembly-CSharp
+        m_MethodName: AddDevProvince
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1751870011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751870008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 87cb8b7f31f360d4ab6ffcd2d1a19dc0, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1751870012
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751870008}
+  m_CullTransparentMesh: 1
 --- !u!1 &1759462338
 GameObject:
   m_ObjectHideFlags: 0
@@ -23658,6 +24413,60 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1796522509}
   m_CullTransparentMesh: 1
+--- !u!1 &1800534405
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1800534407}
+  - component: {fileID: 1800534406}
+  m_Layer: 0
+  m_Name: Population
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1800534406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800534405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab3d1f67049e06a4c893c50792805f81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TotalPopulation: 0
+  PopulationIncomeKoef: 3.5
+  DevelopmentPoint: 50
+  DevelopmentPointIncome: 0
+  DevIncomeBasic: 5
+  clock: {fileID: 569217447}
+  Prov: {fileID: 0}
+  provinceTag: Ukr
+  totalPopulationText: {fileID: 555413646}
+  developmentPointText: {fileID: 331100513}
+--- !u!4 &1800534407
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800534405}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 407.60342, y: 546.85345, z: -17.978182}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1821683750
 GameObject:
   m_ObjectHideFlags: 0
@@ -23964,7 +24773,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1842695179
 Transform:
   m_ObjectHideFlags: 0
@@ -24046,9 +24855,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
   Name: Rivne region
-  Population: 1170337
+  Pop: 0
+  PopIncrease: 0
+  Develompment: 0
+  DevCost: 0
+  DevCostIncrease: 0
   economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
+  population: {fileID: 0}
   coal: 0
   iron: 0
   oil: 0
@@ -24070,7 +24884,8 @@ MonoBehaviour:
   ElectronicsFactory: 0
   ItFactory: 0
   name: {fileID: 441604529}
-  population: {fileID: 87192891}
+  populationT: {fileID: 0}
+  develompmentT: {fileID: 0}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
@@ -24987,9 +25802,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
   Name: Odesa region
-  Population: 2457134
+  Pop: 1234560
+  PopIncrease: 0
+  Develompment: 4
+  DevCost: 35
+  DevCostIncrease: 5
   economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
+  population: {fileID: 1800534406}
   coal: 1
   iron: 0
   oil: 1
@@ -25011,7 +25831,8 @@ MonoBehaviour:
   ElectronicsFactory: 0
   ItFactory: 0
   name: {fileID: 441604529}
-  population: {fileID: 87192891}
+  populationT: {fileID: 87192891}
+  develompmentT: {fileID: 1448620046}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
@@ -25268,7 +26089,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1887822230
 Transform:
   m_ObjectHideFlags: 0
@@ -25350,9 +26171,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
   Name: Cherkasy region
-  Population: 1393960
+  Pop: 0
+  PopIncrease: 0
+  Develompment: 0
+  DevCost: 0
+  DevCostIncrease: 0
   economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
+  population: {fileID: 0}
   coal: 1
   iron: 0
   oil: 0
@@ -25374,7 +26200,8 @@ MonoBehaviour:
   ElectronicsFactory: 0
   ItFactory: 0
   name: {fileID: 441604529}
-  population: {fileID: 87192891}
+  populationT: {fileID: 0}
+  develompmentT: {fileID: 0}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
@@ -25931,7 +26758,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1922829691
 Transform:
   m_ObjectHideFlags: 0
@@ -26091,7 +26918,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1979040550
 Transform:
   m_ObjectHideFlags: 0
@@ -26560,7 +27387,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2069974579
 Transform:
   m_ObjectHideFlags: 0
@@ -26647,7 +27474,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2071915239
 Transform:
   m_ObjectHideFlags: 0
@@ -26729,9 +27556,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
   Name: Volyn region
-  Population: 1057283
+  Pop: 0
+  PopIncrease: 0
+  Develompment: 0
+  DevCost: 0
+  DevCostIncrease: 0
   economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
+  population: {fileID: 0}
   coal: 1
   iron: 0
   oil: 1
@@ -26753,7 +27585,8 @@ MonoBehaviour:
   ElectronicsFactory: 0
   ItFactory: 0
   name: {fileID: 441604529}
-  population: {fileID: 87192891}
+  populationT: {fileID: 0}
+  develompmentT: {fileID: 0}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
@@ -27006,7 +27839,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2110831063
 Transform:
   m_ObjectHideFlags: 0
@@ -27088,9 +27921,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ProvMenu: {fileID: 236199363}
   Name: Kyiv
-  Population: 2616054
+  Pop: 0
+  PopIncrease: 0
+  Develompment: 0
+  DevCost: 0
+  DevCostIncrease: 0
   economy: {fileID: 1527521981}
   clock: {fileID: 569217447}
+  population: {fileID: 0}
   coal: 0
   iron: 0
   oil: 0
@@ -27112,7 +27950,8 @@ MonoBehaviour:
   ElectronicsFactory: 0
   ItFactory: 0
   name: {fileID: 441604529}
-  population: {fileID: 87192891}
+  populationT: {fileID: 0}
+  develompmentT: {fileID: 0}
   coalT: {fileID: 312409684}
   ironT: {fileID: 257810851}
   oilT: {fileID: 610238556}
@@ -27241,3 +28080,4 @@ SceneRoots:
   - {fileID: 569217448}
   - {fileID: 794558574}
   - {fileID: 1527521982}
+  - {fileID: 1800534407}

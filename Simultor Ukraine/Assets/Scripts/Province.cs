@@ -9,10 +9,15 @@ public class Province : MonoBehaviour
 {
     public GameObject ProvMenu;
     public string Name; // Назва регіону
-    public long Population; // Населення
+    public long Pop; // Населення
+    public int PopIncrease;
+    public int Develompment; //Розвиток
+    public int DevCost; //ціна розвитку
+    public int DevCostIncrease; //зміна ціни розвитку при розвитку
     private Dictionary<string, string> tagToWord = new Dictionary<string, string>(); // Словник 
     public Economy economy;
     public Clock clock;
+    public Population population;
 
     //наявність ресурсів для видобутку
     public bool coal;
@@ -41,7 +46,8 @@ public class Province : MonoBehaviour
     public int ItFactory;
 
     [SerializeField] new Text name;
-    [SerializeField] Text population;
+    [SerializeField] Text populationT;
+    [SerializeField] Text develompmentT;
     [SerializeField] Text coalT;
     [SerializeField] Text ironT;
     [SerializeField] Text oilT;
@@ -61,6 +67,8 @@ public class Province : MonoBehaviour
         // Тут тег - країна
         tagToWord.Add("Ukr", "Ukraine");
         tagToWord.Add("Pol", "Poland");
+
+        PopIncrease = ((int)(Develompment * population.PopulationIncomeKoef))*10;
     }
 
     void Update()
@@ -79,23 +87,26 @@ public class Province : MonoBehaviour
                 }
                 hitCollider.GetComponent<Province>().OpenMenu();
                 economy.Prov = hitCollider.GetComponent<Province>();
+                population.Prov = hitCollider.GetComponent<Province>();
             }
             else
             {
                 //ProvMenu.SetActive(false);
             }
         }
+        PopulationIncrease();
     }
     
     public void OpenMenu()
     {
         ProvMenu.SetActive(true);
         name.text = "Назва регіону: " + Name;
-        population.text = "Населення регіону: " + (Population / 1000000.0).ToString("0.000") + " млн";
+        populationT.text = "Населення регіону: " + (Pop / 1000000.0).ToString("0.000") + " млн";
         coalT.text = "Вугілля: " + CoalMine + "/" + CoalLim;
         ironT.text = "Залізо: " + IronMine + "/" + IronLim;
         oilT.text = "Нафта: " + OilTower + "/" + OilLim;
         gasT.text = "Газ: " + GasTower + "/" + GasLim;
+        develompmentT.text = "Розвиток: " + Develompment;
         metalT.text = MetalFactory.ToString();
         fuelT.text = FuelFactory.ToString();
         autoT.text = AutoFactory.ToString();
@@ -113,6 +124,27 @@ public class Province : MonoBehaviour
         else
         {
             displaytext.text = "Країна: Невідома";
+        }
+    }
+
+    public void DevIncrease()
+    {
+        if(DevCost <= population.DevelopmentPoint)
+        {
+            population.DevelopmentPoint -= DevCost;
+            Develompment++;
+            DevCost += DevCostIncrease;
+            PopIncrease = ((int)(Develompment * population.PopulationIncomeKoef)) * 10;
+            develompmentT.text = "Розвиток: " + Develompment;
+            population.ResTextUpdate();
+        }
+    }
+    
+    public void PopulationIncrease()
+    {
+        if(clock.PickMonth)
+        {
+            Pop += PopIncrease;
         }
     }
 
