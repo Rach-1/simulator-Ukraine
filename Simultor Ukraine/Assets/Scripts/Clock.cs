@@ -12,6 +12,8 @@ public class Clock : MonoBehaviour
     public float SecPerMin = 1;
 
     public bool PickMonth = false;
+    public bool PickMonthHandled = false;
+
 
     private string time;
     private string date;
@@ -56,6 +58,11 @@ public class Clock : MonoBehaviour
 
     void Update()
     {
+        if (PickMonth && !PickMonthHandled)
+        {
+            // Очікуємо, поки інший скрипт обробить PickMonth
+            return;
+        }
         PickMonth = false;
         if (timer >= SecPerMin)
         {
@@ -73,6 +80,7 @@ public class Clock : MonoBehaviour
                         day = 1;
                         month++;
                         PickMonth = true;
+                        PickMonthHandled = false;
                         if (month > maxMonth)
                         {
                             year++;

@@ -42,6 +42,6 @@ public class Departments : MonoBehaviour
     }
     public void Inflation(float value)
     {
-        AntiCorruptionDepartment = value;
+        AntiInflationDepartment = value;
     }
 }

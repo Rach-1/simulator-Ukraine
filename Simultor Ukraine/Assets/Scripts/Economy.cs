@@ -236,7 +236,7 @@ public class Economy : MonoBehaviour
             Import();
             AutoSale();
 
-            taxes = (population.TotalPopulation * ((Taxes / 100)) / 12) / (Corruption / 100);
+            taxes = (population.TotalPopulation * ((Taxes / 100)) / 12) * (1- (Corruption / 100));
             Income += (int)taxes;
             Outcome += ResOutcome;
 
@@ -253,6 +253,7 @@ public class Economy : MonoBehaviour
             CorruptionOutcome = 0;
             InflationOutcome = 0;
 
+            clock.PickMonthHandled = true;
             return;
         }
     }
