@@ -22294,7 +22294,7 @@ MonoBehaviour:
   ResOutcome: 0
   CorruptionOutcome: 0
   Corruption: 60
-  Inflation: 80
+  Inflation: 30
   InflationOutcome: 0
   CoalMinePrice: 100
   IronMinePrice: 100
