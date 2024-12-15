@@ -18,7 +18,8 @@ public class Economy : MonoBehaviour
     public int ResOutcome;
     public int CorruptionOutcome;
     public float Corruption;
-    public int CorruptionEffect;
+    public float Inflation;
+    public int InflationOutcome;
 
     //вартість подудови 
     public int CoalMinePrice;
@@ -126,12 +127,14 @@ public class Economy : MonoBehaviour
     [SerializeField] Text moneyText;
     [SerializeField] Text totalIncomeText;
     [SerializeField] Text corruptionText;
+    [SerializeField] Text inflationText;
     [SerializeField] Text incomeText;
     [SerializeField] Text taxesIncomeText;
     [SerializeField] Text resIncomeText;
     [SerializeField] Text outcomeText;
     [SerializeField] Text resOutcomeText;
     [SerializeField] Text corruptionOutcomeText;
+    [SerializeField] Text inflationOutcomeText;
 
     public int SellKoef = 5; //коефіцієнт продажу
 
@@ -233,7 +236,7 @@ public class Economy : MonoBehaviour
             Import();
             AutoSale();
 
-            taxes = (population.TotalPopulation * ((Taxes / 100)) / 12) / (Corruption / CorruptionEffect);
+            taxes = (population.TotalPopulation * ((Taxes / 100)) / 12) / (Corruption / 100);
             Income += (int)taxes;
             Outcome += ResOutcome;
 
@@ -248,6 +251,7 @@ public class Economy : MonoBehaviour
             ResIncome = 0;
             ResOutcome = 0;
             CorruptionOutcome = 0;
+            InflationOutcome = 0;
 
             return;
         }
@@ -260,6 +264,13 @@ public class Economy : MonoBehaviour
         Outcome -= price;
         ResTextUpdate();
     }
+    public void InflationCgange(float change, int price)
+    {
+        Inflation -= change;
+        InflationOutcome -= price;
+        Outcome -= price;
+        ResTextUpdate();
+    }  
     //автопродаж ресурсів
     public void AutoSale()
     {
@@ -267,7 +278,7 @@ public class Economy : MonoBehaviour
         {
             if(Coal >= minSave)
             {
-                ResIncome += (Coal - minSave) * CoalPrice;
+                ResIncome += (Coal - minSave) * (CoalPrice + CoalPrice * ((int)Inflation / 100));
                 Coal = minSave;
             }
         }
@@ -275,7 +286,7 @@ public class Economy : MonoBehaviour
         {
             if (Iron >= minSave)
             {
-                ResIncome += (Iron - minSave) * IronPrice;
+                ResIncome += (Iron - minSave) * (IronPrice + IronPrice * ((int)Inflation / 100));
                 Iron = minSave;
             }
         }
@@ -283,7 +294,7 @@ public class Economy : MonoBehaviour
         {
             if (Oil >= minSave)
             {
-                ResIncome += (Oil - minSave) * OilPrice;
+                ResIncome += (Oil - minSave) * (OilPrice + OilPrice * ((int)Inflation / 100));
                 Oil = minSave;
             }
         }
@@ -291,7 +302,7 @@ public class Economy : MonoBehaviour
         {
             if (Gas >= minSave)
             {
-                ResIncome += (Gas - minSave) * GasPrice;
+                ResIncome += (Gas - minSave) * (GasPrice + GasPrice * ((int)Inflation / 100));
                 Gas = minSave;
             }
         }
@@ -299,7 +310,7 @@ public class Economy : MonoBehaviour
         {
             if (Metal >= minSave)
             {
-                ResIncome += (Metal - minSave) * MetalPrice;
+                ResIncome += (Metal - minSave) * (MetalPrice + MetalPrice * ((int)Inflation / 100));
                 Metal = minSave;
             }
         }
@@ -307,7 +318,7 @@ public class Economy : MonoBehaviour
         {
             if (Fuel >= minSave)
             {
-                ResIncome += (Fuel - minSave) * FuelPrice;
+                ResIncome += (Fuel - minSave) * (FuelPrice + FuelPrice * ((int)Inflation / 100));
                 Fuel = minSave;
             }
         }
@@ -315,7 +326,7 @@ public class Economy : MonoBehaviour
         {
             if (Auto >= minSave)
             {
-                ResIncome += (Auto - minSave) * AutoPrice;
+                ResIncome += (Auto - minSave) * (AutoPrice + AutoPrice * ((int)Inflation / 100));
                 Auto = minSave;
             }
         }
@@ -323,7 +334,7 @@ public class Economy : MonoBehaviour
         {
             if (Plane >= minSave)
             {
-                ResIncome += (Plane - minSave) * PlanePrice;
+                ResIncome += (Plane - minSave) * (PlanePrice + PlanePrice * ((int)Inflation / 100));
                 Plane = minSave;
             }
         }
@@ -331,7 +342,7 @@ public class Economy : MonoBehaviour
         {
             if (Ship >= minSave)
             {
-                ResIncome += (Ship - minSave) * ShipPrice;
+                ResIncome += (Ship - minSave) * (ShipPrice + ShipPrice * ((int)Inflation / 100));
                 Ship = minSave;
             }
         }
@@ -339,7 +350,7 @@ public class Economy : MonoBehaviour
         {
             if (Clothes >= minSave)
             {
-                ResIncome += (Clothes - minSave) * ClothesPrice;
+                ResIncome += (Clothes - minSave) * (ClothesPrice + ClothesPrice * ((int)Inflation / 100));
                 Clothes = minSave;
             }
         }
@@ -347,7 +358,7 @@ public class Economy : MonoBehaviour
         {
             if (Electronics >= minSave)
             {
-                ResIncome += (Electronics - minSave) * ElectronicsPrice;
+                ResIncome += (Electronics - minSave) * (ElectronicsPrice + ElectronicsPrice * ((int)Inflation / 100));
                 Electronics = minSave;
             }
         }
@@ -355,7 +366,7 @@ public class Economy : MonoBehaviour
         {
             if (It >= minSave)
             {
-                ResIncome += (It - minSave) * ItPrice;
+                ResIncome += (It - minSave) * (ItPrice + ItPrice * ((int)Inflation / 100));
                 It = minSave;
             }
         }
@@ -378,12 +389,14 @@ public class Economy : MonoBehaviour
 
         moneyText.text = Money.ToString();
         corruptionText.text = Corruption.ToString();
+        inflationText.text = Inflation.ToString();
         incomeText.text = Income.ToString();
         taxesIncomeText.text = taxes.ToString();
         resIncomeText.text = ResIncome.ToString();
         outcomeText.text = Outcome.ToString();
         resOutcomeText.text = ResOutcome.ToString();
         corruptionOutcomeText.text = CorruptionOutcome.ToString();
+        inflationOutcomeText.text = InflationOutcome.ToString();
     }
 
     public void Import()
@@ -392,15 +405,15 @@ public class Economy : MonoBehaviour
         {
             if(Money >= Coal * CoalImportPrice)
             {
-                ResOutcome += (Coal * CoalImportPrice) * ((int)Corruption / CorruptionEffect);
+                ResOutcome += Coal * (CoalImportPrice + CoalImportPrice * ((int)Corruption / 100) + CoalImportPrice * ((int)Inflation / 100));
                 Coal = 0;
             }
         }
         if (Iron < 0)
         {
-            if (Iron >= Iron * IronImportPrice)
+            if (Money >= Iron * IronImportPrice)
             {
-                ResOutcome += (Iron * IronImportPrice) * ((int)Corruption / CorruptionEffect);
+                ResOutcome += Iron * (IronImportPrice + IronImportPrice * ((int)Corruption / 100) + IronImportPrice * ((int)Inflation / 100));
                 Iron = 0;
             }
         }
@@ -408,7 +421,7 @@ public class Economy : MonoBehaviour
         {
             if (Money >= Oil * OilImportPrice)
             {
-                ResOutcome += (Oil * OilImportPrice) * ((int)Corruption / CorruptionEffect);
+                ResOutcome += Oil * (OilImportPrice + OilImportPrice * ((int)Corruption / 100) + OilImportPrice * ((int)Inflation / 100));
                 Oil = 0;
             }
         }
@@ -416,7 +429,7 @@ public class Economy : MonoBehaviour
         {
             if (Money >= Gas * GasImportPrice)
             {
-                ResOutcome += (Gas * GasImportPrice) * ((int)Corruption / CorruptionEffect);
+                ResOutcome += Gas * (GasImportPrice + GasImportPrice * ((int)Corruption / 100) + GasImportPrice * ((int)Inflation / 100));
                 Gas = 0;
             }
         }
@@ -424,7 +437,7 @@ public class Economy : MonoBehaviour
         {
             if (Money >= Metal * MetalImportPrice)
             {
-                ResOutcome += (Metal * MetalImportPrice) * ((int)Corruption / CorruptionEffect);
+                ResOutcome += Metal * (MetalImportPrice + MetalImportPrice * ((int)Corruption / 100) + MetalImportPrice * ((int)Inflation / 100));
                 Metal = 0;
             }
         }
@@ -432,7 +445,7 @@ public class Economy : MonoBehaviour
         {
             if (Money >= Fuel * FuelImportPrice)
             {
-                ResOutcome += (Fuel * FuelImportPrice) * ((int)Corruption / CorruptionEffect);
+                ResOutcome += Fuel * (FuelImportPrice + FuelImportPrice * ((int)Corruption / 100) + FuelImportPrice * ((int)Inflation / 100));
                 Fuel = 0;
             }
         }
@@ -440,7 +453,7 @@ public class Economy : MonoBehaviour
         {
             if (Money >= Electronics * ElectronicsImportPrice)
             {
-                ResOutcome += (Electronics * ElectronicsImportPrice) * ((int)Corruption / CorruptionEffect);
+                ResOutcome += Electronics * (ElectronicsImportPrice + ElectronicsImportPrice * ((int)Corruption / 100) + ElectronicsImportPrice * ((int)Inflation / 100));
                 Electronics = 0;
             }
         }
@@ -454,11 +467,11 @@ public class Economy : MonoBehaviour
             if (koef) //якщо з коефіцієнтом
             {
                 Coal -= SellKoef;
-                Money += SellKoef * CoalPrice;
+                Money += SellKoef * (CoalPrice + CoalPrice * ((int)Inflation / 100));
             }
             else
             {
-                Money += Coal * CoalPrice;
+                Money += Coal * (CoalPrice + CoalPrice * ((int)Inflation / 100));
                 Coal = 0;
             }
             ResTextUpdate();
@@ -471,11 +484,11 @@ public class Economy : MonoBehaviour
             if (koef) //якщо з коефіцієнтом
             {
                 Iron -= SellKoef;
-                Money += SellKoef * IronPrice;
+                Money += SellKoef * (IronPrice + IronPrice * ((int)Inflation / 100));
             }
             else
             {
-                Money += Iron * IronPrice;
+                Money += Iron * (IronPrice + IronPrice * ((int)Inflation / 100));
                 Iron = 0;
             }
             ResTextUpdate();
@@ -488,11 +501,11 @@ public class Economy : MonoBehaviour
             if (koef) //якщо з коефіцієнтом
             {
                 Oil -= SellKoef;
-                Money += SellKoef * OilPrice;
+                Money += SellKoef * (OilPrice + OilPrice * ((int)Inflation / 100));
             }
             else
             {
-                Money += Oil * OilPrice;
+                Money += Oil * (OilPrice + OilPrice * ((int)Inflation / 100));
                 Oil = 0;
             }
             ResTextUpdate();
@@ -505,11 +518,11 @@ public class Economy : MonoBehaviour
             if (koef) //якщо з коефіцієнтом
             {
                 Gas -= SellKoef;
-                Money += SellKoef * GasPrice;
+                Money += SellKoef * (GasPrice + GasPrice * ((int)Inflation / 100));
             }
             else
             {
-                Money += Gas * GasPrice;
+                Money += Gas * (GasPrice + GasPrice * ((int)Inflation / 100));
                 Gas = 0;
             }
             ResTextUpdate();
@@ -522,11 +535,11 @@ public class Economy : MonoBehaviour
             if (koef) //якщо з коефіцієнтом
             {
                 Metal -= SellKoef;
-                Money += SellKoef * MetalPrice;
+                Money += SellKoef * (MetalPrice + MetalPrice * ((int)Inflation / 100));
             }
             else
             {
-                Money += Metal * MetalPrice;
+                Money += Metal * (MetalPrice + MetalPrice * ((int)Inflation / 100));
                 Metal = 0;
             }
             ResTextUpdate();
@@ -539,11 +552,11 @@ public class Economy : MonoBehaviour
             if (koef) //якщо з коефіцієнтом
             {
                 Fuel -= SellKoef;
-                Money += SellKoef * FuelPrice;
+                Money += SellKoef * (FuelPrice + FuelPrice * ((int)Inflation / 100));
             }
             else
             {
-                Money += Fuel * FuelPrice;
+                Money += Fuel * (FuelPrice + FuelPrice * ((int)Inflation / 100));
                 Fuel = 0;
             }
             ResTextUpdate();
@@ -556,11 +569,11 @@ public class Economy : MonoBehaviour
             if (koef) //якщо з коефіцієнтом
             {
                 Auto -= SellKoef;
-                Money += SellKoef * AutoPrice;
+                Money += SellKoef * (AutoPrice + AutoPrice * ((int)Inflation / 100));
             }
             else
             {
-                Money += Auto * AutoPrice;
+                Money += Auto * (AutoPrice + AutoPrice * ((int)Inflation / 100));
                 Auto = 0;
             }
             ResTextUpdate();
@@ -573,11 +586,11 @@ public class Economy : MonoBehaviour
             if (koef) //якщо з коефіцієнтом
             {
                 Plane -= SellKoef;
-                Money += SellKoef * PlanePrice;
+                Money += SellKoef * (PlanePrice + PlanePrice * ((int)Inflation / 100));
             }
             else
             {
-                Money += Plane * PlanePrice;
+                Money += Plane * (PlanePrice + PlanePrice * ((int)Inflation / 100));
                 Plane = 0;
             }
             ResTextUpdate();
@@ -590,11 +603,11 @@ public class Economy : MonoBehaviour
             if (koef) //якщо з коефіцієнтом
             {
                 Ship -= SellKoef;
-                Money += SellKoef * ShipPrice;
+                Money += SellKoef * (ShipPrice + ShipPrice * ((int)Inflation / 100));
             }
             else
             {
-                Money += Ship * ShipPrice;
+                Money += Ship * (ShipPrice + ShipPrice * ((int)Inflation / 100));
                 Ship = 0;
             }
             ResTextUpdate();
@@ -607,11 +620,11 @@ public class Economy : MonoBehaviour
             if (koef) //якщо з коефіцієнтом
             {
                 Clothes -= SellKoef;
-                Money += SellKoef * ClothesPrice;
+                Money += SellKoef * (ClothesPrice + ClothesPrice * ((int)Inflation / 100));
             }
             else
             {
-                Money += Clothes * ClothesPrice;
+                Money += Clothes * (ClothesPrice + ClothesPrice * ((int)Inflation / 100));
                 Clothes = 0;
             }
             ResTextUpdate();
@@ -624,11 +637,11 @@ public class Economy : MonoBehaviour
             if (koef) //якщо з коефіцієнтом
             {
                 Electronics -= SellKoef;
-                Money += SellKoef * ElectronicsPrice;
+                Money += SellKoef * (ElectronicsPrice + ElectronicsPrice * ((int)Inflation / 100));
             }
             else
             {
-                Money += Electronics * ElectronicsPrice;
+                Money += Electronics * (ElectronicsPrice + ElectronicsPrice * ((int)Inflation / 100));
                 Electronics = 0;
             }
             ResTextUpdate();
@@ -641,11 +654,11 @@ public class Economy : MonoBehaviour
             if (koef) //якщо з коефіцієнтом
             {
                 It -= SellKoef;
-                Money += SellKoef * ItPrice;
+                Money += SellKoef * (ItPrice + ItPrice * ((int)Inflation / 100));
             }
             else
             {
-                Money += It * ItPrice;
+                Money += It * (ItPrice + ItPrice * ((int)Inflation / 100));
                 It = 0;
             }
             ResTextUpdate();
@@ -750,7 +763,7 @@ public class Economy : MonoBehaviour
     }
     public void BuySomething(int price)
     {
-        Money -= price * ((int)Corruption / CorruptionEffect);
+        Money -= price + (price * ((int)Corruption / 100) + price * ((int)Inflation / 100));
         AllFactories();
         ResTextUpdate();
     }
